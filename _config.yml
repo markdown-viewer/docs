@@ -1,3 +1,5 @@
 title: Markdown Viewer Docs
 description: Documentation for Markdown Viewer Extension
 theme: jekyll-theme-cayman
+baseurl: ""
+url: "https://docu.md"
