@@ -1,5 +1,7 @@
-title: Markdown Viewer Docs
-description: Documentation for Markdown Viewer Extension
-theme: jekyll-theme-cayman
+title: Markdown Viewer
+description: Markdown to perfect Word in one click
 baseurl: ""
 url: "https://docu.md"
+markdown: kramdown
+kramdown:
+  input: GFM
