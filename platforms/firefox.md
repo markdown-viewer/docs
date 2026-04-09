@@ -72,6 +72,7 @@ Firefox version includes `webRequest` and `webRequestBlocking` permissions for m
 | Extension | Type |
 |-----------|------|
 | `.md`, `.markdown` | Markdown documents |
+| `.plantuml` | PlantUML diagrams |
 | `.mermaid` | Mermaid diagrams |
 | `.vega`, `.vl`, `.vega-lite` | Vega/Vega-Lite charts |
 | `.gv` | Graphviz DOT graphs |

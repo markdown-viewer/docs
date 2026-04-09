@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown 一键导出完美 Word — Mermaid 流程图、Vega 图表、drawio、Canvas、信息图、Graphviz、LaTeX 公式自动转为可编辑格式，代码高亮，本地处理**
+**Markdown 一键导出完美 Word — PlantUML、Mermaid、Vega、Canvas、信息图、Graphviz、LaTeX 公式自动转为可编辑格式，代码高亮，本地处理**
 
 *完全免费 · 29+ 专业主题 · 支持 28 种语言*
 
@@ -22,6 +22,7 @@
 **现在只需 1 秒钟。**
 
 点击下载，获得完美 Word 文档：
+- ✅ PlantUML 图表 → 高清图片
 - ✅ Mermaid 图表 → 高清图片
 - ✅ Vega/Vega-Lite 数据图表 → 高清图片
 - ✅ drawio 架构图 → 高清图片
@@ -96,8 +97,9 @@ $$
 
 ### 1. 图表自动转换
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 图片 · 复杂 HTML 表格
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 图片 · 复杂 HTML 表格
 
+**PlantUML：** 类图、时序图、用例图、活动图、组件图 → 软件设计、UML 建模  
 **Mermaid：** 流程图、时序图、类图、状态图 → 技术文档、架构设计  
 **Vega/Vega-Lite：** 柱状图、折线图、散点图、热力图 → 商务报告、数据分析  
 **drawio：** 架构图、网络拓扑、UML 图 → 系统设计、技术文档  
@@ -205,7 +207,7 @@ LaTeX → Word 可编辑公式（不是图片！）
 
 ### Markdown 语法全支持
 
-标题 · 段落 · 粗体 · 斜体 · 删除线 · 列表 · 任务列表 · 引用 · 代码块（100+ 语言高亮）· 表格 · 链接 · 图片 · Mermaid 图表 · Vega / Vega-Lite 图表 · drawio 架构图 · Canvas 思维导图 · Infographic 图表 · Graphviz DOT 图 · LaTeX 公式 · HTML · GFM 扩展
+标题 · 段落 · 粗体 · 斜体 · 删除线 · 列表 · 任务列表 · 引用 · 代码块（100+ 语言高亮）· 表格 · 链接 · 图片 · PlantUML 图表 · Mermaid 图表 · Vega / Vega-Lite 图表 · drawio 架构图 · Canvas 思维导图 · Infographic 图表 · Graphviz DOT 图 · LaTeX 公式 · HTML · GFM 扩展
 
 ### 29 个主题
 
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: 能。标准 .docx 格式，数学公式可编辑，不是图片。
 
 **Q: 支持哪些图表？**  
-A: 所有 Mermaid 图表（流程图、时序图、甘特图、类图、状态图、饼图、ER图等）、Vega / Vega-Lite 数据可视化图表、drawio 架构图、Canvas 思维导图、Infographic 统计图表、Graphviz DOT 图 + SVG 自动转换。
+A: PlantUML 图表（类图、时序图、用例图、活动图等）、所有 Mermaid 图表（流程图、时序图、甘特图、类图、状态图、饼图、ER图等）、Vega / Vega-Lite 数据可视化图表、drawio 架构图、Canvas 思维导图、Infographic 统计图表、Graphviz DOT 图 + SVG 自动转换。
 
 **Q: 文件大小有限制吗？**  
 A: 无限制。智能缓存，100+ 图表的文档也秒开。

@@ -10,6 +10,7 @@ This page provides a comprehensive comparison of features available across all M
 | **GitHub Flavored Markdown** | ✅ | ✅ | ✅ | ✅ |
 | **Math Formulas (KaTeX)** | ✅ | ✅ | ✅ | ✅ |
 | **Code Syntax Highlighting** | ✅ | ✅ | ✅ | ✅ |
+| **PlantUML Diagrams** | ✅ | ✅ | ✅ | ✅ |
 | **Mermaid Diagrams** | ✅ | ✅ | ✅ | ✅ |
 | **Vega/Vega-Lite Charts** | ✅ | ✅ | ✅ | ✅ |
 | **drawio Diagrams** | ✅ | ✅ | ✅ | ✅ |
@@ -54,6 +55,10 @@ All platforms share the same core rendering engine built on unified/remark/rehyp
 
 | Diagram Type | Chrome | Firefox | VS Code | Mobile |
 |--------------|:------:|:-------:|:-------:|:------:|
+| PlantUML Sequence | ✅ | ✅ | ✅ | ✅ |
+| PlantUML Class | ✅ | ✅ | ✅ | ✅ |
+| PlantUML Activity | ✅ | ✅ | ✅ | ✅ |
+| PlantUML Use Case | ✅ | ✅ | ✅ | ✅ |
 | Mermaid Flowcharts | ✅ | ✅ | ✅ | ✅ |
 | Mermaid Sequence | ✅ | ✅ | ✅ | ✅ |
 | Mermaid Class | ✅ | ✅ | ✅ | ✅ |
@@ -76,6 +81,7 @@ Support for opening dedicated diagram files:
 | File Format | Chrome | Firefox | VS Code | Mobile |
 |-------------|:------:|:-------:|:-------:|:------:|
 | `.md`, `.markdown` | ✅ | ✅ | ✅ | ✅ |
+| `.plantuml` | ✅ | ✅ | ✅ | ✅ |
 | `.mermaid` | ✅ | ✅ | ✅ | ✅ |
 | `.vega` | ✅ | ✅ | ✅ | ✅ |
 | `.vl`, `.vega-lite` | ✅ | ✅ | ✅ | ✅ |

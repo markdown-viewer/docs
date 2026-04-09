@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown'dan mükemmel Word'e tek tıkla — Mermaid, Vega, drawio, Canvas, infografik, Graphviz, LaTeX (düzenlenebilir), kod vurgulama, yerel işleme**
+**Markdown'dan mükemmel Word'e tek tıkla — PlantUML, Mermaid, Vega, Canvas, infografik, Graphviz, LaTeX (düzenlenebilir), kod vurgulama, yerel işleme**
 
 *Tamamen ücretsiz · 29+ profesyonel tema · 28 dil desteği*
 
@@ -22,6 +22,7 @@ Ama sonunda her zaman bir Word belgesine ihtiyacınız oluyor.
 **Şimdi sadece 1 saniye sürüyor.**
 
 İndirmek için tıklayın ve mükemmel bir Word belgesi alın:
+- ✅ PlantUML diyagramları → Yüksek çözünürlüklü görüntüler
 - ✅ Mermaid diyagramları → Yüksek çözünürlüklü görüntüler
 - ✅ Vega/Vega-Lite veri grafikleri → Yüksek çözünürlüklü görüntüler
 - ✅ drawio diyagramları → Yüksek çözünürlüklü görüntüler
@@ -96,8 +97,9 @@ Verilerin konuşmasına izin verin, tek tıkla profesyonel raporlar oluşturun.
 
 ### 1. Otomatik Diyagram Dönüştürme
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG görselleri · Karmaşık HTML tabloları
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG görselleri · Karmaşık HTML tabloları
 
+**PlantUML:** Sıra diyagramları, sınıf diyagramları, etkinlik diyagramları, kullanım senaryosu diyagramları → Teknik belgeler, mimari tasarım  
 **Mermaid:** Akış şemaları, sıra diyagramları, sınıf diyagramları, durum diyagramları → Teknik belgeler, mimari tasarım  
 **Vega/Vega-Lite:** Çubuk grafikler, çizgi grafikler, dağılım grafikleri, ısı haritaları → İş raporları, veri analizi  
 **drawio:** Mimari diyagramlar, ağ topolojisi, UML diyagramları → Sistem tasarımı, teknik belgeler  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 C: Evet. Standart .docx biçimi, matematik formülleri düzenlenebilir, görüntü değil.
 
 **S: Hangi diyagramlar destekleniyor?**  
-C: Tüm Mermaid diyagramları (akış şeması, sıra, gantt, sınıf, durum, pasta, ER vb.), Vega / Vega-Lite veri görselleştirme grafikleri, drawio diyagramları, JSON Canvas diyagramları, Infographic istatistiksel grafikler, Graphviz DOT grafları + SVG otomatik dönüştürme.
+C: Tüm PlantUML diyagramları (sıra, sınıf, etkinlik, kullanım senaryosu, vb.), tüm Mermaid diyagramları (akış şeması, sıra, gantt, sınıf, durum, pasta, ER vb.), Vega / Vega-Lite veri görselleştirme grafikleri, drawio diyagramları, JSON Canvas diyagramları, Infographic istatistiksel grafikler, Graphviz DOT grafları + SVG otomatik dönüştürme.
 
 **S: Dosya boyutu sınırı var mı?**  
 C: Sınır yok. Akıllı önbellek, 100+ diyagramlı belgeler anında açılır.

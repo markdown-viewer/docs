@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown 一鍵匯出完美 Word — Mermaid、Vega、drawio、Canvas、資訊圖、Graphviz、LaTeX 公式自動轉為可編輯格式，程式碼高亮，本地處理**
+**Markdown 一鍵匯出完美 Word — PlantUML、Mermaid、Vega、Canvas、資訊圖、Graphviz、LaTeX 公式自動轉為可編輯格式，程式碼高亮，本地處理**
 
 *完全免費 · 29+ 專業主題 · 支援 28 種語言*
 
@@ -22,6 +22,7 @@
 **現在只需 1 秒鐘。**
 
 點擊下載，獲得完美 Word 文檔：
+- ✅ PlantUML → 高清圖片
 - ✅ Mermaid 圖表 → 高清圖片
 - ✅ Vega/Vega-Lite 資料圖表 → 高清圖片
 - ✅ drawio 圖表 → 高清圖片
@@ -96,8 +97,9 @@ $$
 
 ### 1. 圖表自動轉換
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 圖片 · 複雜 HTML 表格
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 圖片 · 複雜 HTML 表格
 
+**PlantUML：** 類別圖、時序圖、用例圖、活動圖、元件圖 → 軟體設計、UML 建模  
 **Mermaid：** 流程圖、時序圖、類別圖、狀態圖 → 技術文檔、架構設計  
 **Vega/Vega-Lite：** 柱狀圖、折線圖、散點圖、熱力圖 → 商務報告、資料分析  
 **drawio：** 架構圖、網路拓撲、UML 圖 → 系統設計、技術文檔  
@@ -205,7 +207,7 @@ LaTeX → Word 可編輯公式（不是圖片！）
 
 ### Markdown 語法全支援
 
-標題 · 段落 · 粗體 · 斜體 · 刪除線 · 列表 · 任務列表 · 引用 · 程式碼區塊（100+ 語言高亮）· 表格 · 連結 · 圖片 · Mermaid 圖表 · Vega / Vega-Lite 圖表 · drawio 圖表 · Canvas 圖表 · Infographic 圖表 · Graphviz DOT 圖 · LaTeX 公式 · HTML · GFM 擴充
+標題 · 段落 · 粗體 · 斜體 · 刪除線 · 列表 · 任務列表 · 引用 · 程式碼區塊（100+ 語言高亮）· 表格 · 連結 · 圖片 · PlantUML 圖表 · Mermaid 圖表 · Vega / Vega-Lite 圖表 · drawio 圖表 · Canvas 圖表 · Infographic 圖表 · Graphviz DOT 圖 · LaTeX 公式 · HTML · GFM 擴充
 
 ### 29 個主題
 
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: 能。標準 .docx 格式，數學公式可編輯，不是圖片。
 
 **Q: 支援哪些圖表？**  
-A: 所有 Mermaid 圖表（流程圖、時序圖、甘特圖、類別圖、狀態圖、圓餅圖、ER圖等）、Vega / Vega-Lite 資料視覺化圖表、drawio 架構圖、Canvas 心智圖、Infographic 統計圖表、Graphviz DOT 圖 + SVG 自動轉換。
+A: PlantUML 圖表（類別圖、時序圖、用例圖、活動圖等）、所有 Mermaid 圖表（流程圖、時序圖、甘特圖、類別圖、狀態圖、圓餅圖、ER圖等）、Vega / Vega-Lite 資料視覺化圖表、drawio 架構圖、Canvas 心智圖、Infographic 統計圖表、Graphviz DOT 圖 + SVG 自動轉換。
 
 **Q: 檔案大小有限制嗎？**  
 A: 無限制。智慧快取，100+ 圖表的文檔也秒開。
@@ -316,7 +318,7 @@ A: A: 在 Markdown 中使用 ````vega-lite` 程式碼區塊，內容為 JSON 格
 4. 拖曳 `.md` 檔案到瀏覽器
 5. ✅ 開始使用
 
-**您將獲得：** Markdown → Word 一鍵轉換 · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz 自動轉圖 · LaTeX 可編輯公式 · 100+ 語言程式碼高亮 · 29+ 主題 · 智慧快取 · 完全免費
+**您將獲得：** Markdown → Word 一鍵轉換 · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz 自動轉圖 · LaTeX 可編輯公式 · 100+ 語言程式碼高亮 · 29+ 主題 · 智慧快取 · 完全免費
 
 **適合：** 技術寫作者 · 學生/研究員 · 產品經理 · 開發者 · 任何用 Markdown 的人
 

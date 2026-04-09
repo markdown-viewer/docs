@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown ke Word sempurna dalam satu klik — Mermaid, Vega, drawio, Canvas, infografis, Graphviz, LaTeX (dapat diedit), penyorotan kode, pemrosesan lokal**
+**Markdown ke Word sempurna dalam satu klik — PlantUML, Mermaid, Vega, Canvas, infografis, Graphviz, LaTeX (dapat diedit), penyorotan kode, pemrosesan lokal**
 
 *Sepenuhnya gratis · 29+ tema profesional · Dukungan 28 bahasa*
 
@@ -22,6 +22,7 @@ Tapi pada akhirnya, Anda selalu memerlukan dokumen Word.
 **Sekarang hanya butuh 1 detik.**
 
 Klik unduh dan dapatkan dokumen Word sempurna:
+- ✅ Diagram PlantUML → Gambar resolusi tinggi
 - ✅ Diagram Mermaid → Gambar resolusi tinggi
 - ✅ Grafik data Vega/Vega-Lite → Gambar resolusi tinggi
 - ✅ Diagram drawio → Gambar resolusi tinggi
@@ -96,8 +97,9 @@ Biarkan data berbicara, hasilkan laporan profesional dengan satu klik.
 
 ### 1. Konversi Diagram Otomatis
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Gambar SVG · Tabel HTML kompleks
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Gambar SVG · Tabel HTML kompleks
 
+**PlantUML:** Diagram urutan, diagram kelas, diagram aktivitas, diagram kasus penggunaan → Dokumen teknis, desain arsitektur  
 **Mermaid:** Diagram alur, diagram urutan, diagram kelas, diagram status → Dokumen teknis, desain arsitektur  
 **Vega/Vega-Lite:** Grafik batang, grafik garis, plot sebar, peta panas → Laporan bisnis, analisis data  
 **drawio:** Diagram arsitektur, topologi jaringan, diagram UML → Desain sistem, dokumentasi teknis  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 J: Ya. Format .docx standar, rumus matematika dapat diedit, bukan gambar.
 
 **T: Diagram apa yang didukung?**  
-J: Semua diagram Mermaid (flowchart, sequence, gantt, class, state, pie, ER, dll.), grafik visualisasi data Vega / Vega-Lite, diagram drawio, diagram JSON Canvas, grafik statistik Infographic, graf Graphviz DOT + konversi SVG otomatis.
+J: Semua diagram PlantUML (urutan, kelas, aktivitas, kasus penggunaan, dll.), semua diagram Mermaid (flowchart, sequence, gantt, class, state, pie, ER, dll.), grafik visualisasi data Vega / Vega-Lite, diagram drawio, diagram JSON Canvas, grafik statistik Infographic, graf Graphviz DOT + konversi SVG otomatis.
 
 **T: Apakah ada batasan ukuran file?**  
 J: Tidak ada batasan. Cache cerdas, dokumen dengan 100+ diagram terbuka langsung.

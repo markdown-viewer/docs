@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown naar perfect Word met één klik — Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, LaTeX (bewerkbaar), code-accentuering, lokale verwerking**
+**Markdown naar perfect Word met één klik — PlantUML, Mermaid, Vega, Canvas, Infographic, Graphviz, LaTeX (bewerkbaar), code-accentuering, lokale verwerking**
 
 *Volledig gratis · 29+ professionele thema's · 28 talen*
 
@@ -22,6 +22,7 @@ Maar uiteindelijk heb je altijd een Word-document nodig.
 **Nu duurt het slechts 1 seconde.**
 
 Klik om te downloaden en krijg een perfect Word-document:
+- ✅ PlantUML-diagrammen → Afbeeldingen met hoge resolutie
 - ✅ Mermaid-diagrammen → Afbeeldingen met hoge resolutie
 - ✅ Vega/Vega-Lite datagrafieken → Afbeeldingen met hoge resolutie
 - ✅ drawio-diagrammen → Afbeeldingen met hoge resolutie
@@ -96,8 +97,9 @@ Laat data spreken, genereer professionele rapporten met één klik.
 
 ### 1. Automatische diagramconversie
 
-**Mermaid-diagrammen** · **Vega/Vega-Lite datagrafieken** · **drawio diagrammen** · **Canvas diagrammen** · **Infographic grafieken** · **Graphviz DOT** · SVG-afbeeldingen · Complexe HTML-tabellen
+**PlantUML** · **Mermaid-diagrammen** · **Vega/Vega-Lite datagrafieken** · **drawio diagrammen** · **Canvas diagrammen** · **Infographic grafieken** · **Graphviz DOT** · SVG-afbeeldingen · Complexe HTML-tabellen
 
+**PlantUML:** Sequentiediagrammen, klassediagrammen, activiteitsdiagrammen, use case-diagrammen → Technische documentatie, architectuurontwerp  
 **Mermaid:** Stroomdiagrammen, sequentiediagrammen, klassediagrammen, toestandsdiagrammen → Technische documentatie, architectuurontwerp  
 **Vega/Vega-Lite:** Staafdiagrammen, lijngrafieken, spreidingsdiagrammen, heatmaps → Zakelijke rapporten, data-analyse  
 **drawio:** Architectuurdiagrammen, netwerktopologie, UML-diagrammen → Systeemontwerp, technische documentatie  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: Ja. Standaard .docx-formaat, wiskundige formules zijn bewerkbaar, geen afbeeldingen.
 
 **V: Welke diagrammen worden ondersteund?**  
-A: Alle Mermaid-diagrammen (stroomdiagram, sequentie, gantt, klasse, toestand, taart, ER, enz.), Vega / Vega-Lite datavisualisatiegrafieken, drawio diagrammen, JSON Canvas diagrammen, Infographic statistische grafieken, Graphviz DOT grafen + SVG automatische conversie.
+A: Alle PlantUML-diagrammen (sequentie, klasse, activiteit, use case, enz.), alle Mermaid-diagrammen (stroomdiagram, sequentie, gantt, klasse, toestand, taart, ER, enz.), Vega / Vega-Lite datavisualisatiegrafieken, drawio diagrammen, JSON Canvas diagrammen, Infographic statistische grafieken, Graphviz DOT grafen + SVG automatische conversie.
 
 **V: Is er een bestandsgroottelimiet?**  
 A: Geen limiet. Slimme cache, documenten met 100+ diagrammen openen direct.

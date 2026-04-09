@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown sang Word hoàn hảo chỉ với một click — Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, LaTeX (có thể chỉnh sửa), tô sáng mã, xử lý cục bộ**
+**Markdown sang Word hoàn hảo chỉ với một click — PlantUML, Mermaid, Vega, Canvas, Infographic, Graphviz, LaTeX (có thể chỉnh sửa), tô sáng mã, xử lý cục bộ**
 
 *Hoàn toàn miễn phí · 29+ chủ đề chuyên nghiệp · Hỗ trợ 28 ngôn ngữ*
 
@@ -22,6 +22,7 @@ Nhưng cuối cùng, bạn luôn cần một tài liệu Word.
 **Bây giờ chỉ mất 1 giây.**
 
 Nhấp tải xuống và nhận tài liệu Word hoàn hảo:
+- ✅ Sơ đồ PlantUML → Hình ảnh độ phân giải cao
 - ✅ Sơ đồ Mermaid → Hình ảnh độ phân giải cao
 - ✅ Biểu đồ dữ liệu Vega/Vega-Lite → Hình ảnh độ phân giải cao
 - ✅ Sơ đồ drawio → Hình ảnh độ phân giải cao
@@ -96,8 +97,9 @@ Chọn chủ đề "Business", biểu đồ dữ liệu Vega-Lite tự động c
 
 ### 1. Chuyển đổi sơ đồ tự động
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Hình ảnh SVG · Bảng HTML phức tạp
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Hình ảnh SVG · Bảng HTML phức tạp
 
+**PlantUML:** Sơ đồ tuần tự, sơ đồ lớp, sơ đồ hoạt động, sơ đồ trường hợp sử dụng → Tài liệu kỹ thuật, thiết kế kiến trúc  
 **Mermaid:** Sơ đồ luồng, sơ đồ tuần tự, sơ đồ lớp, sơ đồ trạng thái → Tài liệu kỹ thuật, thiết kế kiến trúc  
 **Vega/Vega-Lite:** Biểu đồ cột, biểu đồ đường, biểu đồ phân tán, bản đồ nhiệt → Báo cáo kinh doanh, phân tích dữ liệu  
 **drawio:** Sơ đồ kiến trúc, cấu trúc liên kết mạng, sơ đồ UML → Thiết kế hệ thống, tài liệu kỹ thuật  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 Đ: Có. Định dạng .docx tiêu chuẩn, công thức toán học có thể chỉnh sửa, không phải hình ảnh.
 
 **H: Những sơ đồ nào được hỗ trợ?**  
-Đ: Tất cả sơ đồ Mermaid (sơ đồ luồng, tuần tự, gantt, lớp, trạng thái, tròn, ER, v.v.), biểu đồ trực quan hóa dữ liệu Vega / Vega-Lite, sơ đồ drawio, sơ đồ JSON Canvas, biểu đồ thống kê Infographic, đồ thị Graphviz DOT + chuyển đổi SVG tự động.
+Đ: Tất cả sơ đồ PlantUML (tuần tự, lớp, hoạt động, trường hợp sử dụng, v.v.), tất cả sơ đồ Mermaid (sơ đồ luồng, tuần tự, gantt, lớp, trạng thái, tròn, ER, v.v.), biểu đồ trực quan hóa dữ liệu Vega / Vega-Lite, sơ đồ drawio, sơ đồ JSON Canvas, biểu đồ thống kê Infographic, đồ thị Graphviz DOT + chuyển đổi SVG tự động.
 
 **H: Có giới hạn kích thước tệp không?**  
 Đ: Không có giới hạn. Bộ nhớ cache thông minh, tài liệu có 100+ sơ đồ mở ngay lập tức.

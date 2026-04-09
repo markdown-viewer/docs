@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown을 클릭 한 번으로 완벽한 Word로 — Mermaid, Vega, drawio, Canvas, 인포그래픽, Graphviz, LaTeX(편집 가능), 코드 강조, 로컬 처리**
+**Markdown을 클릭 한 번으로 완벽한 Word로 — PlantUML, Mermaid, Vega, Canvas, 인포그래픽, Graphviz, LaTeX(편집 가능), 코드 강조, 로컬 처리**
 
 *완전 무료 · 29+ 전문 테마 · 28개 언어 지원*
 
@@ -22,6 +22,7 @@
 **이제는 단 1초면 됩니다.**
 
 다운로드를 클릭하면 완벽한 Word 문서를 얻습니다:
+- ✅ PlantUML 다이어그램 → 고해상도 이미지
 - ✅ Mermaid 다이어그램 → 고해상도 이미지
 - ✅ Vega/Vega-Lite 데이터 차트 → 고해상도 이미지
 - ✅ drawio 다이어그램 → 고해상도 이미지
@@ -96,8 +97,9 @@ $$
 
 ### 1. 자동 다이어그램 변환
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 이미지 · 복잡한 HTML 테이블
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG 이미지 · 복잡한 HTML 테이블
 
+**PlantUML:** 시퀀스 다이어그램, 클래스 다이어그램, 액티비티 다이어그램, 유스케이스 다이어그램 → 기술 문서, 아키텍처 설계  
 **Mermaid:** 순서도, 시퀀스 다이어그램, 클래스 다이어그램, 상태 다이어그램 → 기술 문서, 아키텍처 설계  
 **Vega/Vega-Lite:** 막대 차트, 선 차트, 산점도, 히트맵 → 비즈니스 보고서, 데이터 분석  
 **drawio:** 아키텍처 다이어그램, 네트워크 토폴로지, UML 다이어그램 → 시스템 설계, 기술 문서  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: 예. 표준 .docx 형식이며, 수학 수식은 편집 가능하고 이미지가 아닙니다.
 
 **Q: 어떤 다이어그램을 지원하나요?**  
-A: 모든 Mermaid 다이어그램 (순서도, 시퀀스, 간트, 클래스, 상태, 파이, ER 등), Vega / Vega-Lite 데이터 시각화 차트, drawio 아키텍처 다이어그램, Canvas 마인드맵, Infographic 통계 차트, Graphviz DOT 그래프 + SVG 자동 변환.
+A: 모든 PlantUML 다이어그램 (시퀀스, 클래스, 액티비티, 유스케이스 등), 모든 Mermaid 다이어그램 (순서도, 시퀀스, 간트, 클래스, 상태, 파이, ER 등), Vega / Vega-Lite 데이터 시각화 차트, drawio 아키텍처 다이어그램, Canvas 마인드맵, Infographic 통계 차트, Graphviz DOT 그래프 + SVG 자동 변환.
 
 **Q: 파일 크기 제한이 있나요?**  
 A: 제한 없음. 스마트 캐시로 100+ 다이어그램 문서도 즉시 열립니다.
@@ -316,7 +318,7 @@ A: A: Markdown에서 ````vega-lite` 코드 블록을 사용하고 JSON 형식의
 4. `.md` 파일을 브라우저로 드래그
 5. ✅ 사용 시작
 
-**얻을 수 있는 것:** Markdown → Word 원클릭 변환 · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz 자동 변환 · LaTeX 편집 가능 수식 · 100+ 언어 코드 강조 · 29+ 테마 · 스마트 캐시 · 완전 무료
+**얻을 수 있는 것:** Markdown → Word 원클릭 변환 · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz 자동 변환 · LaTeX 편집 가능 수식 · 100+ 언어 코드 강조 · 29+ 테마 · 스마트 캐시 · 완전 무료
 
 **적합한 대상:** 기술 작성자 · 학생/연구원 · 제품 관리자 · 개발자 · Markdown을 사용하는 모든 사람
 

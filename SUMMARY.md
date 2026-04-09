@@ -14,6 +14,7 @@
 
 * [Overview](features/README.md)
 * [Diagrams](features/diagrams/README.md)
+  * [PlantUML](features/diagrams/plantuml.md)
   * [Mermaid](features/diagrams/mermaid.md)
   * [Vega/Vega-Lite](features/diagrams/vega.md)
   * [drawio](features/diagrams/drawio.md)

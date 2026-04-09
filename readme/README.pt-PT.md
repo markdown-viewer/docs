@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown para Word perfeito com um clique — Mermaid, Vega, drawio, Canvas, infografia, Graphviz, LaTeX (editável), realce de código, processamento local**
+**Markdown para Word perfeito com um clique — PlantUML, Mermaid, Vega, Canvas, infografia, Graphviz, LaTeX (editável), realce de código, processamento local**
 
 *Totalmente gratuito · 29+ temas profissionais · Suporte a 28 idiomas*
 
@@ -22,6 +22,7 @@ Mas no final, precisa sempre de um documento Word.
 **Agora demora apenas 1 segundo.**
 
 Clique para descarregar e obtenha um documento Word perfeito:
+- ✅ Diagramas PlantUML → Imagens em alta definição
 - ✅ Diagramas Mermaid → Imagens em alta definição
 - ✅ Gráficos de dados Vega/Vega-Lite → Imagens em alta definição
 - ✅ Diagramas drawio → Imagens em alta definição
@@ -96,8 +97,9 @@ Fale com dados, gere relatórios profissionais com um clique.
 
 ### 1. Conversão automática de gráficos
 
-**Fluxogramas Mermaid** · **Gráficos de dados Vega/Vega-Lite** · **Diagramas drawio** · **Diagramas Canvas** · **Gráficos Infographic** · **Graphviz DOT** · Imagens SVG · Tabelas HTML complexas
+**PlantUML** · **Fluxogramas Mermaid** · **Gráficos de dados Vega/Vega-Lite** · **Diagramas drawio** · **Diagramas Canvas** · **Gráficos Infographic** · **Graphviz DOT** · Imagens SVG · Tabelas HTML complexas
 
+**PlantUML:** Diagramas de sequência, diagramas de classe, diagramas de atividade, diagramas de casos de uso → Documentação técnica, design de arquitetura  
 **Mermaid:** Fluxogramas, diagramas de sequência, diagramas de classe, diagramas de estado → Documentação técnica, design de arquitetura  
 **Vega/Vega-Lite:** Gráficos de barras, linhas, dispersão, mapas de calor → Relatórios empresariais, análise de dados  
 **drawio:** Diagramas de arquitetura, topologia de rede, diagramas UML → Design de sistemas, documentação técnica  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 R: Sim. Formato .docx padrão, fórmulas matemáticas editáveis, não são imagens.
 
 **P: Quais gráficos são suportados?**  
-R: Todos os diagramas Mermaid (fluxogramas, diagramas de sequência, gráficos de Gantt, diagramas de classe, diagramas de estado, gráficos circulares, diagramas ER, etc.), gráficos de visualização de dados Vega / Vega-Lite, diagramas drawio, diagramas JSON Canvas, gráficos estatísticos Infographic, grafos Graphviz DOT + conversão automática de SVG.
+R: Todos os diagramas PlantUML (sequência, classe, atividade, casos de uso, etc.), todos os diagramas Mermaid (fluxogramas, diagramas de sequência, gráficos de Gantt, diagramas de classe, diagramas de estado, gráficos circulares, diagramas ER, etc.), gráficos de visualização de dados Vega / Vega-Lite, diagramas drawio, diagramas JSON Canvas, gráficos estatísticos Infographic, grafos Graphviz DOT + conversão automática de SVG.
 
 **P: Existe limite de tamanho de ficheiro?**  
 R: Sem limite. Cache inteligente, documentos com 100+ gráficos abrem instantaneamente.

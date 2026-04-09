@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown į tobulą Word vienu spustelėjimu — Mermaid, Vega, drawio, Canvas, infografika, Graphviz, LaTeX (redaguojamas), kodo paryškinimas, vietinis apdorojimas**
+**Markdown į tobulą Word vienu spustelėjimu — PlantUML, Mermaid, Vega, Canvas, infografika, Graphviz, LaTeX (redaguojamas), kodo paryškinimas, vietinis apdorojimas**
 
 *Visiškai nemokama · 29+ profesionalių temų · 28 kalbų palaikymas*
 
@@ -22,10 +22,13 @@ Tačiau galiausiai vis tiek prireikia Word dokumento.
 **Dabar užtenka 1 sekundės.**
 
 Paspauskite atsisiuntimą ir gaukite tvarkingą Word dokumentą:
-- ✅ Mermaid diagramos → aukštos raiškos vaizdai- ✅ Vega/Vega-Lite duomenų diagramos → aukštos raiškos vaizdai
+- ✅ PlantUML diagramos → aukštos raiškos vaizdai
+- ✅ Mermaid diagramos → aukštos raiškos vaizdai
+- ✅ Vega/Vega-Lite duomenų diagramos → aukštos raiškos vaizdai
 - ✅ drawio diagramos → aukštos raiškos vaizdai
 - ✅ Canvas diagramos → aukštos raiškos vaizdai
-- ✅ Infographic diagramos → aukštos raiškos vaizdai- ✅ Graphviz DOT grafai → aukštos raiškos vaizdai
+- ✅ Infographic diagramos → aukštos raiškos vaizdai
+- ✅ Graphviz DOT grafai → aukštos raiškos vaizdai
 - ✅ LaTeX formulės → redaguojamos Word lygtys
 - ✅ Automatinis sintaksės paryškinimas (100+ kalbų)
 - ✅ 29+ profesionalių temų vienu paspaudimu
@@ -94,8 +97,9 @@ Tegul duomenys kalba patys, generuokite profesionalias ataskaitas vienu paspaudi
 
 ### 1. Automatinis diagramų konvertavimas
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG vaizdai · Sudėtingos HTML lentelės
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG vaizdai · Sudėtingos HTML lentelės
 
+**PlantUML:** Sekų diagramos, klasių diagramos, veiklos diagramos, naudojimo atvejų diagramos → Techninė dokumentacija, architektūros projektavimas  
 **Mermaid:** Srautų schemos, sekų diagramos, klasių diagramos, būsenų diagramos → Techninė dokumentacija, architektūros projektavimas  
 **Vega/Vega-Lite:** Stulpelinės, linijinės, taškinės diagramos, šilumos žemėlapiai → Verslo ataskaitos, duomenų analitika  
 **drawio:** Architektūros diagramos, tinklo topologijos, UML diagramos → Sistemų projektavimas, techninė dokumentacija  
@@ -244,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: Taip. Standartinis .docx formatas, matematinės formulės redaguojamos, ne vaizdai.
 
 **Q: Kokios diagramos palaikomos?**  
-A: Visos Mermaid diagramos (srautų schema, seka, Gantt, klasė, būsena, skritulinė, ER ir kt.), Vega / Vega-Lite duomenų vizualizacijos diagramos, drawio architektūros diagramos, Canvas mindžemėlapiai, Infographic statistinės diagramos, Graphviz DOT grafai + SVG automatinis konvertavimas.
+A: Visos PlantUML diagramos (sekų, klasių, veiklos, naudojimo atvejų ir kt.), visos Mermaid diagramos (srautų schema, seka, Gantt, klasė, būsena, skritulinė, ER ir kt.), Vega / Vega-Lite duomenų vizualizacijos diagramos, drawio architektūros diagramos, Canvas mindžemėlapiai, Infographic statistinės diagramos, Graphviz DOT grafai + SVG automatinis konvertavimas.
 
 **Q: Ar yra failo dydžio limitas?**  
 A: Jokių limitų. Išmani talpykla, dokumentai su 100+ diagramų atsidaro akimirksniu.
@@ -314,7 +318,7 @@ A: Naudokite ````vega-lite` kodo bloką Markdown su JSON formato diagramos speci
 4. Vilkite `.md` failus į naršyklę
 5. ✅ Pradėkite naudoti
 
-**Jūs gausite:** Markdown → Word konvertavimas vienu paspaudimu · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automatinis konvertavimas · Redaguojamos LaTeX formulės · 100+ kalbų sintaksės paryškinimas · 29+ temų · Išmani talpykla · Visiškai nemokama
+**Jūs gausite:** Markdown → Word konvertavimas vienu paspaudimu · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automatinis konvertavimas · Redaguojamos LaTeX formulės · 100+ kalbų sintaksės paryškinimas · 29+ temų · Išmani talpykla · Visiškai nemokama
 
 **Puikiai tinka:** Techniniams rašytojams · Studentams/tyrėjams · Produktų vadybininkams · Programuotojams · Visiems, naudojantiems Markdown
 

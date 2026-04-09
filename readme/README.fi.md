@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown täydelliseksi Wordiksi yhdellä napsautuksella — Mermaid, Vega, drawio, Canvas, infografiikka, Graphviz, LaTeX (muokattava), koodin korostus, paikallinen käsittely**
+**Markdown täydelliseksi Wordiksi yhdellä napsautuksella — PlantUML, Mermaid, Vega, Canvas, infografiikka, Graphviz, LaTeX (muokattava), koodin korostus, paikallinen käsittely**
 
 *Täysin ilmainen · 29+ ammattimaista teemaa · 28 kielen tuki*
 
@@ -22,6 +22,7 @@ Mutta lopulta tarvitset aina Word-dokumentin.
 **Nyt vain 1 sekunti.**
 
 Klikkaa lataa ja saat täydellisen Word-dokumentin:
+- ✅ PlantUML-kaaviot → Korkearesoluutioiset kuvat
 - ✅ Mermaid-kaaviot → Korkearesoluutioiset kuvat
 - ✅ Vega/Vega-Lite-datakaaviot → Korkearesoluutioiset kuvat
 - ✅ drawio-kaaviot → Korkearesoluutioiset kuvat
@@ -96,8 +97,9 @@ Anna datan puhua, luo ammattimaiset raportit yhdellä klikkauksella.
 
 ### 1. Automaattinen kaaviomuunnos
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG-kuvat · Monimutkaiset HTML-taulukot
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG-kuvat · Monimutkaiset HTML-taulukot
 
+**PlantUML:** Sekvenssikaaviot, luokkakaaviot, aktiviteettikaaviot, käyttötapauskaaviot → Tekniset dokumentit, arkkitehtuurisuunnittelu  
 **Mermaid:** Vuokaaviot, sekvenssikaaviot, luokkakaaviot, tilakaaviot → Tekniset dokumentit, arkkitehtuurisuunnittelu  
 **Vega/Vega-Lite:** Pylväskaaviot, viivakaaviot, hajontakaaviot, lämpökartat → Liiketoimintaraportit, data-analyysi  
 **drawio:** Arkkitehtuurikaaviot, verkkotopologiat, UML-kaaviot → Järjestelmäsuunnittelu, tekninen dokumentaatio  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: Kyllä. Standardi .docx-muoto, matemaattiset kaavat ovat muokattavissa, eivät kuvia.
 
 **K: Mitä kaavioita tuetaan?**  
-A: Kaikki Mermaid-kaaviot (vuokaavio, sekvenssi, gantt, luokka, tila, piirakka, ER jne.), Vega / Vega-Lite -datavisualisointikaaviot, drawio-arkkitehtuurikaaviot, Canvas-miellekartat, Infographic-tilastokaaviot, Graphviz DOT -kaaviot + SVG-automaattimuunnos.
+A: Kaikki PlantUML-kaaviot (sekvenssi, luokka, aktiviteetti, käyttötapaus jne.), kaikki Mermaid-kaaviot (vuokaavio, sekvenssi, gantt, luokka, tila, piirakka, ER jne.), Vega / Vega-Lite -datavisualisointikaaviot, drawio-arkkitehtuurikaaviot, Canvas-miellekartat, Infographic-tilastokaaviot, Graphviz DOT -kaaviot + SVG-automaattimuunnos.
 
 **K: Onko tiedoston koolle rajoitusta?**  
 A: Ei rajoitusta. Älykäs välimuisti, dokumentit, joissa on 100+ kaaviota, avautuvat välittömästi.
@@ -316,7 +318,7 @@ A: Käytä ````vega-lite` koodilohkoa Markdownissa JSON-muotoisella kaaviomäär
 4. Vedä `.md`-tiedostot selaimeen
 5. ✅ Aloita käyttö
 
-**Saat:** Markdown → Word yhden klikkauksen muunnos · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automaattimuunnos · LaTeX muokattavat kaavat · 100+ kielen syntaksikorostus · 29+ teemaa · Älykäs välimuisti · Täysin ilmainen
+**Saat:** Markdown → Word yhden klikkauksen muunnos · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automaattimuunnos · LaTeX muokattavat kaavat · 100+ kielen syntaksikorostus · 29+ teemaa · Älykäs välimuisti · Täysin ilmainen
 
 **Täydellinen:** Tekniset kirjoittajat · Opiskelijat/tutkijat · Tuotepäälliköt · Kehittäjät · Kuka tahansa Markdownia käyttävä
 

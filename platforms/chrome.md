@@ -63,6 +63,7 @@ The extension automatically handles these file types:
 | Extension | Type |
 |-----------|------|
 | `.md`, `.markdown` | Markdown documents |
+| `.plantuml` | PlantUML diagrams |
 | `.mermaid` | Mermaid diagrams |
 | `.vega`, `.vl`, `.vega-lite` | Vega/Vega-Lite charts |
 | `.gv` | Graphviz DOT graphs |
@@ -155,7 +156,7 @@ Any Chromium-based browser should work.
 ### Diagrams Not Rendering?
 
 1. **Wait for completion:** Complex diagrams take time
-2. **Check syntax:** Verify your Mermaid/DOT/Vega syntax
+2. **Check syntax:** Verify your PlantUML/Mermaid/DOT/Vega syntax
 3. **Clear cache:** Try clearing the diagram cache in settings
 
 ### Export Fails?

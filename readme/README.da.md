@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown til perfekt Word med ét klik — Mermaid, Vega, drawio, Canvas, infografik, Graphviz, LaTeX (redigerbar), kodefremhævning, lokal behandling**
+**Markdown til perfekt Word med ét klik — PlantUML, Mermaid, Vega, Canvas, infografik, Graphviz, LaTeX (redigerbar), kodefremhævning, lokal behandling**
 
 *Helt gratis · 29+ professionelle temaer · 28 sprog*
 
@@ -22,6 +22,7 @@ Men til sidst har du altid brug for et Word-dokument.
 **Nu tager det kun 1 sekund.**
 
 Klik for at downloade og få et perfekt Word-dokument:
+- ✅ PlantUML-diagrammer → Højopløsningsbilleder
 - ✅ Mermaid-diagrammer → Højopløsningsbilleder
 - ✅ Vega/Vega-Lite datadiagrammer → Højopløsningsbilleder
 - ✅ drawio-diagrammer → Højopløsningsbilleder
@@ -96,8 +97,9 @@ Lad data tale, generer professionelle rapporter med ét klik.
 
 ### 1. Automatisk diagramkonvertering
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG-billeder · Komplekse HTML-tabeller
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG-billeder · Komplekse HTML-tabeller
 
+**PlantUML:** Sekvensdiagrammer, klassediagrammer, aktivitetsdiagrammer, brugstilfældediagrammer → Teknisk dokumentation, arkitekturdesign  
 **Mermaid:** Flowcharts, sekvensdiagrammer, klassediagrammer, tilstandsdiagrammer → Teknisk dokumentation, arkitekturdesign  
 **Vega/Vega-Lite:** Søjlediagrammer, linjediagrammer, punktdiagrammer, varmekort → Forretningsrapporter, dataanalyse  
 **drawio:** Arkitekturdiagrammer, netværkstopologier, UML-diagrammer → Systemdesign, teknisk dokumentation  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 Sv: Ja. Standard .docx-format, matematikformler er redigerbare, ikke billeder.
 
 **Sp: Hvilke diagrammer understøttes?**  
-Sv: Alle Mermaid-diagrammer (flowchart, sekvens, gantt, klasse, tilstand, cirkel, ER osv.), Vega / Vega-Lite datavisualiseringsdiagrammer, drawio arkitekturdiagrammer, Canvas mindmaps, Infographic statistiske diagrammer, Graphviz DOT-grafer + SVG auto-konvertering.
+Sv: Alle PlantUML-diagrammer (sekvens, klasse, aktivitet, brugstilfælde osv.), alle Mermaid-diagrammer (flowchart, sekvens, gantt, klasse, tilstand, cirkel, ER osv.), Vega / Vega-Lite datavisualiseringsdiagrammer, drawio arkitekturdiagrammer, Canvas mindmaps, Infographic statistiske diagrammer, Graphviz DOT-grafer + SVG auto-konvertering.
 
 **Sp: Er der en filstørrelsesbegrænsning?**  
 Sv: Ingen begrænsning. Smart cache, dokumenter med 100+ diagrammer åbner øjeblikkeligt.
@@ -316,7 +318,7 @@ Sv: Brug ````vega-lite` kodeblok i Markdown med JSON-format diagramspecifikation
 4. Træk `.md`-filer til browser
 5. ✅ Begynd at bruge
 
-**Du får:** Markdown → Word ét-klik konvertering · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz auto-konvertering · LaTeX redigerbare formler · 100+ sprog syntaksfremhævning · 29+ temaer · Smart cache · Fuldstændig gratis
+**Du får:** Markdown → Word ét-klik konvertering · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz auto-konvertering · LaTeX redigerbare formler · 100+ sprog syntaksfremhævning · 29+ temaer · Smart cache · Fuldstændig gratis
 
 **Perfekt til:** Tekniske forfattere · Studerende/forskere · Produktchefer · Udviklere · Alle der bruger Markdown
 

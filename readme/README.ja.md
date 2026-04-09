@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown をワンクリックで完璧な Word に — Mermaid、Vega、drawio、Canvas、インフォグラフィック、Graphviz、LaTeX（編集可能）、コードハイライト、ローカル処理**
+**Markdown をワンクリックで完璧な Word に — PlantUML、Mermaid、Vega、Canvas、インフォグラフィック、Graphviz、LaTeX（編集可能）、コードハイライト、ローカル処理**
 
 *完全無料 · 29+ のプロフェッショナルテーマ · 28 言語サポート*
 
@@ -22,6 +22,7 @@ Markdownで書くのが好きですよね。クリーンで効率的で、バー
 **今では1秒で完了。**
 
 ダウンロードをクリックして完璧なWord文書を取得：
+- ✅ PlantUMLダイアグラム → 高解像度画像
 - ✅ Mermaidダイアグラム → 高解像度画像
 - ✅ Vega/Vega-Liteデータチャート → 高解像度画像
 - ✅ drawioダイアグラム → 高解像度画像
@@ -96,8 +97,9 @@ $$
 
 ### 1. 自動ダイアグラム変換
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG画像 · 複雑なHTMLテーブル
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG画像 · 複雑なHTMLテーブル
 
+**PlantUML:** クラス図、シーケンス図、ユースケース図、アクティビティ図、コンポーネント図 → ソフトウェア設計、UMLモデリング  
 **Mermaid:** フローチャート、シーケンス図、クラス図、状態図 → 技術文書、アーキテクチャ設計  
 **Vega/Vega-Lite:** 棒グラフ、折れ線グラフ、散布図、ヒートマップ → ビジネスレポート、データ分析  
 **drawio:** アーキテクチャ図、ネットワークトポロジー、UML図 → システム設計、技術文書  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 A: はい。標準の.docx形式で、数式は編集可能で、画像ではありません。
 
 **Q: どのようなダイアグラムがサポートされていますか？**  
-A: すべてのMermaidダイアグラム（フローチャート、シーケンス、ガント、クラス、状態、円グラフ、ERなど）、Vega/Vega-Liteデータ可視化チャート、drawioアーキテクチャ図、Canvasマインドマップ、Infographic統計チャート、Graphviz DOTグラフ + SVG自動変換。
+A: PlantUMLダイアグラム（クラス図、シーケンス、ユースケース、アクティビティなど）、すべてのMermaidダイアグラム（フローチャート、シーケンス、ガント、クラス、状態、円グラフ、ERなど）、Vega/Vega-Liteデータ可視化チャート、drawioアーキテクチャ図、Canvasマインドマップ、Infographic統計チャート、Graphviz DOTグラフ + SVG自動変換。
 
 **Q: ファイルサイズに制限はありますか？**  
 A: 制限なし。スマートキャッシュで、100+ダイアグラムの文書も瞬時に開きます。
@@ -316,7 +318,7 @@ A: Markdownで````vega-lite`コードブロックを使用し、JSON形式のチ
 4. `.md`ファイルをブラウザにドラッグ
 5. ✅ 使用開始
 
-**得られるもの:** Markdown → Wordワンクリック変換 · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz自動変換 · LaTeX編集可能数式 · 100+言語構文ハイライト · 29+テーマ · スマートキャッシュ · 完全無料
+**得られるもの:** Markdown → Wordワンクリック変換 · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz自動変換 · LaTeX編集可能数式 · 100+言語構文ハイライト · 29+テーマ · スマートキャッシュ · 完全無料
 
 **最適な対象:** 技術ライター · 学生/研究者 · プロダクトマネージャー · 開発者 · Markdownを使用するすべての人
 

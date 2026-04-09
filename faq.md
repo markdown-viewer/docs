@@ -36,6 +36,7 @@ All major diagram types:
 
 | Type | Examples |
 |------|----------|
+| **PlantUML** | Sequence diagrams, class diagrams, activity diagrams, use case diagrams |
 | **Mermaid** | Flowcharts, sequences, class diagrams, Gantt, ER, state, pie |
 | **Vega/Vega-Lite** | Bar charts, line charts, scatter plots, heatmaps |
 | **drawio** | Architecture diagrams, network topologies, UML |

@@ -6,6 +6,7 @@ Markdown Viewer can convert code-based diagrams into high-resolution images duri
 
 | Type | Syntax | Best For |
 |------|--------|----------|
+| [PlantUML](plantuml.md) | `plantuml` | Sequence, class, activity, use case diagrams |
 | [Mermaid](mermaid.md) | `mermaid` | Flowcharts, sequences, architecture |
 | [Vega/Vega-Lite](vega.md) | `vega`, `vega-lite` | Data visualization |
 | [drawio](drawio.md) | `drawio` | Architecture, network, UML |
@@ -56,6 +57,7 @@ graph TD
 
 | Diagram Type | Use Cases | Examples |
 |--------------|-----------|----------|
+| **PlantUML** | System modeling, UML diagrams, sequences | Class diagrams, sequence diagrams, activity diagrams |
 | **Mermaid** | Process flows, system architecture, sequences | Workflows, API flows, class diagrams |
 | **Vega/Vega-Lite** | Data-driven charts | Sales data, analytics, dashboards |
 | **drawio** | Professional diagrams, rich shape libraries | AWS/Azure architecture, UML, network topology |
@@ -78,6 +80,7 @@ All diagrams are rendered at high resolution for crisp output:
 
 ## Explore Each Type
 
+- [PlantUML Diagrams](plantuml.md) — For UML diagrams and system modeling
 - [Mermaid Diagrams](mermaid.md) — The most versatile option
 - [Vega/Vega-Lite](vega.md) — For data visualization
 - [drawio](drawio.md) — For professional architecture diagrams

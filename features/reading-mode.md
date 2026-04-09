@@ -156,7 +156,7 @@ For documents with 50+ diagrams:
 
 If documents are slow:
 
-1. **Check diagram count** — Many complex Mermaid diagrams take time
+1. **Check diagram count** — Many complex PlantUML/Mermaid diagrams take time
 2. **Simplify diagrams** — Split large diagrams into smaller ones
 3. **Enable caching** — Don't clear cache frequently
 4. **Close other tabs** — Free up browser memory

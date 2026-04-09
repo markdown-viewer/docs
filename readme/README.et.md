@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown täiuslikuks Wordiks ühe klõpsuga — Mermaid, Vega, drawio, Canvas, infograafika, Graphviz, LaTeX (redigeeritav), koodi esiletõstmine, kohalik töötlemine**
+**Markdown täiuslikuks Wordiks ühe klõpsuga — PlantUML, Mermaid, Vega, Canvas, infograafika, Graphviz, LaTeX (redigeeritav), koodi esiletõstmine, kohalik töötlemine**
 
 *Täiesti tasuta · 29+ professionaalset teemat · 28 keele tugi*
 
@@ -22,6 +22,7 @@ Kuid lõpuks vajate alati Word-dokumenti.
 **Nüüd võtab see vaid 1 sekundi.**
 
 Klõpsake allalaadimiseks ja saage täiuslik Word-dokument:
+- ✅ PlantUML diagrammid → Kõrge eraldusvõimega pildid
 - ✅ Mermaid diagrammid → Kõrge eraldusvõimega pildid
 - ✅ Vega/Vega-Lite andmegraafikud → Kõrge eraldusvõimega pildid
 - ✅ drawio diagrammid → Kõrge eraldusvõimega pildid
@@ -96,8 +97,9 @@ Laseme andmetel rääkida, looge professionaalseid aruandeid ühe klikiga.
 
 ### 1. Automaatne diagrammide teisendamine
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG pildid · Keerukad HTML tabelid
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · SVG pildid · Keerukad HTML tabelid
 
+**PlantUML:** Järjestusdiagrammid, klassi diagrammid, tegevusdiagrammid, kasutusjuhu diagrammid → Tehniline dokumentatsioon, arhitektuuri kujundus  
 **Mermaid:** Voodiagrammid, järjestusdiagrammid, klassi diagrammid, olekudiagrammid → Tehniline dokumentatsioon, arhitektuuri kujundus  
 **Vega/Vega-Lite:** Tulpdiagrammid, joondiagrammid, hajuvusdiagrammid, soojuskaardid → Äriaruanded, andmeanalüüs  
 **drawio:** Arhitektuuri diagrammid, võrgu topoloogiad, UML diagrammid → Süsteemi kujundus, tehniline dokumentatsioon  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 V: Jah. Standardne .docx formaat, matemaatilised valemid on redigeeritavad, mitte pildid.
 
 **K: Millised diagrammid on toetatud?**  
-V: Kõik Mermaid diagrammid (voodiagramm, järjestus, gantt, klass, olek, piruk, ER jne), Vega / Vega-Lite andmete visualiseerimise graafikud, drawio arhitektuuri diagrammid, Canvas mõttekaardid, Infographic statistilised graafikud, Graphviz DOT graafikud + SVG automaatne teisendamine.
+V: Kõik PlantUML diagrammid (järjestus, klass, tegevus, kasutusjuht jne), kõik Mermaid diagrammid (voodiagramm, järjestus, gantt, klass, olek, piruk, ER jne), Vega / Vega-Lite andmete visualiseerimise graafikud, drawio arhitektuuri diagrammid, Canvas mõttekaardid, Infographic statistilised graafikud, Graphviz DOT graafikud + SVG automaatne teisendamine.
 
 **K: Kas failisuurusel on piirang?**  
 V: Pirangut pole. Nutikas vahemälu, 100+ diagrammiga dokumendid avanevad kohe.
@@ -316,7 +318,7 @@ V: Kasutage Markdownis ````vega-lite` koodiplokki JSON-vormingus graafiku spetsi
 4. Lohistage `.md` failid brauserisse
 5. ✅ Hakake kasutama
 
-**Saate:** Markdown → Word ühe klikiga teisendamine · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automaatne teisendamine · LaTeX redigeeritavad valemid · 100+ keele süntaksi esiletõstmine · 29+ teemat · Nutikas vahemälu · Täiesti tasuta
+**Saate:** Markdown → Word ühe klikiga teisendamine · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz automaatne teisendamine · LaTeX redigeeritavad valemid · 100+ keele süntaksi esiletõstmine · 29+ teemat · Nutikas vahemälu · Täiesti tasuta
 
 **Ideaalne:** Tehnilised kirjutajad · Üliõpilased/teadlased · Tootejuhid · Arendajad · Igaüks, kes kasutab Markdowni
 

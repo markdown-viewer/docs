@@ -41,7 +41,7 @@ The Extension uses browser's local storage (Chrome Storage API / Firefox Storage
 
 ### 1. Rendering Cache
 
-- PNG images converted from Mermaid diagrams
+- PNG images converted from PlantUML, Mermaid diagrams
 - Rendered Graphviz, Vega, and Infographic charts
 - Complex HTML/SVG content
 

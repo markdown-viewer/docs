@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown to perfect Word in one click — Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, LaTeX (editable), code highlighting, local processing**
+**Markdown to perfect Word in one click — PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, LaTeX (editable), code highlighting, local processing**
 
 *Completely Free · 29 Professional Themes · 28 Languages Support*
 
@@ -30,6 +30,7 @@ You love writing in Markdown — clean, efficient, version control friendly. But
 
 Click to download and get a perfect Word document:
 
+- ✅ **PlantUML diagrams** → High-resolution images
 - ✅ **Mermaid diagrams** → High-resolution images
 - ✅ **Vega/Vega-Lite charts** → High-resolution images
 - ✅ **drawio diagrams** → High-resolution images
@@ -51,6 +52,7 @@ Click to download and get a perfect Word document:
 
 Convert diagrams written in code to high-resolution images:
 
+- **PlantUML** - Sequence diagrams, class diagrams, activity diagrams, use case diagrams, and more
 - **Mermaid** - Flowcharts, sequence diagrams, class diagrams, state diagrams, Gantt charts, and more
 - **Vega/Vega-Lite** - Bar charts, line charts, scatter plots, heatmaps for data visualization
 - **drawio** - Architecture diagrams, network topologies, UML diagrams

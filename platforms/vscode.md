@@ -109,6 +109,17 @@ Access settings: `File → Preferences → Settings → Markdown Viewer`
 
 All diagram types work in VS Code:
 
+### PlantUML
+
+````markdown
+```plantuml
+@startuml
+Alice -> Bob: Hello
+Bob --> Alice: Hi!
+@enduml
+```
+````
+
 ### Mermaid
 
 ````markdown
@@ -171,6 +182,7 @@ digraph G {
 |-----------|-------------|-----------|
 | `.md` | `markdown` | ✅ |
 | `.markdown` | `markdown` | ✅ |
+| `.plantuml` | `plantuml` | ✅ |
 | `.mermaid` | `mermaid` | ✅ |
 | `.vega`, `.vl` | `vega` | ✅ |
 | `.gv`, `.dot` | `graphviz` | ✅ |

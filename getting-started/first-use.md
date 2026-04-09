@@ -86,7 +86,7 @@ This is the core feature of Markdown Viewer!
 | Code blocks | Syntax highlighted |
 | Tables | Formatted tables |
 | Images | Embedded images |
-| Mermaid diagrams | High-res PNG |
+| Mermaid/PlantUML diagrams | High-res PNG |
 | LaTeX formulas | Editable equations |
 | Links | Clickable hyperlinks |
 
@@ -139,7 +139,7 @@ This is the core feature of Markdown Viewer!
 
 1. **Use standard Markdown syntax** — The more standard your Markdown, the better the conversion
 
-2. **Test complex diagrams first** — For documents with many Mermaid diagrams, do a test export
+2. **Test complex diagrams first** — For documents with many PlantUML/Mermaid diagrams, do a test export
 
 3. **Check theme compatibility** — Some themes work better with certain content types
 

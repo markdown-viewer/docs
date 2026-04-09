@@ -1,6 +1,6 @@
 # Markdown Viewer
 
-**Markdown ke Word sempurna dengan satu klik — Mermaid, Vega, drawio, Canvas, infografik, Graphviz, LaTeX (boleh diedit), penyerlahan kod, pemprosesan tempatan**
+**Markdown ke Word sempurna dengan satu klik — PlantUML, Mermaid, Vega, Canvas, infografik, Graphviz, LaTeX (boleh diedit), penyerlahan kod, pemprosesan tempatan**
 
 *Sepenuhnya percuma · 29+ tema profesional · Sokongan 28 bahasa*
 
@@ -22,6 +22,7 @@ Tetapi akhirnya, anda sentiasa memerlukan dokumen Word.
 **Sekarang hanya ambil 1 saat.**
 
 Klik untuk muat turun dan dapatkan dokumen Word yang sempurna:
+- ✅ Gambar rajah PlantUML → Imej resolusi tinggi
 - ✅ Gambar rajah Mermaid → Imej resolusi tinggi
 - ✅ Carta data Vega/Vega-Lite → Imej resolusi tinggi
 - ✅ Gambar rajah drawio → Imej resolusi tinggi
@@ -96,8 +97,9 @@ Biarkan data bercakap, jana laporan profesional dengan satu klik.
 
 ### 1. Penukaran Gambar Rajah Automatik
 
-**Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Imej SVG · Jadual HTML kompleks
+**PlantUML** · **Mermaid** · **Vega/Vega-Lite** · **drawio** · **Canvas** · **Infographic** · **Graphviz DOT** · Imej SVG · Jadual HTML kompleks
 
+**PlantUML:** Gambar rajah urutan, gambar rajah kelas, gambar rajah aktiviti, gambar rajah kes penggunaan → Dokumen teknikal, reka bentuk seni bina  
 **Mermaid:** Carta alir, gambar rajah urutan, gambar rajah kelas, gambar rajah keadaan → Dokumen teknikal, reka bentuk seni bina  
 **Vega/Vega-Lite:** Carta bar, carta garis, plot serakan, peta haba → Laporan perniagaan, analitik data  
 **drawio:** Gambar rajah seni bina, topologi rangkaian, gambar rajah UML → Reka bentuk sistem, dokumentasi teknikal  
@@ -246,7 +248,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 J: Ya. Format .docx standard, formula matematik boleh diedit, bukan imej.
 
 **S: Gambar rajah mana yang disokong?**  
-J: Semua gambar rajah Mermaid (carta alir, urutan, gantt, kelas, keadaan, pai, ER, dll.), carta visualisasi data Vega / Vega-Lite, gambar rajah seni bina drawio, peta minda Canvas, carta statistik Infographic, graf Graphviz DOT + penukaran auto SVG.
+J: Semua gambar rajah PlantUML (urutan, kelas, aktiviti, kes penggunaan, dll.), semua gambar rajah Mermaid (carta alir, urutan, gantt, kelas, keadaan, pai, ER, dll.), carta visualisasi data Vega / Vega-Lite, gambar rajah seni bina drawio, peta minda Canvas, carta statistik Infographic, graf Graphviz DOT + penukaran auto SVG.
 
 **S: Adakah had saiz fail?**  
 J: Tiada had. Cache pintar, dokumen dengan 100+ gambar rajah dibuka serta-merta.
@@ -316,7 +318,7 @@ J: Gunakan blok kod ````vega-lite` dalam Markdown dengan spesifikasi carta forma
 4. Seret fail `.md` ke pelayar
 5. ✅ Mula guna
 
-**Anda akan dapat:** Markdown → Word penukaran satu klik · Mermaid/Vega/drawio/Canvas/Infographic/Graphviz auto-tukar · Formula LaTeX boleh diedit · 100+ bahasa penyorotan sintaks · 29+ tema · Cache pintar · Percuma sepenuhnya
+**Anda akan dapat:** Markdown → Word penukaran satu klik · PlantUML/Mermaid/Vega/drawio/Canvas/Infographic/Graphviz auto-tukar · Formula LaTeX boleh diedit · 100+ bahasa penyorotan sintaks · 29+ tema · Cache pintar · Percuma sepenuhnya
 
 **Sempurna untuk:** Penulis teknikal · Pelajar/penyelidik · Pengurus produk · Pembangun · Sesiapa yang menggunakan Markdown
 

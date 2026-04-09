@@ -21,6 +21,7 @@ Markdown Viewer is available as a native mobile app for iOS and Android, built w
 |---------|---------|
 | Markdown rendering | ✅ |
 | Word export | ✅ |
+| PlantUML diagrams | ✅ |
 | Mermaid diagrams | ✅ |
 | Graphviz DOT | ✅ |
 | Vega/Vega-Lite | ✅ |

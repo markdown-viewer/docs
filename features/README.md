@@ -8,6 +8,7 @@ Markdown Viewer is packed with features designed to make your Markdown-to-Word w
 
 Transform code-based diagrams into high-resolution images automatically:
 
+- **[PlantUML](diagrams/plantuml.md)** — Sequence diagrams, class diagrams, activity diagrams, use case diagrams
 - **[Mermaid](diagrams/mermaid.md)** — Flowcharts, sequence diagrams, class diagrams, and more
 - **[Vega/Vega-Lite](diagrams/vega.md)** — Data visualization charts
 - **[drawio](diagrams/drawio.md)** — Architecture diagrams, network topologies, UML
@@ -83,6 +84,7 @@ Markdown Viewer supports the complete Markdown specification plus extensions:
 
 ### Extended Syntax
 
+- PlantUML diagrams
 - Mermaid diagrams
 - Vega/Vega-Lite charts
 - drawio diagrams
@@ -139,7 +141,7 @@ Markdown Viewer supports the complete Markdown specification plus extensions:
 | Tables | Formatted tables with borders |
 | Code blocks | Syntax highlighted |
 | Images | Embedded high-quality |
-| Mermaid/DOT/Vega | PNG images |
+| Mermaid/PlantUML/DOT/Vega | PNG images |
 | LaTeX | Native equations |
 
 ---
@@ -170,6 +172,7 @@ Markdown Viewer supports the complete Markdown specification plus extensions:
 
 Dive deeper into each feature:
 
+- [PlantUML Diagrams](diagrams/plantuml.md)
 - [Mermaid Diagrams](diagrams/mermaid.md)
 - [Vega/Vega-Lite Charts](diagrams/vega.md)
 - [drawio Diagrams](diagrams/drawio.md)
