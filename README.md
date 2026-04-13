@@ -6,9 +6,10 @@
 
 ### 🚀 Install Now
 
-- **Chrome / Chromium:** [https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
-- **Firefox:** [https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
+- **Chrome / Chromium:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
+- **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
 - **VS Code:** [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
+- **Skills:** [Diagram Skills Library](https://github.com/markdown-viewer/skills)
 
 ---
 
@@ -118,6 +119,8 @@ Different scenarios, different styles, one-click switch:
 **Chrome:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
 
 **GitHub:** [markdown-viewer-extension](https://github.com/markdown-viewer/markdown-viewer-extension)
+
+**Skills:** [Diagram Skills Library](https://github.com/markdown-viewer/skills)
 
 ---
 
