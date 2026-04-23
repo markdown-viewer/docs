@@ -124,4 +124,4 @@ Different scenarios, different styles, one-click switch:
 
 ---
 
-*Markdown Viewer is open source under ISC license. Star us on GitHub!*
+*Markdown Viewer is open source under GPL-3.0 license. Star us on GitHub!*
