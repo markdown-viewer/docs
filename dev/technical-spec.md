@@ -3405,8 +3405,10 @@ vscode.postMessage({
 
 | 方向 | 类型 | 说明 |
 |-----|------|-----|
-| Host → Webview | `UPDATE_CONTENT` | 发送文档内容 |
-| Host → Webview | `SCROLL_TO_LINE` | 同步编辑器滚动位置 |
+| Host → Webview | `OPEN_DOCUMENT` | 打开新文档并同步文档元数据 |
+| Host → Webview | `UPDATE_CONTENT` | 更新当前文档内容 |
+| Host → Webview | `SYNC_HOST_UI` | 同步主题、TOC 与宿主布局状态 |
+| Host → Webview | `SYNC_HOST_NAVIGATION` | 同步编辑器滚动位置或锚点导航 |
 | Host → Webview | `OPEN_SETTINGS` | 打开设置面板 |
 | Host → Webview | `EXPORT_DOCX` | 触发 DOCX 导出 |
 | Webview → Host | `STORAGE_GET/SET` | 存储操作 |
@@ -3589,11 +3591,11 @@ _controller.runJavaScript('''
 // 消息格式
 {
   "id": "flutter-1704384000-1",
-  "type": "LOAD_MARKDOWN",
+  "type": "OPEN_DOCUMENT",
   "payload": {
     "content": "# Hello",
     "filename": "demo.md",
-    "themeDataJson": "{...}"
+    "filePath": "/documents/demo.md"
   },
   "timestamp": 1704384000000,
   "source": "flutter-host"
@@ -3647,9 +3649,10 @@ void _handleWebViewMessage(String message) {
 
 | 方向 | 类型 | 说明 |
 |-----|------|-----|
-| Flutter → WV | `LOAD_MARKDOWN` | 加载文档内容 |
-| Flutter → WV | `SET_THEME` | 应用主题 |
-| Flutter → WV | `SET_LOCALE` | 设置语言 |
+| Flutter → WV | `OPEN_DOCUMENT` | 打开新文档并同步文档元数据 |
+| Flutter → WV | `UPDATE_CONTENT` | 更新当前文档内容 |
+| Flutter → WV | `SYNC_HOST_UI` | 同步主题、字体与语言等宿主 UI 状态 |
+| Flutter → WV | `SYNC_HOST_NAVIGATION` | 同步目标行或锚点导航 |
 | WV → Flutter | `READY` | WebView 就绪 |
 | WV → Flutter | `STORAGE_GET/SET` | 存储操作 |
 | WV → Flutter | `READ_RELATIVE_FILE` | 读取文件 |
@@ -4336,8 +4339,8 @@ const result = await renderChannel.send('RENDER', {
 **推送消息的典型场景**
 
 ```typescript
-// VS Code 编辑器 → Webview：跳转到指定行
-channel.post('SCROLL_TO_LINE', { line: 42 });
+// VS Code 编辑器 → Webview：同步导航位置
+channel.post('SYNC_HOST_NAVIGATION', { line: 42 });
 
 // Content Script → Background：报告渲染完成事件
 channel.post('RENDER_COMPLETE', { documentId: 'abc', duration: 1500 });
