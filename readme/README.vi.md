@@ -4,7 +4,7 @@
 
 *Hoàn toàn miễn phí · 29+ chủ đề chuyên nghiệp · Hỗ trợ 28 ngôn ngữ*
 
-🚀 **Cài đặt ngay:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Dự án này là mã nguồn mở theo giấy phép ISC. Hoan nghênh Star hỗ
 
 **Tập trung vào viết, để Markdown Viewer xử lý mọi thứ khác**
 
-🚀 **Cài đặt ngay:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Hoàn toàn miễn phí · Xử lý cục bộ · Bảo vệ quyền riêng tư*

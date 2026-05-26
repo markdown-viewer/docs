@@ -4,7 +4,7 @@
 
 *完全免费 · 29+ 专业主题 · 支持 28 种语言*
 
-🚀 **立即安装:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ A: 在 Markdown 中使用 ````vega-lite` 代码块，内容为 JSON 格式的图
 
 **把精力放在写作上，让 Markdown Viewer 处理其他一切**
 
-🚀 **立即安装:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *完全免费 · 本地处理 · 隐私安全*

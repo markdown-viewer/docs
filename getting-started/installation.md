@@ -1,24 +1,30 @@
 # Installation
 
-Get Markdown Viewer installed in just 30 seconds.
+Get Markdown Viewer installed in just 30 seconds on your browser, editor, or note-taking app.
 
-## Chrome Extension
+## Browser Extensions
 
-The primary platform for Markdown Viewer is the Chrome browser extension.
+### Chrome Extension
 
-### Step 1: Visit Chrome Web Store
-
-Open your Chrome browser and navigate to:
+Install from the Chrome Web Store:
 
 🚀 **[Chrome Web Store - Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)**
-
-### Step 2: Add to Chrome
 
 1. Click the **"Add to Chrome"** button
 2. In the popup dialog, click **"Add extension"**
 3. Wait a few seconds for the installation to complete
 
-### Step 3: Verify Installation
+### Microsoft Edge Extension
+
+Install from the native Edge Add-ons listing:
+
+🚀 **[Edge Add-ons - docu.md Markdown Viewer](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)**
+
+1. Click **"Get"**
+2. Confirm **"Add extension"** in the Edge dialog
+3. Wait a few seconds for the installation to complete
+
+### Verify Browser Installation
 
 You should see the Markdown Viewer icon in your browser's extension toolbar. If you don't see it:
 
@@ -40,6 +46,22 @@ Firefox users can install from Firefox Add-ons:
 
 ---
 
+## Obsidian Plugin
+
+Install from the Obsidian Community Plugins directory:
+
+🚀 **[Obsidian Community Plugin - Markdown Viewer](https://community.obsidian.md/plugins/markdown-viewer-extension)**
+
+1. Open Obsidian
+2. Go to **Settings → Community plugins**
+3. Turn off **Restricted mode** if prompted
+4. Click **Browse** and search for **Markdown Viewer**
+5. Click **Install**, then **Enable**
+
+After installation, open the Command Palette and run **Open Markdown Viewer**.
+
+---
+
 ## VS Code Extension
 
 For VS Code users who want to preview and export Markdown within the editor:
@@ -56,13 +78,14 @@ For VS Code users who want to preview and export Markdown within the editor:
 
 ## Supported Browsers
 
-| Browser | Support |
+| Platform | Support |
 |---------|---------|
 | Google Chrome | ✅ Full support |
-| Microsoft Edge | ✅ Full support (Chromium-based) |
-| Brave | ✅ Full support |
-| Opera | ✅ Full support |
+| Microsoft Edge | ✅ Full support |
+| Brave / Opera / other Chromium browsers | ✅ Chrome build supported |
 | Firefox | ✅ Full support |
+| Obsidian | ✅ Community plugin |
+| VS Code / VSCodium | ✅ Marketplace / Open VSX |
 | Safari | ❌ Not available |
 
 ---
@@ -70,7 +93,9 @@ For VS Code users who want to preview and export Markdown within the editor:
 ## System Requirements
 
 - **Chrome**: Version 88 or later
+- **Edge**: Current Chromium-based Microsoft Edge
 - **Firefox**: Version 78 or later
+- **Obsidian**: Version 1.0.0 or later
 - **VS Code**: Version 1.60 or later
 - **Operating System**: Windows, macOS, or Linux
 

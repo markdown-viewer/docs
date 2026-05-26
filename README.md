@@ -7,7 +7,9 @@
 ### 🚀 Install Now
 
 - **Chrome / Chromium:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
+- **Microsoft Edge:** [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)
 - **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
+- **Obsidian:** [Community Plugin Directory](https://community.obsidian.md/plugins/markdown-viewer-extension)
 - **VS Code:** [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
 - **Skills:** [Diagram Skills Library](https://github.com/markdown-viewer/skills)
 
@@ -98,7 +100,9 @@ Different scenarios, different styles, one-click switch:
 | Platform | Status | Description |
 |----------|--------|-------------|
 | [Chrome Extension](platforms/chrome.md) | ✅ Released | Primary platform, available on Chrome Web Store |
+| [Edge Extension](platforms/edge.md) | ✅ Released | Native Microsoft Edge Add-ons distribution |
 | [Firefox Extension](platforms/firefox.md) | ✅ Released | Firefox browser support |
+| [Obsidian Plugin](platforms/obsidian.md) | ✅ Released | Preview and export inside Obsidian vaults |
 | [VS Code Extension](platforms/vscode.md) | ✅ Released | Preview and export within VS Code |
 | [Mobile App](platforms/mobile.md) | ✅ Released | iOS and Android via Flutter |
 
@@ -117,6 +121,14 @@ Different scenarios, different styles, one-click switch:
 ## Install Now
 
 **Chrome:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
+
+**Edge:** [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)
+
+**Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
+
+**Obsidian:** [Community Plugin Directory](https://community.obsidian.md/plugins/markdown-viewer-extension)
+
+**VS Code:** [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
 
 **GitHub:** [markdown-viewer-extension](https://github.com/markdown-viewer/markdown-viewer-extension)
 

@@ -4,7 +4,7 @@
 
 *Totalmente gratuito · 29+ temas profissionais · Suporte a 28 idiomas*
 
-🚀 **Instale agora:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Este projeto é open source sob licença ISC. Bem-vindas Estrelas de suporte, re
 
 **Concentre sua energia na escrita, deixe o Markdown Viewer cuidar do resto**
 
-🚀 **Instale agora:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Totalmente gratuito · Processamento local · Privacidade segura*

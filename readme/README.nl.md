@@ -4,7 +4,7 @@
 
 *Volledig gratis · 29+ professionele thema's · 28 talen*
 
-🚀 **Installeer nu:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Dit project is open source onder ISC-licentie. Welkom om te sterren, problemen t
 
 **Focus op schrijven, laat Markdown Viewer al het andere afhandelen**
 
-🚀 **Installeer nu:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Volledig gratis · Lokale verwerking · Privacy beschermd*

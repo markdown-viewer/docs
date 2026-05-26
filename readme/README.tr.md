@@ -4,7 +4,7 @@
 
 *Tamamen ücretsiz · 29+ profesyonel tema · 28 dil desteği*
 
-🚀 **Şimdi Yükleyin:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Bu proje ISC lisansı altında açık kaynaktır. Yıldız vermeniz, sorun bildi
 
 **Yazmaya odaklanın, geri kalan her şeyi Markdown Viewer'a bırakın**
 
-🚀 **Şimdi Yükleyin:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Tamamen Ücretsiz · Yerel İşleme · Gizlilik Korumalı*

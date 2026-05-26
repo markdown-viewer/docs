@@ -4,7 +4,7 @@
 
 *Visiškai nemokama · 29+ profesionalių temų · 28 kalbų palaikymas*
 
-🚀 **Install Now:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ A: Naudokite ````vega-lite` kodo bloką Markdown su JSON formato diagramos speci
 
 **Susikoncentruokite į rašymą, leiskite Markdown Viewer pasirūpinti viskuo kitu**
 
-🚀 **Įdiegti dabar:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Visiškai nemokama · Vietinis apdorojimas · Privatumas apsaugotas*

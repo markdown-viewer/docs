@@ -4,7 +4,7 @@
 
 *Helt gratis · 29+ professionelle temaer · 28 sprog*
 
-🚀 **Installer nu:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Dette projekt er open source under ISC-licens. Velkommen til at give Star, rappo
 
 **Fokuser på at skrive, lad Markdown Viewer håndtere alt andet**
 
-🚀 **Installer nu:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Fuldstændig gratis · Lokal behandling · Privatliv beskyttet*

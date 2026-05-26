@@ -8,7 +8,7 @@ Now that you have Markdown Viewer installed, let's open your first document!
 
 The simplest way to open a Markdown file:
 
-1. Open a new Chrome tab
+1. Open a new Chrome, Edge, or Firefox tab
 2. Drag your `.md` file from your file manager into the browser window
 3. Drop it — Markdown Viewer will automatically render it
 
@@ -17,7 +17,7 @@ The simplest way to open a Markdown file:
 If you've [enabled file access](file-access.md):
 
 1. Simply double-click any `.md` file
-2. It will open directly in Chrome with Markdown Viewer
+2. It will open directly in your configured browser with Markdown Viewer
 
 ### Method 3: GitHub and Online Files
 
@@ -28,6 +28,15 @@ Markdown Viewer automatically renders Markdown files on:
 - Any URL ending in `.md`
 
 Just navigate to the Markdown file, and it will be rendered automatically.
+
+### Method 4: Obsidian Vault Preview
+
+If you've installed the Obsidian plugin:
+
+1. Open a note or supported diagram file in your vault
+2. Open the Command Palette
+3. Run **Open Markdown Viewer**
+4. The preview opens in a split pane and stays synced with the active file
 
 ---
 

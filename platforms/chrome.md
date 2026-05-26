@@ -14,7 +14,7 @@ The Chrome extension is the primary platform for Markdown Viewer, offering the m
 | Smart caching | ✅ |
 | Offline mode | ✅ |
 
-**Version:** 1.4.0  
+**Version:** 5.0.0  
 **Manifest:** V3 (latest Chrome standard)
 
 ---
@@ -58,16 +58,18 @@ The extension requests these permissions:
 
 ## Supported File Types
 
-The extension automatically handles these file types:
+The Chrome build uses the shared format registry from the core codebase:
 
-| Extension | Type |
+| Extensions | Type |
 |-----------|------|
-| `.md`, `.markdown` | Markdown documents |
-| `.plantuml` | PlantUML diagrams |
-| `.mermaid` | Mermaid diagrams |
-| `.vega`, `.vl`, `.vega-lite` | Vega/Vega-Lite charts |
-| `.gv` | Graphviz DOT graphs |
+| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
+| `.plantuml`, `.puml` | PlantUML diagrams |
+| `.mermaid`, `.mmd` | Mermaid diagrams |
+| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
+| `.gv`, `.dot` | Graphviz DOT graphs |
 | `.infographic` | Infographic charts |
+| `.canvas` | Canvas diagrams |
+| `.drawio` | draw.io diagrams |
 
 ---
 

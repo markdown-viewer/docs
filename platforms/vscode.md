@@ -13,6 +13,8 @@ Markdown Viewer is available as a VS Code extension, allowing you to preview and
 | 29 themes | ✅ |
 | Live preview | ✅ |
 
+**Version:** 5.0.0
+
 ---
 
 ## Installation
@@ -47,20 +49,20 @@ code --install-extension xicilion.markdown-viewer-extension
 As you edit your Markdown file, the preview updates in real-time.
 
 **Open Preview:**
-- Command Palette: `Markdown Viewer: Open Preview`
+- Command Palette: `Markdown Viewer: Open Markdown Preview to the Side (Advanced)`
 - Keyboard: `Ctrl+Shift+V` / `Cmd+Shift+V`
-- Right-click file → "Open Preview"
+- Editor title action: `Markdown Viewer`
 
 ### Side-by-Side Editing
 
 Edit and preview simultaneously:
-- `Ctrl+K V` / `Cmd+K V` — Open preview to the side
+- `Ctrl+Shift+V` / `Cmd+Shift+V` — Open the Markdown Viewer panel to the side
 
 ### Export to Word
 
 Export the current document to Word:
-- Command Palette: `Markdown Viewer: Export to Word`
-- Right-click in editor → "Export to Word"
+- Open the preview first, then use the **Export** menu in the preview title bar
+- Choose the DOCX export action from the preview UI
 
 ---
 
@@ -69,17 +71,18 @@ Export the current document to Word:
 ### Opening Preview
 
 1. Open a `.md` file in VS Code
-2. Click the preview icon in the top-right corner
+2. Click the **Markdown Viewer** action in the editor title bar
    - Or use keyboard shortcut `Ctrl+Shift+V`
+  - Or run `Markdown Viewer: Open Markdown Preview to the Side (Advanced)`
 3. Preview opens in a new tab
 
 ### Exporting
 
-1. Open the Markdown file
-2. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-3. Type "Markdown Viewer: Export to Word"
-4. Choose save location
-5. Word document is created
+1. Open the Markdown Viewer preview
+2. Click the **Export** menu in the preview title bar
+3. Choose the DOCX action
+4. Choose a save location if prompted
+5. The Word document is created
 
 ---
 
@@ -89,17 +92,22 @@ Access settings: `File → Preferences → Settings → Markdown Viewer`
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| `markdownViewer.theme` | `default` | Document theme |
-| `markdownViewer.fontSize` | `14` | Preview font size |
-| `markdownViewer.lineHeight` | `1.5` | Line height |
+| `markdownViewer.theme` | `auto` | Preview theme selection |
+| `markdownViewer.fontSize` | `16` | Base preview font size |
+| `markdownViewer.fontFamily` | `""` | Custom preview font family |
+| `markdownViewer.lineNumbers` | `true` | Show code block line numbers |
+| `markdownViewer.scrollSync` | `true` | Sync editor and preview scrolling |
+| `markdownViewer.deferAsyncRenderUntilFirstPaint` | `false` | Delay async rendering until first paint for heavy docs |
 
 ### settings.json Example
 
 ```json
 {
-  "markdownViewer.theme": "business",
+  "markdownViewer.theme": "auto",
   "markdownViewer.fontSize": 16,
-  "markdownViewer.lineHeight": 1.6
+  "markdownViewer.fontFamily": "Georgia",
+  "markdownViewer.lineNumbers": true,
+  "markdownViewer.scrollSync": true
 }
 ```
 
@@ -160,9 +168,8 @@ digraph G {
 
 | Action | Windows/Linux | macOS |
 |--------|---------------|-------|
-| Open Preview | `Ctrl + Shift + V` | `Cmd + Shift + V` |
-| Preview to Side | `Ctrl + K V` | `Cmd + K V` |
-| Export to Word | Via Command Palette | Via Command Palette |
+| Open Preview to Side | `Ctrl + Shift + V` | `Cmd + Shift + V` |
+| Export / Settings / Print | Use preview title-bar menus | Use preview title-bar menus |
 
 ---
 
@@ -178,15 +185,16 @@ digraph G {
 
 ### File Types
 
-| Extension | Language ID | Supported |
+| Extensions | Language ID | Supported |
 |-----------|-------------|-----------|
-| `.md` | `markdown` | ✅ |
-| `.markdown` | `markdown` | ✅ |
-| `.plantuml` | `plantuml` | ✅ |
-| `.mermaid` | `mermaid` | ✅ |
-| `.vega`, `.vl` | `vega` | ✅ |
+| `.md`, `.markdown`, `.slides.md` | `markdown` | ✅ |
+| `.plantuml`, `.puml` | `plantuml` | ✅ |
+| `.mermaid`, `.mmd` | `mermaid` | ✅ |
+| `.vega`, `.vl`, `.vega-lite` | `vega` | ✅ |
 | `.gv`, `.dot` | `graphviz` | ✅ |
 | `.infographic` | `infographic` | ✅ |
+| `.canvas` | `canvas` | ✅ |
+| `.drawio` | `drawio` | ✅ |
 
 ---
 

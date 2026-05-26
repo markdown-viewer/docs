@@ -1,143 +1,50 @@
 # Platform Feature Comparison
 
-This page provides a comprehensive comparison of features available across all Markdown Viewer platforms.
+This page provides a comparison of the main Markdown Viewer platform families and lists the official install location for every released platform.
 
-## Quick Reference Matrix
+## Install Locations
 
-| Feature | Chrome | Firefox | VS Code | Mobile |
-|---------|:------:|:-------:|:-------:|:------:|
-| **Markdown Rendering** | ✅ | ✅ | ✅ | ✅ |
-| **GitHub Flavored Markdown** | ✅ | ✅ | ✅ | ✅ |
-| **Math Formulas (KaTeX)** | ✅ | ✅ | ✅ | ✅ |
-| **Code Syntax Highlighting** | ✅ | ✅ | ✅ | ✅ |
-| **PlantUML Diagrams** | ✅ | ✅ | ✅ | ✅ |
-| **Mermaid Diagrams** | ✅ | ✅ | ✅ | ✅ |
-| **Vega/Vega-Lite Charts** | ✅ | ✅ | ✅ | ✅ |
-| **drawio Diagrams** | ✅ | ✅ | ✅ | ✅ |
-| **Canvas Diagrams** | ✅ | ✅ | ✅ | ✅ |
-| **Infographics** | ✅ | ✅ | ✅ | ✅ |
-| **Graphviz DOT Diagrams** | ✅ | ✅ | ✅ | ✅ |
-| **Word Export (DOCX)** | ✅ | ✅ | ✅ | ✅ |
-| **Table of Contents** | ✅ | ✅ | ✅ | ✅ |
-| **29 Themes** | ✅ | ✅ | ✅ | ✅ |
-| **28 Languages** | ✅ | ✅ | ✅ | ✅ |
-| **Render Caching** | ✅ | ✅ | ✅ | ✅ |
-| **History/Recent Files** | ✅ | ✅ | ❌ | ✅ |
-| **Local File Access** | ✅ | ✅ | ✅ | ✅ |
-| **Online File Access** | ✅ | ✅ | ❌ | ❌ |
-| **Print Function** | ✅ | ✅ | ❌ | ❌ |
-| **Native Share** | ❌ | ❌ | ❌ | ✅ |
-| **Scroll Sync with Editor** | ❌ | ❌ | ✅ | ❌ |
-| **Editor Integration** | ❌ | ❌ | ✅ | ❌ |
-| **Standalone Files** | ✅ | ✅ | ❌ | ✅ |
-| **Offline Mode** | ✅ | ✅ | ✅ | ✅ |
+| Platform | Install |
+|---------|---------|
+| Chrome Extension | [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi) |
+| Edge Extension | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca) |
+| Firefox Extension | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/) |
+| Obsidian Plugin | [Obsidian Community Plugin](https://community.obsidian.md/plugins/markdown-viewer-extension) |
+| VS Code Extension | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension) |
+| Mobile App | App Store / Google Play |
 
-## Detailed Feature Breakdown
+## Capability Matrix
 
-### Core Rendering Features
+| Capability | Chrome | Edge | Firefox | Obsidian | VS Code | Mobile |
+|---------|:------:|:----:|:-------:|:--------:|:-------:|:------:|
+| Markdown rendering | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Shared diagram/file registry | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DOCX export | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Print | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| Theme switching | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Local/offline use | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Online URL handling | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Recent files/history | ✅ | ✅ | ✅ | Host-managed | ❌ | ✅ |
+| Native share | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Scroll sync with editor | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Host integration | Browser | Browser | Browser | Vault + workspace | Editor + webview | Native app shell |
 
-All platforms share the same core rendering engine built on unified/remark/rehype:
+## Shared Format Registry
 
-| Feature | Chrome | Firefox | VS Code | Mobile |
-|---------|:------:|:-------:|:-------:|:------:|
-| Headings (H1-H6) | ✅ | ✅ | ✅ | ✅ |
-| Bold/Italic/Strikethrough | ✅ | ✅ | ✅ | ✅ |
-| Links & Images | ✅ | ✅ | ✅ | ✅ |
-| Blockquotes | ✅ | ✅ | ✅ | ✅ |
-| Code Blocks | ✅ | ✅ | ✅ | ✅ |
-| Tables | ✅ | ✅ | ✅ | ✅ |
-| Task Lists | ✅ | ✅ | ✅ | ✅ |
-| Footnotes | ✅ | ✅ | ✅ | ✅ |
-| Auto-linking | ✅ | ✅ | ✅ | ✅ |
-| Subscript/Superscript | ✅ | ✅ | ✅ | ✅ |
+All released platforms are built on the same shared format registry in `src/types/formats.ts`:
 
-### Diagram Support
+| Extensions | Type |
+|-----------|------|
+| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
+| `.plantuml`, `.puml` | PlantUML diagrams |
+| `.mermaid`, `.mmd` | Mermaid diagrams |
+| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
+| `.gv`, `.dot` | Graphviz DOT graphs |
+| `.infographic` | Infographic charts |
+| `.canvas` | Canvas diagrams |
+| `.drawio` | draw.io diagrams |
 
-| Diagram Type | Chrome | Firefox | VS Code | Mobile |
-|--------------|:------:|:-------:|:-------:|:------:|
-| PlantUML Sequence | ✅ | ✅ | ✅ | ✅ |
-| PlantUML Class | ✅ | ✅ | ✅ | ✅ |
-| PlantUML Activity | ✅ | ✅ | ✅ | ✅ |
-| PlantUML Use Case | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Flowcharts | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Sequence | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Class | ✅ | ✅ | ✅ | ✅ |
-| Mermaid State | ✅ | ✅ | ✅ | ✅ |
-| Mermaid ER | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Gantt | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Pie | ✅ | ✅ | ✅ | ✅ |
-| Mermaid Mindmap | ✅ | ✅ | ✅ | ✅ |
-| Vega Charts | ✅ | ✅ | ✅ | ✅ |
-| Vega-Lite Charts | ✅ | ✅ | ✅ | ✅ |
-| drawio | ✅ | ✅ | ✅ | ✅ |
-| Canvas | ✅ | ✅ | ✅ | ✅ |
-| Infographic | ✅ | ✅ | ✅ | ✅ |
-| Graphviz DOT | ✅ | ✅ | ✅ | ✅ |
-
-### Standalone File Formats
-
-Support for opening dedicated diagram files:
-
-| File Format | Chrome | Firefox | VS Code | Mobile |
-|-------------|:------:|:-------:|:-------:|:------:|
-| `.md`, `.markdown` | ✅ | ✅ | ✅ | ✅ |
-| `.plantuml` | ✅ | ✅ | ✅ | ✅ |
-| `.mermaid` | ✅ | ✅ | ✅ | ✅ |
-| `.vega` | ✅ | ✅ | ✅ | ✅ |
-| `.vl`, `.vega-lite` | ✅ | ✅ | ✅ | ✅ |
-| `.drawio` | ✅ | ✅ | ✅ | ✅ |
-| `.canvas` | ✅ | ✅ | ✅ | ✅ |
-| `.infographic` | ✅ | ✅ | ✅ | ✅ |
-| `.gv`, `.dot` | ✅ | ✅ | ✅ | ✅ |
-
-### Export Capabilities
-
-| Export Feature | Chrome | Firefox | VS Code | Mobile |
-|----------------|:------:|:-------:|:-------:|:------:|
-| DOCX Export | ✅ | ✅ | ✅ | ✅ |
-| Math in DOCX | ✅ | ✅ | ✅ | ✅ |
-| Code Highlighting in DOCX | ✅ | ✅ | ✅ | ✅ |
-| Tables in DOCX | ✅ | ✅ | ✅ | ✅ |
-| Images in DOCX | ✅ | ✅ | ✅ | ✅ |
-| Diagrams as Images in DOCX | ✅ | ✅ | ✅ | ✅ |
-| TOC in DOCX | ✅ | ✅ | ✅ | ✅ |
-| HR as Page Break | ✅ | ✅ | ✅ | ✅ |
-| Print to PDF | ✅ | ✅ | ❌ | ❌ |
-
-### Themes
-
-All 29 themes are available on all platforms:
-
-| Theme Category | Themes |
-|----------------|--------|
-| Classic | Default, Academic, Business, Manuscript, Newspaper |
-| Reading | Palatino, Garamond, Typewriter, Elegant |
-| Modern | Technical, Swiss, Minimal |
-| Creative | Magazine, Century, Handwritten, Verdana |
-| Chinese | Heiti, Mixed, Water |
-| Playful | Rainbow, Starry, Candy, Dinosaur, Space, Garden |
-| Nature | Forest, Ocean, Coral, Sunset |
-
-### User Interface Features
-
-| UI Feature | Chrome | Firefox | VS Code | Mobile |
-|------------|:------:|:-------:|:-------:|:------:|
-| Table of Contents Panel | ✅ | ✅ | ✅ | ✅ (Drawer) |
-| Theme Selector | ✅ | ✅ | ✅ | ✅ |
-| Font Size Control | ✅ | ✅ | ✅ | ✅ |
-| Popup Settings | ✅ | ✅ | ❌ | ❌ |
-| Settings Page | ✅ | ✅ | ✅ | ✅ |
-| Toolbar | ✅ | ✅ | ✅ | ✅ |
-
-### Localization
-
-All 28 languages are supported on all platforms:
-
-- Danish (da), Dutch (nl), English (en), Estonian (et), Finnish (fi), French (fr)
-- German (de), Hindi (hi), Indonesian (id), Italian (it), Japanese (ja), Korean (ko)
-- Lithuanian (lt), Malay (ms), Norwegian (no), Polish (pl), Portuguese (Brazil: pt-BR, Portugal: pt-PT)
-- Russian (ru), Spanish (es), Swedish (sv), Thai (th), Turkish (tr), Ukrainian (uk)
-- Vietnamese (vi), Belarusian (be), Chinese (Simplified: zh-CN, Traditional: zh-TW)
+Obsidian additionally registers `.svg` for preview handling inside the host app.
 
 ## Platform-Specific Features
 
@@ -146,7 +53,7 @@ All 28 languages are supported on all platforms:
 - **Permissions**: storage, unlimitedStorage, offscreen, scripting, downloads
 - **Manifest**: V3
 - **Special**: Offscreen document for background rendering
-- **Install**: [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/aacplhfjalgjjjngonlgkalnlpmkgmgi)
+- **Install**: [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
 
 ### Firefox Extension
 
@@ -156,10 +63,24 @@ All 28 languages are supported on all platforms:
 - **Special**: Extended permissions for web request handling
 - **Install**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
 
+### Edge Extension
+
+- **Engine**: Chromium build with the same rendering and export feature set as Chrome
+- **Distribution**: Native Microsoft Edge Add-ons listing
+- **Special**: Best fit for users who want Edge-managed updates and permissions UI
+- **Install**: [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)
+
+### Obsidian Plugin
+
+- **Platforms**: Obsidian Desktop and Mobile
+- **Minimum Version**: Obsidian 1.0.0
+- **Special**: Vault-native preview pane, ribbon icon, command palette entry, print/export/settings actions
+- **Install**: [Obsidian Community Plugin](https://community.obsidian.md/plugins/markdown-viewer-extension)
+
 ### VS Code Extension
 
-- **Commands**: Preview, Preview to Side, Export DOCX, Open Settings, Refresh
-- **Settings**: Theme, Font Size, Font Family, Line Numbers, Scroll Sync
+- **Commands**: Open Markdown Preview to the Side, Open Settings, Open Export Menu, Refresh, Print, Export DOCX
+- **Settings**: Theme, Font Size, Font Family, Line Numbers, Scroll Sync, Deferred async render
 - **Special**: Bidirectional scroll sync with editor, keyboard shortcuts
 - **Install**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
 
@@ -167,17 +88,19 @@ All 28 languages are supported on all platforms:
 
 - **Platforms**: iOS, Android
 - **Framework**: Flutter (Dart)
-- **Special**: Native share, file picker, system theme integration
+- **Special**: Native share, file picker, recent files, system theme integration
 - **Services**: Cache, Localization, Recent Files, Settings, Theme
 - **Install**: App Store / Google Play
 
 ## Version Information
 
-All platforms are currently at version **1.4.0**.
+Extension and plugin packages in this repository are currently on version **5.0.0**. The Flutter app package is version **5.0.0+1**.
 
 ## Related Pages
 
 - [Chrome Extension](../platforms/chrome.md)
+- [Edge Extension](../platforms/edge.md)
 - [Firefox Extension](../platforms/firefox.md)
+- [Obsidian Plugin](../platforms/obsidian.md)
 - [VS Code Extension](../platforms/vscode.md)
 - [Mobile App](../platforms/mobile.md)

@@ -4,7 +4,7 @@
 
 *Completely Free · 29+ Professional Themes · 28 Languages Support*
 
-🚀 **Install Now:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ This project is open source under ISC license. Welcome to Star, report issues, s
 
 **Focus on writing, let Markdown Viewer handle everything else**
 
-🚀 **Install Now:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Completely Free · Local Processing · Privacy Protected*

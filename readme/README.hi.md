@@ -4,7 +4,7 @@
 
 *पूरी तरह से निःशुल्क · 29+ पेशेवर थीम · 28 भाषाओं का समर्थन*
 
-🚀 **अभी इंस्टॉल करें:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 
 **लेखन पर ध्यान केंद्रित करें, बाकी सब Markdown Viewer को संभालने दें**
 
-🚀 **अभी इंस्टॉल करें:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *पूरी तरह मुफ्त · स्थानीय प्रसंस्करण · गोपनीयता सुरक्षित*

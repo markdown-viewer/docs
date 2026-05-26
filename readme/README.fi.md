@@ -4,7 +4,7 @@
 
 *Täysin ilmainen · 29+ ammattimaista teemaa · 28 kielen tuki*
 
-🚀 **Asenna nyt:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Tämä projekti on avoimen lähdekoodin ISC-lisenssillä. Tervetuloa antamaan t�
 
 **Keskity kirjoittamiseen, anna Markdown Viewerin hoitaa kaikki muu**
 
-🚀 **Asenna nyt:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Täysin ilmainen · Paikallinen käsittely · Yksityisyys suojattu*

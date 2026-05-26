@@ -4,7 +4,7 @@
 
 *완전 무료 · 29+ 전문 테마 · 28개 언어 지원*
 
-🚀 **지금 설치:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ A: A: Markdown에서 ````vega-lite` 코드 블록을 사용하고 JSON 형식의
 
 **작성에 집중하고, 나머지는 Markdown Viewer에 맡기세요**
 
-🚀 **지금 설치:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *완전 무료 · 로컬 처리 · 개인정보 보호*

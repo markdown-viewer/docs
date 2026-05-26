@@ -10,8 +10,12 @@ Markdown Viewer is available as a native mobile app for iOS and Android, built w
 | Word export | ✅ |
 | All diagram types | ✅ |
 | LaTeX formulas | ✅ |
-| Multiple themes | ✅ |
+| 29 themes | ✅ |
+| Native share | ✅ |
+| Recent files | ✅ |
 | Offline mode | ✅ |
+
+**Version:** 5.0.0
 
 ---
 
@@ -20,15 +24,19 @@ Markdown Viewer is available as a native mobile app for iOS and Android, built w
 | Feature | Status |
 |---------|---------|
 | Markdown rendering | ✅ |
-| Word export | ✅ |
+| DOCX export | ✅ |
+| HTML export | ✅ |
 | PlantUML diagrams | ✅ |
 | Mermaid diagrams | ✅ |
+| Vega / Vega-Lite | ✅ |
+| draw.io diagrams | ✅ |
+| Canvas diagrams | ✅ |
+| Infographic charts | ✅ |
 | Graphviz DOT | ✅ |
-| Vega/Vega-Lite | ✅ |
 | LaTeX formulas | ✅ |
-| Multiple themes | ✅ |
+| Native share flow | ✅ |
+| Recent files | ✅ |
 | Offline mode | ✅ |
-| Cloud sync | 🤔 Considering |
 
 ---
 
@@ -40,6 +48,19 @@ Markdown Viewer is available as a native mobile app for iOS and Android, built w
 | Android | ✅ Released |
 | iPadOS | ✅ Supported |
 | Android Tablet | ✅ Supported |
+
+## Supported File Types
+
+| Extensions | Type |
+|-----------|------|
+| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
+| `.plantuml`, `.puml` | PlantUML diagrams |
+| `.mermaid`, `.mmd` | Mermaid diagrams |
+| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
+| `.gv`, `.dot` | Graphviz DOT graphs |
+| `.infographic` | Infographic charts |
+| `.canvas` | Canvas diagrams |
+| `.drawio` | draw.io diagrams |
 
 ---
 
@@ -69,7 +90,8 @@ This ensures consistent rendering across all platforms.
 
 - Same rendering as desktop
 - Offline capable
-- Share documents easily
+- Native share integration
+- Recent files list with cached reopening
 - Native mobile experience
 
 ---
@@ -131,7 +153,7 @@ Yes, the mobile app is completely free, consistent with our other platforms.
 
 ### Does It Sync with Desktop?
 
-Currently, the app works with local files and cloud storage (iCloud, Google Drive). Direct sync between devices is planned for future updates.
+The app works with local files and cloud storage providers exposed by the system file picker. Direct cross-device sync is not built into the app.
 
 ### What About Tablets?
 

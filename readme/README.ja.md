@@ -4,7 +4,7 @@
 
 *完全無料 · 29+ のプロフェッショナルテーマ · 28 言語サポート*
 
-🚀 **今すぐインストール:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ A: Markdownで````vega-lite`コードブロックを使用し、JSON形式のチ
 
 **執筆に集中し、他のすべてはMarkdown Viewerに任せてください**
 
-🚀 **今すぐインストール:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *完全無料 · ローカル処理 · プライバシー保護*

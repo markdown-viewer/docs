@@ -4,7 +4,7 @@
 
 *Täiesti tasuta · 29+ professionaalset teemat · 28 keele tugi*
 
-🚀 **Install Now:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ See projekt on avatud lähtekoodiga ISC litsentsi alusel. Tere tulemast Star'ima
 
 **Keskenduge kirjutamisele, laske Markdown Vieweril hoolitseda ülejäänu eest**
 
-🚀 **Installige kohe:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Täiesti tasuta · Kohalik töötlemine · Privaatsus kaitstud*

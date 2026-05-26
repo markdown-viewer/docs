@@ -4,7 +4,7 @@
 
 *Совершенно бесплатно · 29+ профессиональных тем · 28 языков интерфейса*
 
-🚀 **Установить сейчас:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 
 **Сосредоточьтесь на написании, позвольте Markdown Viewer обработать всё остальное**
 
-🚀 **Установить сейчас:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Полностью бесплатно · Локальная обработка · Безопасная конфиденциальность*

@@ -4,7 +4,7 @@
 
 *Helt gratis · 29+ profesjonelle temaer · 28 språk*
 
-🚀 **Installer nå:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Dette prosjektet er åpen kildekode under ISC-lisens. Velkommen til å gi stjern
 
 **Fokuser på skriving, la Markdown Viewer håndtere alt annet**
 
-🚀 **Installer nå:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Fullstendig gratis · Lokal behandling · Personvern beskyttet*

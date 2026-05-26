@@ -30,7 +30,9 @@
 
 * [Platform Comparison](platforms/platform-comparison.md)
 * [Chrome Extension](platforms/chrome.md)
+* [Edge Extension](platforms/edge.md)
 * [Firefox Extension](platforms/firefox.md)
+* [Obsidian Plugin](platforms/obsidian.md)
 * [VS Code Extension](platforms/vscode.md)
 * [Mobile App](platforms/mobile.md)
 

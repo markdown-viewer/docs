@@ -4,7 +4,7 @@
 
 *Całkowicie za darmo · 29+ profesjonalnych motywów · Obsługa 28 języków*
 
-🚀 **Zainstaluj teraz:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Ten projekt jest otwartoźródłowy na licencji ISC. Mile widziane Gwiazdki wspa
 
 **Skup energię na pisaniu, pozwól Markdown Viewer obsłużyć resztę**
 
-🚀 **Zainstaluj teraz:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Całkowicie za darmo · Przetwarzanie lokalne · Bezpieczna prywatność*

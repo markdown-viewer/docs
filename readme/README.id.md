@@ -4,7 +4,7 @@
 
 *Sepenuhnya gratis · 29+ tema profesional · Dukungan 28 bahasa*
 
-🚀 **Instal Sekarang:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ Proyek ini adalah open source di bawah lisensi ISC. Selamat datang untuk memberi
 
 **Fokus pada penulisan, biarkan Markdown Viewer menangani yang lain**
 
-🚀 **Instal Sekarang:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *Sepenuhnya Gratis · Pemrosesan Lokal · Privasi Terlindungi*

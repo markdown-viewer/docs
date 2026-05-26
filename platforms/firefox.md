@@ -14,7 +14,7 @@ Markdown Viewer is available for Firefox with full feature support.
 | Smart caching | ✅ |
 | Offline mode | ✅ |
 
-**Version:** 1.4.0  
+**Version:** 5.0.0  
 **Manifest:** V3  
 **Minimum Firefox:** 140.0
 
@@ -69,14 +69,18 @@ Firefox version includes `webRequest` and `webRequestBlocking` permissions for m
 
 ## Supported File Types
 
-| Extension | Type |
+Firefox follows the same shared format registry as the Chrome and Edge builds:
+
+| Extensions | Type |
 |-----------|------|
-| `.md`, `.markdown` | Markdown documents |
-| `.plantuml` | PlantUML diagrams |
-| `.mermaid` | Mermaid diagrams |
-| `.vega`, `.vl`, `.vega-lite` | Vega/Vega-Lite charts |
-| `.gv` | Graphviz DOT graphs |
+| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
+| `.plantuml`, `.puml` | PlantUML diagrams |
+| `.mermaid`, `.mmd` | Mermaid diagrams |
+| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
+| `.gv`, `.dot` | Graphviz DOT graphs |
 | `.infographic` | Infographic charts |
+| `.canvas` | Canvas diagrams |
+| `.drawio` | draw.io diagrams |
 
 ---
 

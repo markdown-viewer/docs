@@ -4,7 +4,7 @@
 
 *ฟรีโดยสมบูรณ์ · 29+ ธีมระดับมืออาชีพ · รองรับ 28 ภาษา*
 
-🚀 **ติดตั้งเลย:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 ---
 
@@ -336,6 +336,6 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 
 **มุ่งเน้นที่การเขียน ปล่อยให้ Markdown Viewer จัดการที่เหลือทั้งหมด**
 
-🚀 **ติดตั้งเลย:** https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi
+
 
 *ฟรีทั้งหมด · ประมวลผลในเครื่อง · ความเป็นส่วนตัวได้รับการปกป้อง*
