@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>docu.md — AI writes it. docu.md does the rest.</title>
+  <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset & Variables ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #3b82f6;
+      --brand-hover: #2563eb;
+      --brand-light: #eff6ff;
+      --brand-soft: #dbeafe;
+      --brand-glow: rgba(59, 130, 246, 0.12);
+
+      --amber: #f59e0b;
+      --emerald: #10b981;
+      --violet: #8b5cf6;
+      --rose: #f43f5e;
+
+      --text-primary: #0f172b;
+      --text-secondary: #64748b;
+      --text-muted: #94a3b8;
+
+      --border: #e2e8f0;
+      --border-light: #f1f5f9;
+      --canvas: #ffffff;
+      --surface: #f8fafc;
+      --surface-alt: #f1f5f9;
+
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-lg: 16px;
+      --radius-pill: 9999px;
+
+      --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+      --shadow-card-hover: 0 4px 12px 0 rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 2px 8px -2px rgba(0, 0, 0, 0.06);
+
+      --max-width: 1200px;
+      --section-gap: 96px;
+      --section-gap-sm: 64px;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--canvas);
+      line-height: 1.56;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== Typography ===== */
+    .display { font-size: clamp(40px, 5.5vw, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; }
+    .heading-lg { font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }
+    .heading-md { font-size: 24px; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+    .heading-sm { font-size: 20px; font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; }
+    .body-lg { font-size: 18px; font-weight: 400; line-height: 1.56; color: var(--text-secondary); }
+    .body-sm { font-size: 14px; font-weight: 400; line-height: 1.5; color: var(--text-muted); }
+    .eyebrow { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand); }
+
+    /* ===== Layout ===== */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; position: relative; }
+    .section { padding: var(--section-gap) 0; position: relative; overflow: hidden; }
+    .section-sm { padding: var(--section-gap-sm) 0; position: relative; }
+    .section-alt { background: var(--surface); }
+
+    /* ===== Section Header ===== */
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header .eyebrow { margin-bottom: 12px; display: block; }
+    .section-header .body-lg { max-width: 540px; margin: 12px auto 0; }
+
+    /* ===== Navigation ===== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-width); margin: 0 auto; padding: 0 32px;
+      height: 56px; display: flex; align-items: center; gap: 32px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+    .nav-logo img { width: 30px; height: 30px; border-radius: 6px; }
+    .nav-links { display: flex; gap: 4px; }
+    .nav-links a { text-decoration: none; color: var(--text-secondary); font-size: 14px; font-weight: 500; padding: 6px 14px; border-radius: var(--radius-sm); transition: all 0.15s; }
+    .nav-links a:hover { color: var(--brand); background: var(--brand-light); }
+    .nav-actions { margin-left: auto; display: flex; gap: 0; align-items: center; }
+    .language-select {
+      appearance: none; -webkit-appearance: none; -moz-appearance: none;
+      border: 0; outline: none; box-shadow: none;
+      background: transparent; color: var(--text-secondary); font-family: inherit;
+      font-size: 14px; line-height: 1.2; font-weight: 500; letter-spacing: 0;
+      padding: 0 16px 0 0; min-height: auto; cursor: pointer;
+      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+      background-position: calc(100% - 9px) 50%, calc(100% - 4px) 50%;
+      background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+      transition: color 0.15s;
+    }
+    .language-select:hover { color: var(--text-primary); }
+    .language-select:focus,
+    .language-select:focus-visible,
+    .language-select:active {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+      color: var(--text-primary);
+    }
+    .language-select option { color: var(--text-primary); }
+    .nav-mobile-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-primary); padding: 4px; }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 0 0 7px; border-radius: 0; font-size: 15px; font-weight: 700;
+      text-decoration: none; cursor: pointer; transition: color 0.18s, border-color 0.18s;
+      border: none; border-bottom: 2px solid currentColor; white-space: nowrap;
+      background: transparent;
+    }
+    .btn svg { transition: transform 0.18s; }
+    .btn:hover svg { transform: translateX(3px); }
+    .btn-primary { color: var(--text-primary); }
+    .btn-primary:hover { color: var(--brand); }
+    .btn-secondary { color: var(--text-secondary); border-bottom-color: rgba(100, 116, 139, 0.35); }
+    .btn-secondary:hover { color: var(--text-primary); border-bottom-color: var(--text-primary); }
+    .btn-lg { padding-bottom: 8px; font-size: 16px; }
+
+    /* ===== Decorative: Dot Grid Pattern ===== */
+    .dot-grid {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.04;
+      background-image: radial-gradient(circle, var(--text-primary) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* ===== Decorative: Editorial Lines ===== */
+    .editorial-lines {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.48;
+      background:
+        linear-gradient(90deg, transparent 0, transparent calc(50% - 1px), rgba(15, 23, 43, 0.06) calc(50% - 1px), rgba(15, 23, 43, 0.06) 50%, transparent 50%),
+        linear-gradient(180deg, transparent 0, transparent 72%, rgba(15, 23, 43, 0.04) 72%, rgba(15, 23, 43, 0.04) calc(72% + 1px), transparent calc(72% + 1px));
+    }
+
+    .accent-rule {
+      position: absolute; width: 160px; height: 3px; border-radius: 999px;
+      background: var(--brand); opacity: 0.72; pointer-events: none;
+    }
+    .accent-rule.one { top: 132px; left: max(32px, calc((100vw - var(--max-width)) / 2)); }
+    .accent-rule.two { right: max(32px, calc((100vw - var(--max-width)) / 2)); bottom: 92px; background: var(--amber); width: 96px; }
+
+    /* ===== Decorative: Section Divider Wave ===== */
+    .divider-wave {
+      width: 100%; height: 40px; overflow: hidden; line-height: 0;
+      background: var(--canvas);
+    }
+    .divider-wave svg { width: 100%; height: 40px; }
+    .divider-wave.flip { transform: rotate(180deg); }
+
+    /* ===== Hero ===== */
+    .hero {
+      padding: 144px 0 88px; position: relative; overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(248, 250, 252, 0.85) 0%, rgba(255, 255, 255, 1) 54%),
+        linear-gradient(135deg, rgba(59, 130, 246, 0.08), transparent 38%);
+    }
+    .hero .dot-grid { opacity: 0.06; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr); gap: 64px; align-items: center; position: relative; z-index: 1; }
+    .hero-copy { text-align: left; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 16px; border-radius: var(--radius-pill);
+      background: var(--canvas); color: var(--brand);
+      font-size: 12px; font-weight: 700; margin-bottom: 28px;
+      border: 1px solid var(--brand-soft); position: relative; z-index: 1;
+      box-shadow: var(--shadow-card);
+    }
+    .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .hero h1 { margin-bottom: 24px; position: relative; z-index: 1; }
+    .hero h1 em {
+      font-style: normal; background: linear-gradient(135deg, var(--brand) 0%, var(--violet) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero .subtitle { max-width: 600px; margin: 0 0 40px; position: relative; z-index: 1; }
+    .hero-actions { display: flex; gap: 12px; justify-content: flex-start; flex-wrap: wrap; position: relative; z-index: 1; }
+    .hero-platforms { margin-top: 36px; display: flex; gap: 18px; justify-content: flex-start; flex-wrap: wrap; position: relative; z-index: 1; }
+    .hero-platforms span { font-size: 13px; color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 6px; }
+    .hero-platforms span svg { opacity: 0.5; }
+
+    /* ===== Hero Visual: Publication Stack ===== */
+    .artifact-stage { min-height: 520px; position: relative; isolation: isolate; }
+    .artifact-stage::before {
+      content: ''; position: absolute; inset: 28px 0 8px 40px;
+      border: 1px solid rgba(15, 23, 43, 0.08); border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.72), rgba(239,246,255,0.56));
+      transform: rotate(-2deg); z-index: -1;
+    }
+    .doc-sheet {
+      position: absolute; background: var(--canvas); border: 1px solid var(--border);
+      border-radius: 18px; box-shadow: var(--shadow-lg); overflow: hidden;
+    }
+    .doc-sheet.main { width: 360px; min-height: 472px; right: 62px; top: 8px; padding: 30px; transform: rotate(1.8deg); }
+    .doc-sheet.code { width: 258px; min-height: 230px; left: 4px; top: 84px; padding: 22px; background: #111827; color: #dbeafe; transform: rotate(-5deg); }
+    .doc-sheet.export { width: 250px; min-height: 170px; left: 72px; bottom: 28px; padding: 22px; transform: rotate(3deg); }
+    .sheet-label { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); margin-bottom: 18px; }
+    .doc-title { font-size: 34px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 18px; }
+    .doc-kicker { font-size: 13px; color: var(--text-muted); font-weight: 600; margin-bottom: 12px; }
+    .doc-line { height: 9px; border-radius: 999px; background: var(--border); margin: 10px 0; }
+    .doc-line.short { width: 58%; }
+    .doc-line.medium { width: 76%; }
+    .doc-figure { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: end; height: 90px; }
+    .doc-bar { border-radius: 8px 8px 3px 3px; background: var(--brand); }
+    .doc-bar:nth-child(1) { height: 44px; background: var(--emerald); }
+    .doc-bar:nth-child(2) { height: 72px; }
+    .doc-bar:nth-child(3) { height: 58px; background: var(--amber); }
+    .code-line { display: block; height: 10px; border-radius: 999px; background: rgba(219,234,254,0.22); margin: 12px 0; }
+    .code-line:nth-child(2) { width: 72%; background: rgba(96,165,250,0.44); }
+    .code-line:nth-child(4) { width: 54%; background: rgba(16,185,129,0.5); }
+    .code-line:nth-child(6) { width: 82%; }
+    .export-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .export-tile { border: 1px solid var(--border); border-radius: 12px; padding: 12px; background: var(--surface); }
+    .export-tile strong { display: block; font-size: 18px; line-height: 1; letter-spacing: -0.02em; }
+    .export-tile span { display: block; margin-top: 6px; font-size: 11px; color: var(--text-muted); font-weight: 600; }
+    .floating-note {
+      position: absolute; right: 0; bottom: 82px; padding: 12px 16px;
+      background: var(--text-primary); color: #fff; border-radius: 999px;
+      font-size: 12px; font-weight: 700; letter-spacing: -0.01em; box-shadow: var(--shadow-lg);
+    }
+
+    /* ===== Problem/Solution ===== */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .card { background: var(--canvas); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-card); position: relative; overflow: hidden; }
+    .card-accent-left { border-left: 3px solid var(--brand); }
+    .card-accent-right { border-left: 3px solid var(--emerald); }
+    .card-icon-wrap { width: 48px; height: 48px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .card-icon-wrap.blue { background: var(--brand-light); color: var(--brand); }
+    .card-icon-wrap.green { background: #ecfdf5; color: var(--emerald); }
+    .card h3 { margin-bottom: 12px; }
+
+    /* ===== Features Grid ===== */
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card { padding: 32px; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-card); transition: all 0.2s; position: relative; overflow: hidden; }
+    .feature-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-2px); border-color: var(--brand-soft); }
+    .feature-card .card-icon-wrap { margin-bottom: 24px; }
+    .feature-card h3 { margin-bottom: 8px; font-size: 18px; font-weight: 600; }
+    .feature-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.5; }
+    .feature-card .card-shine {
+      position: absolute; top: 0; right: 0; width: 80px; height: 80px;
+      background: radial-gradient(circle at top right, var(--brand-glow), transparent 70%);
+      pointer-events: none; opacity: 0; transition: opacity 0.3s;
+    }
+    .feature-card:hover .card-shine { opacity: 1; }
+
+    /* ===== Visual Showcase: Before/After ===== */
+    .showcase-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0; align-items: center; max-width: 900px; margin: 0 auto; }
+    .showcase-arrow {
+      display: flex; align-items: center; justify-content: center;
+      width: 72px; height: 2px; color: var(--brand); z-index: 2; flex-shrink: 0;
+      background: var(--brand); position: relative;
+    }
+    .showcase-arrow svg {
+      position: absolute; right: -12px; width: 24px; height: 24px;
+      background: var(--surface); padding: 2px;
+    }
+    .showcase-card {
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      background: var(--canvas); box-shadow: var(--shadow-card); overflow: hidden;
+    }
+    .showcase-card-header {
+      padding: 14px 20px; background: var(--surface); border-bottom: 1px solid var(--border);
+      font-size: 12px; font-weight: 800; color: var(--text-muted); letter-spacing: 0.08em;
+      text-transform: uppercase; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    }
+    .showcase-card-header .format-chip {
+      display: inline-flex; align-items: center; padding: 3px 9px; border-radius: var(--radius-pill);
+      background: var(--canvas); border: 1px solid var(--border); color: var(--brand); font-size: 11px;
+      letter-spacing: 0; text-transform: none;
+    }
+    .showcase-card-body { padding: 20px; }
+    .showcase-card-body.md {
+      background: #0d1117; color: #c9d1d9; font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 12px; line-height: 1.7; min-height: 180px;
+    }
+    .showcase-card-body.md .c1 { color: #ff7b72; }
+    .showcase-card-body.md .c2 { color: #79c0ff; }
+    .showcase-card-body.md .c3 { color: #a5d6ff; }
+    .showcase-card-body.md .c4 { color: #8b949e; }
+    .showcase-card-body.rendered { min-height: 180px; }
+    .showcase-card-body.rendered .r-h1 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+    .showcase-card-body.rendered .r-h2 { font-size: 15px; font-weight: 600; color: var(--text-secondary); margin-bottom: 10px; }
+    .showcase-card-body.rendered .r-p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px; }
+    .showcase-card-body.rendered .r-tag {
+      display: inline-block; padding: 3px 10px; border-radius: var(--radius-pill);
+      font-size: 11px; font-weight: 500; margin: 2px;
+      background: var(--brand-light); color: var(--brand);
+    }
+
+    /* ===== Theme Previews ===== */
+    .theme-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .theme-preview {
+      border: 1px solid var(--border); border-radius: 20px; padding: 16px;
+      background: var(--canvas); box-shadow: var(--shadow-card); overflow: hidden;
+    }
+    .theme-preview-sheet {
+      min-height: 260px; border-radius: 14px; padding: 24px; border: 1px solid rgba(15,23,43,0.08);
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .theme-preview.academic .theme-preview-sheet { background: #fbfaf6; color: #171717; font-family: Georgia, 'Times New Roman', serif; }
+    .theme-preview.business .theme-preview-sheet { background: #f8fafc; color: #0f172b; }
+    .theme-preview.reading .theme-preview-sheet { background: #fff7ed; color: #2b2118; font-family: Palatino, Georgia, serif; }
+    .theme-preview-title { font-size: 24px; line-height: 1.08; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 18px; }
+    .theme-preview.academic .theme-preview-title { font-weight: 600; }
+    .theme-preview-lines span { display: block; height: 8px; border-radius: 999px; margin: 10px 0; background: currentColor; opacity: 0.14; }
+    .theme-preview-lines span:nth-child(1) { width: 96%; }
+    .theme-preview-lines span:nth-child(2) { width: 78%; }
+    .theme-preview-lines span:nth-child(3) { width: 88%; }
+    .theme-preview-lines span:nth-child(4) { width: 52%; }
+    .theme-preview-caption { margin-top: 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .theme-preview-caption strong { font-size: 15px; }
+    .theme-preview-caption span { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+
+    /* ===== Diagram Types ===== */
+    .diagram-strip { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .diagram-tag {
+      padding: 10px 20px; border-radius: var(--radius-pill);
+      background: var(--canvas); color: var(--text-primary);
+      font-size: 14px; font-weight: 500; border: 1px solid var(--border);
+      box-shadow: var(--shadow-card); transition: all 0.2s;
+    }
+    .diagram-tag:hover { border-color: var(--brand); box-shadow: var(--shadow-card-hover); transform: translateY(-1px); }
+    .diagram-tag .tag-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+    .tag-dot.puml { background: #4a90d9; } .tag-dot.mer { background: #22aa55; }
+    .tag-dot.vega { background: #f58518; } .tag-dot.draw { background: #f08705; }
+    .tag-dot.canv { background: #7c3aed; } .tag-dot.info { background: #e11d48; }
+    .tag-dot.gv { background: #0891b2; }
+
+    /* ===== Steps ===== */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; position: relative; }
+    .steps::before {
+      content: ''; position: absolute; top: 56px; left: 20%; right: 20%; height: 2px;
+      background: linear-gradient(90deg, var(--brand-soft), var(--brand), var(--brand-soft));
+      z-index: 0; display: block;
+    }
+    .step { text-align: center; position: relative; z-index: 1; }
+    .step-number { width: 56px; height: 56px; border-radius: 50%; background: var(--canvas); color: var(--brand); display: inline-flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; margin-bottom: 20px; border: 2px solid var(--brand); box-shadow: 0 0 0 8px var(--canvas); }
+    .step h3 { margin-bottom: 8px; }
+    .step p { font-size: 15px; color: var(--text-secondary); }
+    .step-meta { margin-top: 16px; font-size: 12px; color: var(--text-muted); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    /* ===== Platforms ===== */
+    .platforms-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+    .platform-card {
+      padding: 28px 16px; border: 1px solid var(--border);
+      border-radius: var(--radius); text-align: center; text-decoration: none;
+      color: var(--text-primary); transition: all 0.2s; box-shadow: var(--shadow-card);
+      background: var(--canvas);
+    }
+    .platform-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-2px); border-color: var(--brand); }
+    .platform-card .plat-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+    .plat-icon.chrome { background: #eff6ff; color: #4285f4; }
+    .plat-icon.edge { background: #eff6ff; color: #0078d7; }
+    .plat-icon.firefox { background: #fff0eb; color: #ff7139; }
+    .plat-icon.obsidian { background: #f5f0ff; color: #7c3aed; }
+    .plat-icon.vscode { background: #e6f0ff; color: #007acc; }
+    .plat-icon.mobile { background: var(--surface); color: var(--text-secondary); }
+    .platform-card .name { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+    .platform-card .hint { font-size: 11px; color: var(--text-muted); }
+
+    /* ===== CTA Section ===== */
+    .cta-section {
+      background: var(--text-primary); color: #fff; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-section .dot-grid { opacity: 0.06; background-image: radial-gradient(circle, #fff 1px, transparent 1px); }
+    .cta-section .heading-lg { color: #fff; position: relative; z-index: 1; }
+    .cta-section .body-lg { color: #94a3b8; margin: 16px auto 32px; max-width: 560px; position: relative; z-index: 1; }
+    .cta-section .hero-actions { position: relative; z-index: 1; }
+    .cta-section .btn-primary { color: #fff; }
+    .cta-section .btn-primary:hover { color: #bfdbfe; }
+    .cta-section .btn-secondary { color: #cbd5e1; border-bottom-color: rgba(203,213,225,0.35); }
+    .cta-section .btn-secondary:hover { color: #fff; border-bottom-color: #fff; }
+
+    /* ===== Footer ===== */
+    .footer { padding: 48px 0; border-top: 1px solid var(--border); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-left { display: flex; align-items: center; gap: 12px; }
+    .footer-left img { width: 22px; height: 22px; border-radius: 4px; }
+    .footer-left span { font-size: 14px; color: var(--text-muted); }
+    .footer-right { display: flex; gap: 24px; }
+    .footer-right a { text-decoration: none; color: var(--text-secondary); font-size: 14px; font-weight: 500; transition: color 0.15s; }
+    .footer-right a:hover { color: var(--brand); }
+
+    /* ===== Export Format Badges ===== */
+    .export-formats { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+    .export-badge {
+      display: flex; align-items: center; gap: 8px; padding: 14px 24px;
+      border: 1px solid var(--border); border-radius: var(--radius);
+      background: var(--canvas); box-shadow: var(--shadow-card);
+      font-weight: 600; font-size: 15px; color: var(--text-primary);
+    }
+    .export-badge .fmt-ext { font-size: 12px; color: var(--brand); font-weight: 700; background: var(--brand-light); padding: 2px 8px; border-radius: 4px; }
+
+    /* ===== Output Gallery ===== */
+    .output-gallery { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: stretch; }
+    .output-card {
+      min-height: 260px; padding: 28px; border: 1px solid var(--border); border-radius: 20px;
+      background: var(--canvas); box-shadow: var(--shadow-card); position: relative; overflow: hidden;
+    }
+    .output-card.dark { background: var(--text-primary); color: #fff; }
+    .output-card.wide { grid-row: span 2; }
+    .output-card::after {
+      content: ''; position: absolute; inset: auto 0 0; height: 6px;
+      background: linear-gradient(90deg, var(--brand), var(--emerald), var(--amber));
+    }
+    .output-card.dark::after { background: linear-gradient(90deg, var(--brand), var(--violet)); }
+    .output-card .label { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand); margin-bottom: 18px; }
+    .output-card.dark .label { color: #93c5fd; }
+    .output-card h3 { font-size: 28px; line-height: 1.08; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .output-card p { color: var(--text-secondary); font-size: 15px; max-width: 440px; }
+    .output-card.dark p { color: #cbd5e1; }
+    .output-mini-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 28px; }
+    .output-mini {
+      padding: 16px; border-radius: 14px; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .output-mini strong { display: block; font-size: 22px; line-height: 1; }
+    .output-mini span { display: block; margin-top: 8px; font-size: 12px; color: #cbd5e1; font-weight: 600; }
+    .report-lines { margin-top: 30px; max-width: 360px; }
+    .report-lines span { display: block; height: 10px; border-radius: 999px; background: var(--border); margin: 12px 0; }
+    .report-lines span:nth-child(1) { width: 92%; }
+    .report-lines span:nth-child(2) { width: 72%; }
+    .report-lines span:nth-child(3) { width: 84%; }
+    .report-lines span:nth-child(4) { width: 56%; background: var(--brand-soft); }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .platforms-grid { grid-template-columns: repeat(3, 1fr); }
+      .showcase-grid { grid-template-columns: 1fr; gap: 16px; }
+      .showcase-arrow { transform: rotate(90deg); }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-gap: 64px; --section-gap-sm: 48px; }
+      .container { padding: 0 20px; }
+      .nav-links { display: none; }
+      .language-select { font-size: 14px; }
+      .nav-mobile-btn { display: block; }
+      .hero { padding: 120px 0 48px; }
+      .two-col { grid-template-columns: 1fr; gap: 24px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 24px; }
+      .steps::before { display: none; }
+      .platforms-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .hero-actions .btn { width: auto; justify-content: flex-start; }
+      .heading-lg { font-size: 28px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .artifact-stage { min-height: 420px; }
+      .doc-sheet.main { right: 0; width: min(330px, 82vw); }
+      .doc-sheet.code { display: none; }
+      .doc-sheet.export { left: 0; bottom: 12px; width: min(250px, 72vw); }
+      .showcase-grid { grid-template-columns: 1fr; }
+      .showcase-arrow { transform: rotate(90deg); margin: 8px auto; }
+      .theme-preview-grid { grid-template-columns: 1fr; }
+      .output-gallery { grid-template-columns: 1fr; }
+      .output-card.wide { grid-row: auto; }
+    }
+
+    @media (max-width: 480px) {
+      .platforms-grid { grid-template-columns: 1fr 1fr; }
+      .hero-platforms { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="assets/images/logo.svg" alt="docu.md" width="30" height="30">
+        docu.md
+      </a>
+      <div class="nav-links">
+        <a href="#features" data-i18n="Features">Features</a>
+        <a href="#showcase" data-i18n="Showcase">Showcase</a>
+        <a href="#platforms" data-i18n="Platforms">Platforms</a>
+        <a href="/features/" data-i18n="Docs">Docs</a>
+        <a href="/faq" data-i18n="FAQ">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <select class="language-select" id="languageSelect" aria-label="Language" title="Language">
+          <option value="en">English</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="ru">Русский</option>
+          <option value="ja">日本語</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ko">한국어</option>
+          <option value="de">Deutsch</option>
+          <option value="pt-BR">Português (Brasil)</option>
+          <option value="pt-PT">Português (Portugal)</option>
+          <option value="nl">Nederlands</option>
+          <option value="uk">Українська</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="be">Беларуская</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="es">Español</option>
+          <option value="th">ไทย</option>
+          <option value="sv">Svenska</option>
+          <option value="tr">Türkçe</option>
+          <option value="et">Eesti</option>
+          <option value="ms">Bahasa Melayu</option>
+          <option value="pl">Polski</option>
+          <option value="fi">Suomi</option>
+          <option value="lt">Lietuvių</option>
+          <option value="no">Norsk</option>
+          <option value="da">Dansk</option>
+        </select>
+      </div>
+      <button class="nav-mobile-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="dot-grid"></div>
+    <div class="editorial-lines"></div>
+    <div class="accent-rule one"></div>
+    <div class="accent-rule two"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span data-i18n="The aftercare for AI-written markdown">The aftercare for AI-written markdown</span>
+          </div>
+          <h1 class="display" data-i18n-html="hero-slogan">AI writes it.<br><em>docu.md</em> does the rest.</h1>
+          <p class="body-lg subtitle" data-i18n="Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.">
+            Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.
+          </p>
+          <div class="hero-actions">
+            <a href="#get-started" class="btn btn-primary btn-lg">
+              <span data-i18n="Start with docu.md">Start with docu.md</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#showcase" class="btn btn-secondary btn-lg"><span data-i18n="See the output">See the output</span></a>
+          </div>
+
+          <div class="hero-platforms">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> <span data-i18n="Browser">Browser</span></span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Obsidian</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> VS Code</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> <span data-i18n="Mobile">Mobile</span></span>
+          </div>
+        </div>
+
+        <div class="artifact-stage" aria-hidden="true">
+          <div class="doc-sheet code">
+            <span class="code-line"></span>
+            <span class="code-line"></span>
+            <span class="code-line"></span>
+            <span class="code-line"></span>
+            <span class="code-line"></span>
+            <span class="code-line"></span>
+          </div>
+          <div class="doc-sheet main">
+            <div class="sheet-label" data-i18n="Annual Brief">Annual Brief</div>
+            <div class="doc-title" data-i18n="A finished document from a simple .md">A finished document from a simple .md</div>
+            <div class="doc-kicker">DOCX / PDF / HTML</div>
+            <div class="doc-line"></div>
+            <div class="doc-line medium"></div>
+            <div class="doc-line short"></div>
+            <div class="doc-figure">
+              <div class="doc-bar"></div>
+              <div class="doc-bar"></div>
+              <div class="doc-bar"></div>
+            </div>
+          </div>
+          <div class="doc-sheet export">
+            <div class="sheet-label" data-i18n="Deliverables">Deliverables</div>
+            <div class="export-grid">
+              <div class="export-tile"><strong>.docx</strong><span data-i18n="editable">editable</span></div>
+              <div class="export-tile"><strong>.pdf</strong><span data-i18n="print">print</span></div>
+              <div class="export-tile"><strong>.html</strong><span data-i18n="publish">publish</span></div>
+              <div class="export-tile"><strong>.png</strong><span data-i18n="diagrams">diagrams</span></div>
+            </div>
+          </div>
+          <div class="floating-note" data-i18n="Markdown in. Finished work out.">Markdown in. Finished work out.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Problem / Solution ===== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="two-col">
+        <div class="card card-accent-left">
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="heading-sm" data-i18n="AI writes .md by default.">AI writes .md by default.</h3>
+          <p class="body-sm" data-i18n-html="problem-copy">
+            ChatGPT, Claude, Copilot — every AI outputs markdown. It's fast, clean, and version-control friendly. But when you need to share with a colleague, submit to a journal, or present to a client, you hit a wall. <strong>Markdown files aren't documents.</strong>
+          </p>
+        </div>
+        <div class="card card-accent-right">
+          <div class="card-icon-wrap green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="heading-sm" data-i18n="docu.md bridges the gap.">docu.md bridges the gap.</h3>
+          <p class="body-sm" data-i18n-html="bridge-copy">
+            Open any .md file and see it beautifully rendered — live diagrams, formatted code, editable math. Export to polished DOCX, PDF, or HTML in one click. No manual formatting. No copy-paste. <strong>Just your content, delivered professionally.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Showcase: Before / After ===== -->
+  <section class="section section-alt" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="See the Magic">See the Magic</span>
+        <h2 class="heading-lg" data-i18n="Raw markdown → Polished document.">Raw markdown → Polished document.</h2>
+        <p class="body-lg" data-i18n="What you write in your editor vs. what docu.md delivers.">What you write in your editor vs. what docu.md delivers.</p>
+      </div>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-card-header">
+            <span data-i18n="Source draft">Source draft</span>
+            <span class="format-chip">.md</span>
+          </div>
+          <div class="showcase-card-body md">
+            <span class="c1"># Annual Report 2025</span><br>
+            <span class="c1">## Executive Summary</span><br>
+            <br>
+            Our <span class="c2">**AI-driven platform**</span><br>
+            processed over <span class="c2">**10M requests**</span><br>
+            in fiscal year 2025.<br>
+            <br>
+            <span class="c4">```mermaid</span><br>
+            <span class="c3">pie title Revenue Split</span><br>
+            <span class="c3">"Enterprise" : 45</span><br>
+            <span class="c3">"SMB" : 35</span><br>
+            <span class="c3">"Individual" : 20</span><br>
+            <span class="c4">```</span><br>
+            <br>
+            <span class="c4">$$E = mc^2$$</span>
+          </div>
+        </div>
+        <div class="showcase-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-card-header">
+            <span data-i18n="Finished artifact">Finished artifact</span>
+            <span class="format-chip">.docx</span>
+          </div>
+          <div class="showcase-card-body rendered">
+            <div class="r-h1" data-i18n="Annual Report 2025">Annual Report 2025</div>
+            <div class="r-h2" data-i18n="Executive Summary">Executive Summary</div>
+            <div class="r-p" data-i18n-html="annual-report-summary">Our <strong>AI-driven platform</strong> processed over <strong>10M requests</strong> in fiscal year 2025.</div>
+            <div class="r-p">
+              <span class="r-tag" data-i18n="Enterprise 45%">Enterprise 45%</span>
+              <span class="r-tag" data-i18n="SMB 35%">SMB 35%</span>
+              <span class="r-tag" data-i18n="Individual 20%">Individual 20%</span>
+            </div>
+            <div class="r-p" style="font-family:serif;font-style:italic;font-size:16px;color:var(--text-primary);">E = mc²</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Export Format Badges -->
+      <div class="export-formats">
+        <div class="export-badge">
+          <span class="fmt-ext">.docx</span> <span data-i18n="Word Document">Word Document</span>
+        </div>
+        <div class="export-badge">
+          <span class="fmt-ext">.pdf</span> <span data-i18n="Print-ready">Print-ready</span>
+        </div>
+        <div class="export-badge">
+          <span class="fmt-ext">.html</span> <span data-i18n="Self-contained">Self-contained</span>
+        </div>
+        <div class="export-badge">
+          <span class="fmt-ext">.png</span> <span data-i18n="Diagrams">Diagrams</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="Features">Features</span>
+        <h2 class="heading-lg" data-i18n="Everything markdown deserves.">Everything markdown deserves.</h2>
+        <p class="body-lg" data-i18n="Beyond plain text — diagrams, formulas, themes, and export. All in one tool.">Beyond plain text — diagrams, formulas, themes, and export. All in one tool.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3 data-i18n="Rich Diagram Support">Rich Diagram Support</h3>
+          <p data-i18n="PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz — 7 diagram engines rendered live.">PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz — 7 diagram engines rendered live.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3 data-i18n="Professional Export">Professional Export</h3>
+          <p data-i18n="DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.">DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>
+          </div>
+          <h3 data-i18n="Cross-Platform">Cross-Platform</h3>
+          <p data-i18n="Chrome, Edge, Firefox, Obsidian, VS Code, Mobile — one consistent experience everywhere.">Chrome, Edge, Firefox, Obsidian, VS Code, Mobile — one consistent experience everywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 data-i18n="29 Professional Themes">29 Professional Themes</h3>
+          <p data-i18n="Classic, Reading, Modern, Creative, Chinese, Playful, Nature — switch in one click.">Classic, Reading, Modern, Creative, Chinese, Playful, Nature — switch in one click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 data-i18n="100+ Language Highlighting">100+ Language Highlighting</h3>
+          <p data-i18n="Automatic syntax highlighting for over 100 programming languages. IDE-quality code rendering.">Automatic syntax highlighting for over 100 programming languages. IDE-quality code rendering.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-shine"></div>
+          <div class="card-icon-wrap blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-i18n="Privacy-first, always free">Privacy-first, always free</h3>
+          <p data-i18n="All local processing. Your documents never leave your device. No premium tiers, no data collection.">All local processing. Your documents never leave your device. No premium tiers, no data collection.</p>
+        </div>
+      </div>
+
+      <!-- Theme Previews -->
+      <div style="margin-top:56px;">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="Themes">Themes</span>
+          <h2 class="heading-lg" data-i18n="Same markdown. Different occasion.">Same markdown. Different occasion.</h2>
+          <p class="body-lg" data-i18n="Choose a document mood before export — academic, business, reading, Chinese typography, playful notes, and more.">Choose a document mood before export — academic, business, reading, Chinese typography, playful notes, and more.</p>
+        </div>
+        <div class="theme-preview-grid">
+          <div class="theme-preview academic">
+            <div class="theme-preview-sheet">
+              <div>
+                <div class="theme-preview-title" data-i18n="Research Note">Research Note</div>
+                <div class="theme-preview-lines"><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div style="font-size:13px;line-height:1.5;opacity:.72;" data-i18n="Equation blocks, citations, and long-form reading stay calm and formal.">Equation blocks, citations, and long-form reading stay calm and formal.</div>
+            </div>
+            <div class="theme-preview-caption">
+              <strong data-i18n="Academic">Academic</strong>
+              <span data-i18n="Papers and essays">Papers and essays</span>
+            </div>
+          </div>
+          <div class="theme-preview business">
+            <div class="theme-preview-sheet">
+              <div>
+                <div class="theme-preview-title" data-i18n="Quarterly Brief">Quarterly Brief</div>
+                <div class="theme-preview-lines"><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:end;height:56px;">
+                <span style="height:34px;background:var(--brand);border-radius:6px 6px 2px 2px;"></span>
+                <span style="height:52px;background:var(--emerald);border-radius:6px 6px 2px 2px;"></span>
+                <span style="height:42px;background:var(--amber);border-radius:6px 6px 2px 2px;"></span>
+              </div>
+            </div>
+            <div class="theme-preview-caption">
+              <strong data-i18n="Business">Business</strong>
+              <span data-i18n="Reports and decks">Reports and decks</span>
+            </div>
+          </div>
+          <div class="theme-preview reading">
+            <div class="theme-preview-sheet">
+              <div>
+                <div class="theme-preview-title" data-i18n="Reading Copy">Reading Copy</div>
+                <div class="theme-preview-lines"><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div style="font-size:13px;line-height:1.55;opacity:.72;" data-i18n="Warm spacing and book-like type make AI drafts easier to review.">Warm spacing and book-like type make AI drafts easier to review.</div>
+            </div>
+            <div class="theme-preview-caption">
+              <strong data-i18n="Reading">Reading</strong>
+              <span data-i18n="Review and sharing">Review and sharing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Diagram Types ===== -->
+  <section class="section-sm section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="Diagrams">Diagrams</span>
+        <h2 class="heading-lg" data-i18n="7 diagram engines, zero configuration.">7 diagram engines, zero configuration.</h2>
+        <p class="body-lg" data-i18n="Write diagram code in your markdown. docu.md renders it live — and exports at high resolution.">Write diagram code in your markdown. docu.md renders it live — and exports at high resolution.</p>
+      </div>
+      <div class="diagram-strip">
+        <span class="diagram-tag"><span class="tag-dot puml"></span>PlantUML</span>
+        <span class="diagram-tag"><span class="tag-dot mer"></span>Mermaid</span>
+        <span class="diagram-tag"><span class="tag-dot vega"></span>Vega / Vega-Lite</span>
+        <span class="diagram-tag"><span class="tag-dot draw"></span>drawio</span>
+        <span class="diagram-tag"><span class="tag-dot canv"></span>Canvas</span>
+        <span class="diagram-tag"><span class="tag-dot info"></span>Infographic</span>
+        <span class="diagram-tag"><span class="tag-dot gv"></span>Graphviz DOT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How It Works ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="How It Works">How It Works</span>
+        <h2 class="heading-lg" data-i18n="From AI output to polished document in seconds.">From AI output to polished document in seconds.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 class="heading-sm" data-i18n="AI generates .md">AI generates .md</h3>
+          <p data-i18n="ChatGPT, Claude, or any AI writes your content in markdown — reports, docs, papers, READMEs.">ChatGPT, Claude, or any AI writes your content in markdown — reports, docs, papers, READMEs.</p>
+          <div class="step-meta" data-i18n="Draft">Draft</div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 class="heading-sm" data-i18n="Open in docu.md">Open in docu.md</h3>
+          <p data-i18n="Drag and drop, double-click, or paste a URL. Instant preview with all diagrams and formulas rendered.">Drag and drop, double-click, or paste a URL. Instant preview with all diagrams and formulas rendered.</p>
+          <div class="step-meta" data-i18n="Refine">Refine</div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 class="heading-sm" data-i18n="Export and share">Export and share</h3>
+          <p data-i18n="One click to DOCX, PDF, or HTML. Perfect formatting, editable equations, high-res diagrams.">One click to DOCX, PDF, or HTML. Perfect formatting, editable equations, high-res diagrams.</p>
+          <div class="step-meta" data-i18n="Deliver">Deliver</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Output Gallery ===== -->
+  <section class="section-sm section-alt" id="outputs">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="Outputs">Outputs</span>
+        <h2 class="heading-lg" data-i18n="Not a preview. A publication surface.">Not a preview. A publication surface.</h2>
+        <p class="body-lg" data-i18n="docu.md turns markdown into finished artifacts for every real-world handoff.">docu.md turns markdown into finished artifacts for every real-world handoff.</p>
+      </div>
+      <div class="output-gallery">
+        <div class="output-card dark wide">
+          <div class="label" data-i18n="Formal Documents">Formal Documents</div>
+          <h3 data-i18n="AI drafts become reports people can actually submit.">AI drafts become reports people can actually submit.</h3>
+          <p data-i18n="Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX and PDF.">Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX and PDF.</p>
+          <div class="output-mini-grid">
+            <div class="output-mini"><strong>DOCX</strong><span data-i18n="editable equations">editable equations</span></div>
+            <div class="output-mini"><strong>PDF</strong><span data-i18n="print-ready pages">print-ready pages</span></div>
+            <div class="output-mini"><strong>HTML</strong><span data-i18n="shareable pages">shareable pages</span></div>
+            <div class="output-mini"><strong>PNG</strong><span data-i18n="high-res diagrams">high-res diagrams</span></div>
+          </div>
+        </div>
+        <div class="output-card">
+          <div class="label" data-i18n="Academic and Technical">Academic and Technical</div>
+          <h3 data-i18n="Formulas, references, code, diagrams.">Formulas, references, code, diagrams.</h3>
+          <p data-i18n="Keep complex markdown readable without flattening it into screenshots.">Keep complex markdown readable without flattening it into screenshots.</p>
+          <div class="report-lines"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="output-card">
+          <div class="label" data-i18n="Business and Sharing">Business and Sharing</div>
+          <h3 data-i18n="From chat answer to client-ready file.">From chat answer to client-ready file.</h3>
+          <p data-i18n="Make AI-assisted writing feel finished, formatted, and easy to pass along.">Make AI-assisted writing feel finished, formatted, and easy to pass along.</p>
+          <div class="report-lines"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Platforms ===== -->
+  <section class="section" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="Platforms">Platforms</span>
+        <h2 class="heading-lg" data-i18n="Available everywhere you work.">Available everywhere you work.</h2>
+        <p class="body-lg" data-i18n="Install on any platform — same powerful engine, same beautiful output.">Install on any platform — same powerful engine, same beautiful output.</p>
+      </div>
+      <div class="platforms-grid">
+        <a href="https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi" class="platform-card" target="_blank" rel="noopener">
+          <div class="plat-icon chrome">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="#4285F4"/><circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="12" cy="12" r="2.5" fill="#4285F4"/></svg>
+          </div>
+          <div class="name">Chrome</div>
+          <div class="hint" data-i18n="Web Store">Web Store</div>
+        </a>
+        <a href="https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca" class="platform-card" target="_blank" rel="noopener">
+          <div class="plat-icon edge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="#0078D7"/><path d="M8.5 12l2.5 2.5 5-5" fill="none" stroke="#fff" stroke-width="2"/></svg>
+          </div>
+          <div class="name">Edge</div>
+          <div class="hint" data-i18n="Add-ons">Add-ons</div>
+        </a>
+        <a href="https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/" class="platform-card" target="_blank" rel="noopener">
+          <div class="plat-icon firefox">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="#FF7139"/><path d="M12 5c-2 2-4 4-3 8s3 6 3 6 2-2 3-6-3-8-3-8z" fill="#fff" opacity="0.6"/></svg>
+          </div>
+          <div class="name">Firefox</div>
+          <div class="hint" data-i18n="Add-ons">Add-ons</div>
+        </a>
+        <a href="https://community.obsidian.md/plugins/markdown-viewer-extension" class="platform-card" target="_blank" rel="noopener">
+          <div class="plat-icon obsidian">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1.5" fill="#7C3AED"/><rect x="13" y="3" width="8" height="8" rx="1.5" fill="#7C3AED" opacity="0.6"/><rect x="3" y="13" width="8" height="8" rx="1.5" fill="#7C3AED" opacity="0.6"/><rect x="13" y="13" width="8" height="8" rx="1.5" fill="#7C3AED"/></svg>
+          </div>
+          <div class="name">Obsidian</div>
+          <div class="hint" data-i18n="Plugin">Plugin</div>
+        </a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension" class="platform-card" target="_blank" rel="noopener">
+          <div class="plat-icon vscode">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 2l5 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11z" fill="#007ACC"/><path d="M14 2v6h6" fill="#fff" opacity="0.2"/></svg>
+          </div>
+          <div class="name">VS Code</div>
+          <div class="hint" data-i18n="Marketplace">Marketplace</div>
+        </a>
+        <a href="/platforms/mobile" class="platform-card">
+          <div class="plat-icon mobile">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <div class="name">Mobile</div>
+          <div class="hint" data-i18n="iOS and Android">iOS and Android</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta-section" id="get-started">
+    <div class="dot-grid"></div>
+    <div class="editorial-lines"></div>
+    <div class="container">
+      <h2 class="heading-lg" data-i18n="Ready to go beyond markdown?">Ready to go beyond markdown?</h2>
+      <p class="body-lg" data-i18n="Install docu.md and turn every .md file into a professional document. Free, local, and open source.">Install docu.md and turn every .md file into a professional document. Free, local, and open source.</p>
+      <div class="hero-actions">
+        <a href="https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          <span data-i18n="Install for Chrome">Install for Chrome</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/getting-started/installation" class="btn btn-secondary btn-lg"><span data-i18n="Other Platforms">Other Platforms</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <img src="assets/images/logo.svg" alt="docu.md" width="22" height="22">
+          <span data-i18n="© 2026 docu.md — Open source under GPLv3.">&copy; 2026 docu.md &mdash; Open source under GPLv3.</span>
+        </div>
+        <div class="footer-right">
+          <a href="/features/" data-i18n="Docs">Docs</a>
+          <a href="/faq" data-i18n="FAQ">FAQ</a>
+          <a href="/privacy" data-i18n="Privacy">Privacy</a>
+          <a href="https://github.com/markdown-viewer/markdown-viewer-extension" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/homepage-i18n-data.js"></script>
+  <script src="assets/js/homepage-i18n.js"></script>
+
+</body>
+</html>

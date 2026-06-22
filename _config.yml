@@ -1,5 +1,5 @@
-title: Markdown Viewer
-description: Markdown to perfect Word in one click
+title: docu.md
+description: AI writes it. docu.md does the rest. — Preview, format, and export markdown to DOCX/PDF/HTML. Cross-platform with rich diagram support.
 baseurl: ""
 url: "https://docu.md"
 markdown: kramdown
