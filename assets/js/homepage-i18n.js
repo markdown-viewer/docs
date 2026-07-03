@@ -1,16 +1,22 @@
 (function () {
   var config = window.DOCUMD_HOMEPAGE_I18N;
-  if (!config) {
-    return;
-  }
+  if (!config) return;
 
+  // pageMeta and translations are mutated by per-language IIFEs —
+  // they share the same object references created by common.js
   var pageMeta = config.pageMeta || {};
   var translations = config.translations || {};
   var fallbackLocales = config.fallbackLocales || {};
   var supported = config.supported || ['en'];
+  var I18N_BASE = 'assets/js/i18n/';
+  var loaded = {};
+  var loadCallbacks = {};
+
   var originalText = new WeakMap();
   var metaDescription = document.querySelector('meta[name="description"]');
   var languageSelect = document.getElementById('languageSelect');
+
+  /* ---------- language detection ---------- */
 
   function normalizeLanguage(value) {
     if (!value) return 'en';
@@ -51,6 +57,48 @@
     var params = new URLSearchParams(window.location.search);
     return normalizeLanguage(params.get('lang') || localStorage.getItem('documd-lang') || navigator.language);
   }
+
+  /* ---------- lazy loading ---------- */
+
+  function loadLanguage(lang, callback) {
+    if (loaded[lang]) { callback(); return; }
+    if (loadCallbacks[lang]) { loadCallbacks[lang].push(callback); return; }
+
+    loadCallbacks[lang] = [callback];
+    var script = document.createElement('script');
+    script.src = I18N_BASE + lang + '.js';
+
+    script.onload = function () {
+      loaded[lang] = true;
+      var cbs = loadCallbacks[lang];
+      delete loadCallbacks[lang];
+      for (var i = 0; i < cbs.length; i++) cbs[i]();
+    };
+
+    script.onerror = function () {
+      var cbs = loadCallbacks[lang];
+      delete loadCallbacks[lang];
+      // Silently continue — missing translation data just means
+      // English fallback text will be used for that language.
+      for (var i = 0; i < cbs.length; i++) cbs[i]();
+    };
+
+    document.head.appendChild(script);
+  }
+
+  function ensureLanguages(language, callback) {
+    // 'en' is always needed for pageMeta fallback
+    var normalized = normalizeLanguage(language);
+    loadLanguage('en', function () {
+      if (normalized !== 'en') {
+        loadLanguage(normalized, callback);
+      } else {
+        callback();
+      }
+    });
+  }
+
+  /* ---------- translation ---------- */
 
   function buildDictionary(language) {
     var chain = [];
@@ -136,12 +184,13 @@
     return 'Language';
   }
 
-  function applyLanguage(language) {
-    var normalized = normalizeLanguage(language);
-    var meta = pageMeta[normalized] || pageMeta.en;
-    document.documentElement.lang = meta.lang;
-    document.title = meta.title;
-    if (metaDescription) metaDescription.setAttribute('content', meta.description);
+  /* ---------- apply ---------- */
+
+  function doApplyLanguage(normalized) {
+    var meta = pageMeta[normalized] || pageMeta['en'];
+    document.documentElement.lang = meta ? meta.lang : 'en';
+    document.title = meta ? meta.title : document.title;
+    if (metaDescription && meta) metaDescription.setAttribute('content', meta.description);
     if (languageSelect) languageSelect.value = normalized;
     translateMarkedNodes(normalized);
     translateTextNodes(normalized);
@@ -151,7 +200,19 @@
       languageSelect.setAttribute('title', languageLabel);
     }
     localStorage.setItem('documd-lang', normalized);
+    // Notify other components (e.g. custom language dropdown)
+    try {
+      document.dispatchEvent(new CustomEvent('documd-language-applied', { detail: { language: normalized } }));
+    } catch (e) { /* ignore */ }
   }
+
+  function applyLanguage(language) {
+    ensureLanguages(language, function () {
+      doApplyLanguage(normalizeLanguage(language));
+    });
+  }
+
+  /* ---------- bootstrap ---------- */
 
   if (languageSelect) {
     languageSelect.addEventListener('change', function (event) {
