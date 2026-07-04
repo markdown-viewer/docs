@@ -242,21 +242,16 @@
     localStorage.setItem('documd-lang', normalized);
 
     // Reveal the page now that translations have been applied.
-    // The .i18n-loading class hides body via visibility:hidden to prevent
+    // The .i18n-loading class hides body via display:none to prevent
     // a flash of untranslated content.
     _d('doApplyLanguage:beforeReveal', {
       hasClass: document.documentElement.classList.contains('i18n-loading'),
-      bodyVis: getComputedStyle(document.body).visibility,
-      hideStyleExists: !!document.getElementById('i18n-hide-style')
+      bodyDisplay: document.body ? getComputedStyle(document.body).display : 'no-body'
     });
-    // Remove the aggressively-injected style first (most reliable)
-    var hideStyle = document.getElementById('i18n-hide-style');
-    if (hideStyle) hideStyle.remove();
-    // Then remove the class (fallback CSS rule)
     document.documentElement.classList.remove('i18n-loading');
     _d('doApplyLanguage:revealed', {
       htmlClass: document.documentElement.className,
-      bodyVis: getComputedStyle(document.body).visibility,
+      bodyDisplay: document.body ? getComputedStyle(document.body).display : 'no-body',
       title: document.title.substring(0,50),
       firstI18nText: (document.querySelector('[data-i18n]')||{}).textContent
     });
@@ -286,5 +281,11 @@
 
   var initial = getInitialLanguage();
   _d('bootstrap', {initial:initial, readyState:document.readyState, bodyChildCount:document.body?document.body.children.length:-1});
-  applyLanguage(initial);
+  try {
+    applyLanguage(initial);
+  } catch (e) {
+    _d('bootstrap-error', String(e));
+    // If anything fails, force-reveal the body so the page is never stuck blank.
+    document.documentElement.classList.remove('i18n-loading');
+  }
 })();

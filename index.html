@@ -71,10 +71,6 @@
         _log('preload-documentWrite-start', {file:file});
         document.write('<script src="assets/js/i18n/' + file + '.js"><\/script>');
         _log('preload-documentWrite-done', {file:file});
-        // Aggressive hiding: inject a <style> with !important directly into the
-        // parser stream so it's guaranteed to be in the CSSOM before <body> starts.
-        // Give it an id so the i18n engine can remove it atomically when done.
-        document.write('<style id="i18n-hide-style">body{display:none!important}<\/style>');
         document.documentElement.className = 'i18n-loading';
         _log('preload-classSet', {className:document.documentElement.className});
       }
@@ -83,6 +79,19 @@
     })();
   </script>
   <style>html.i18n-loading body{display:none}</style>
+  <!-- Safety net: if the i18n engine fails to load or crashes, force-show
+       the body after 5s so the page is never permanently blank. -->
+  <script>
+    (function(){
+      setTimeout(function(){
+        var stillHidden = document.documentElement.classList.contains('i18n-loading');
+        if (stillHidden) {
+          try { console.log('[I18N-SAFETY] Force-revealing body after timeout'); } catch(e) {}
+          document.documentElement.classList.remove('i18n-loading');
+        }
+      }, 5000);
+    })();
+  </script>
   <!-- Preload critical font files so they start downloading before
        the stylesheet is fully parsed, reducing FOUT (Flash of Unstyled Text). -->
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2">
@@ -218,7 +227,6 @@
   <!-- Defer the i18n engine so it downloads in parallel with HTML
        parsing and executes immediately after the DOM is ready — no
        blocking network round-trip at the end of <body>. -->
-  <script src="assets/js/homepage-i18n.js" defer></script>
   <title>docu.md — AI writes it. docu.md does the rest.</title>
   <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
@@ -1291,6 +1299,9 @@
     </div>
   </footer>
 
+  <!-- i18n engine: blocking script at end of <body> so document.body is
+       guaranteed to exist. No defer — avoids document.write race with warm cache. -->
+  <script src="assets/js/homepage-i18n.js"></script>
   <script>
     (function() {
       var btn = document.getElementById('languageBtn');
