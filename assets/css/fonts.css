@@ -1,0 +1,18 @@
+/* ===== Self-hosted Fonts ===== */
+/* Fraunces — serif, variable (wght 400–700) */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/fraunces.woff2') format('woff2');
+}
+
+/* Inter — sans-serif, variable (wght 400–800) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/inter.woff2') format('woff2');
+}
