@@ -93,7 +93,7 @@
   "Start with docu.md": "Mulai dengan docu.md",
   "The aftercare for AI-written markdown": "Yang dibutuhkan setelah AI menulis Markdown",
   "Themes": "Tema",
-  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Ubah Markdown dari AI menjadi hasil yang bisa Anda kirim, bagikan, terbitkan, atau presentasikan.",
+  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Ubah Markdown dari AI menjadi hasil yang bisa Anda kirim, bagikan, terbitkan, atau presentasikan. Bacaan yang indah, diagram yang kaya, dan output DOCX/PDF/HTML yang rapi di berbagai platform yang sudah Anda gunakan.",
   "Vector diagrams": "Diagram vektor",
   "Warm spacing and book-like type make AI drafts easier to review.": "Ruang antar elemen yang nyaman dan tipografi seperti buku membuat draf AI lebih mudah ditinjau.",
   "What you write in your editor vs. what docu.md delivers.": "Apa yang Anda tulis di editor dan apa yang dihasilkan docu.md.",
@@ -115,7 +115,7 @@
   "print": "cetak",
   "print-ready pages": "halaman siap cetak",
   "problem-copy": "ChatGPT, Claude, Copilot — hampir semua AI menghasilkan Markdown. Ini cepat, rapi, dan cocok untuk kontrol versi. Namun saat perlu dibagikan ke rekan, dikirim, atau dipresentasikan ke klien, muncul jarak. <strong>Berkas Markdown masih belum menjadi dokumen akhir.</strong>",
-  "publish": "terbit",
+  "publish": "terbitkan",
   "shareable pages": "halaman mudah dibagikan",
   "vector export": "ekspor vektor",
   "© 2026 docu.md — Open source under GPLv3.": "© 2026 docu.md — open source di bawah GPLv3."

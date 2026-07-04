@@ -98,7 +98,7 @@
   "Start with docu.md": "docu.md로 시작하기",
   "The aftercare for AI-written markdown": "AI가 쓴 Markdown 이후의 마무리 작업",
   "Themes": "테마",
-  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "AI가 만든 Markdown을 제출, 공유, 게시, 발표할 수 있는 결과물로 바꾸세요.",
+  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "AI가 만든 Markdown을 제출, 공유, 게시, 발표할 수 있는 결과물로 바꾸세요. 아름다운 읽기 경험, 풍부한 다이어그램, 정돈된 DOCX/PDF/HTML 출력을 이미 사용하는 플랫폼에서 그대로 누리세요.",
   "Vector diagrams": "벡터 다이어그램",
   "Warm spacing and book-like type make AI drafts easier to review.": "따뜻한 여백과 책 같은 활자가 AI 초안을 더 읽기 쉽게 만듭니다.",
   "Web Store": "웹 스토어",

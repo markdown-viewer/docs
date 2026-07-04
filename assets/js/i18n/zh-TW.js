@@ -51,7 +51,7 @@
   "Formal Documents": "正式文件",
   "Formulas, references, code, diagrams.": "公式、引用、程式碼與圖表。",
   "From AI output to polished document in seconds.": "幾秒鐘內，把 AI 輸出變成精緻文件。",
-  "From chat answer to client-ready file.": "從聊天回覆到客戶就緒檔案。",
+  "From chat answer to client-ready file.": "從聊天回覆到可直接交付客戶的檔案。",
   "Get Started": "開始使用",
   "How It Works": "工作流程",
   "Individual 20%": "個人 20%",

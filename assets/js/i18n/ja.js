@@ -80,7 +80,7 @@
   "Privacy": "プライバシー",
   "Privacy-first, always free": "プライバシー重視、常に無料",
   "Professional Export": "プロ向け出力",
-  "Quarterly Brief": "四半期ブリーフ",
+  "Quarterly Brief": "四半期概要",
   "Raw markdown → Polished document.": "素の Markdown → 整った文書。",
   "Reading": "読書",
   "Reading Copy": "閲覧用コピー",

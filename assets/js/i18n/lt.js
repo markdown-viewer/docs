@@ -94,7 +94,7 @@
   "Start with docu.md": "Pradėti su docu.md",
   "The aftercare for AI-written markdown": "Viskas, ko reikia po AI parašyto Markdown",
   "Themes": "Temos",
-  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Paverskite AI sugeneruotą Markdown darbu, kurį galima pateikti, išsiųsti, publikuoti ar pristatyti. Gražus skaitymas, turtingi diagramos ir tvarkingas DOCX/PDF/HTML rezultatas platformose, kurias jau naudojate.",
+  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Paverskite AI sugeneruotą Markdown darbu, kurį galima pateikti, išsiųsti, publikuoti ar pristatyti. Gražus skaitymas, turtingos diagramos ir tvarkingas DOCX/PDF/HTML rezultatas platformose, kurias jau naudojate.",
   "Vector diagrams": "Vektorinės diagramos",
   "Warm spacing and book-like type make AI drafts easier to review.": "Šilti tarpai ir knyginis šriftas palengvina AI juodraščių peržiūrą.",
   "What you write in your editor vs. what docu.md delivers.": "Ką rašote redaktoriuje ir ką pateikia docu.md.",

@@ -92,7 +92,7 @@
   "Start with docu.md": "Empieza con docu.md",
   "The aftercare for AI-written markdown": "Todo lo que hace falta después del Markdown escrito por IA",
   "Themes": "Temas",
-  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Convierte el Markdown generado por IA en trabajo que puedes entregar, compartir, publicar o presentar.",
+  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Convierte el Markdown generado por IA en trabajo que puedes entregar, compartir, publicar o presentar. Lectura agradable, diagramas ricos y una salida DOCX/PDF/HTML cuidada en las plataformas que ya usas.",
   "Vector diagrams": "Diagramas vectoriales",
   "Warm spacing and book-like type make AI drafts easier to review.": "El espaciado amable y la tipografía de libro hacen que los borradores de IA sean más fáciles de revisar.",
   "What you write in your editor vs. what docu.md delivers.": "Lo que escribes en tu editor frente a lo que entrega docu.md.",

@@ -94,7 +94,7 @@
   "Start with docu.md": "Mit docu.md starten",
   "The aftercare for AI-written markdown": "Alles, was nach AI-geschriebenem Markdown noch fehlt",
   "Themes": "Themes",
-  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Verwandeln Sie AI-generiertes Markdown in Arbeit, die Sie abgeben, versenden, veröffentlichen oder präsentieren können.",
+  "Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.": "Verwandeln Sie AI-generiertes Markdown in Arbeit, die Sie abgeben, versenden, veröffentlichen oder präsentieren können. Schönes Lesen, umfangreiche Diagramme und sauberer DOCX/PDF/HTML-Export auf den Plattformen, die Sie bereits nutzen.",
   "Vector diagrams": "Vektordiagramme",
   "Warm spacing and book-like type make AI drafts easier to review.": "Warme Abstände und buchartige Typografie machen AI-Entwürfe angenehmer zu lesen.",
   "What you write in your editor vs. what docu.md delivers.": "Was Sie im Editor schreiben und was docu.md daraus macht.",
@@ -116,7 +116,7 @@
   "print": "Druck",
   "print-ready pages": "druckfertige Seiten",
   "problem-copy": "ChatGPT, Claude und Copilot liefern meist Markdown aus. Das ist schnell, sauber und angenehm für Versionsverwaltung. Aber sobald Sie es mit Kolleginnen und Kollegen teilen, einreichen oder Kundschaft zeigen wollen, entsteht eine Lücke. <strong>Markdown-Dateien sind noch keine fertigen Dokumente.</strong>",
-  "publish": "Veröff.",
+  "publish": "Veröffentlichen",
   "shareable pages": "teilbare Seiten",
   "vector export": "Vektorexport",
   "© 2026 docu.md — Open source under GPLv3.": "© 2026 docu.md — Open Source unter GPLv3."
