@@ -24,14 +24,6 @@
        page appears in the correct language from the first paint. -->
   <script>
     (function(){
-      var _d = window.__DEBUG_LOG__ = window.__DEBUG_LOG__ || [];
-      var _t0 = performance.now();
-      function _ts() { return (performance.now() - _t0).toFixed(1); }
-      function _log(m,d) { var e={t:_ts(),msg:m,detail:d||''}; _d.push(e); try{console.log('[DBG '+e.t+'ms]',m,d||'');}catch(ex){} }
-
-      _log('preload-start', {url:location.href, navLang:navigator.language, localStorage:localStorage.getItem('documd-lang')});
-      performance.mark('preload-start');
-
       var lang = (new URLSearchParams(location.search)).get('lang')
               || localStorage.getItem('documd-lang')
               || navigator.language || '';
@@ -64,18 +56,10 @@
       else if (lower.indexOf('lt') === 0) file = 'lt';
       else if (lower.indexOf('no') === 0) file = 'no';
       else if (lower.indexOf('da') === 0) file = 'da';
-
-      _log('preload-detect', {raw:lang, lower:lower, file:file||'(none)'});
-
       if (file) {
-        _log('preload-documentWrite-start', {file:file});
         document.write('<script src="assets/js/i18n/' + file + '.js"><\/script>');
-        _log('preload-documentWrite-done', {file:file});
         document.documentElement.className = 'i18n-loading';
-        _log('preload-classSet', {className:document.documentElement.className});
       }
-      performance.mark('preload-end');
-      _log('preload-end');
     })();
   </script>
   <style>html.i18n-loading body{display:none}</style>
@@ -97,136 +81,6 @@
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2">
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="assets/css/fonts.css">
-  <!-- DEBUG: Observe body visibility, dimensions, paint timing, font status,
-       and html class changes throughout the entire loading sequence. -->
-  <script>
-    (function(){
-      var _d = window.__DEBUG_LOG__ = window.__DEBUG_LOG__ || [];
-      var _t0 = performance.now();
-      function _ts() { return (performance.now() - _t0).toFixed(1); }
-      function _log(m,d) { var e={t:_ts(),msg:m,detail:d||''}; _d.push(e); try{console.log('[DBG '+e.t+'ms]',m,d||'');}catch(ex){} }
-
-      function _bodySnapshot(label) {
-        var b = document.body;
-        if (!b) { _log(label+':body-missing'); return; }
-        var cs = window.getComputedStyle(b);
-        // Pick first 3 [data-i18n] elements to check if translated
-        var i18nEls = b.querySelectorAll('[data-i18n]');
-        var samples = [];
-        for (var i = 0; i < Math.min(3, i18nEls.length); i++) {
-          samples.push(i18nEls[i].textContent.substring(0,40));
-        }
-        _log(label, {
-          htmlClass: document.documentElement.className,
-          bodyVis: cs.visibility,
-          bodyW: b.offsetWidth,
-          bodyH: b.offsetHeight,
-          bodyKids: b.children.length,
-          i18nSamples: samples,
-          title: document.title.substring(0,50)
-        });
-      }
-
-      _log('observer-init', {htmlClass:document.documentElement.className});
-
-      // --- Poll body existence with rAF ---
-      var _bodyPollRaf;
-      function _pollBody() {
-        if (document.body) {
-          _log('body-in-dom');
-          _bodySnapshot('body-in-dom');
-          return;
-        }
-        _bodyPollRaf = requestAnimationFrame(_pollBody);
-      }
-      _bodyPollRaf = requestAnimationFrame(_pollBody);
-
-      // --- Watch html class changes (i18n-loading add/remove) ---
-      try {
-        var _classObs = new MutationObserver(function(mutations) {
-          mutations.forEach(function(m) {
-            if (m.attributeName === 'class') {
-              _log('html-class-mutation', {
-                old: m.oldValue,
-                new: document.documentElement.className
-              });
-              _bodySnapshot('after-class-change');
-            }
-          });
-        });
-        _classObs.observe(document.documentElement, {
-          attributes: true,
-          attributeFilter: ['class'],
-          attributeOldValue: true
-        });
-      } catch(e) { _log('class-observer-error', String(e)); }
-
-      // --- Paint timing (first-paint, first-contentful-paint) ---
-      try {
-        var _paintObs = new PerformanceObserver(function(list) {
-          list.getEntries().forEach(function(e) {
-            _log('paint-event', {name:e.name, startTime:e.startTime.toFixed(1)});
-            _bodySnapshot('after-'+e.name.replace(/\s+/g,'-'));
-          });
-        });
-        _paintObs.observe({ type: 'paint', buffered: true });
-      } catch(e) { _log('paint-observer-error', String(e)); }
-
-      // --- Font loading status ---
-      try {
-        if (document.fonts) {
-          if (document.fonts.status === 'loaded') {
-            _log('fonts-already-loaded');
-          } else {
-            _log('fonts-status', {status: document.fonts.status});
-          }
-          document.fonts.ready.then(function() {
-            _log('fonts-ready');
-            _bodySnapshot('after-fonts-ready');
-          });
-          try {
-            document.fonts.forEach(function(f) {
-              _log('font-status', {family:f.family, status:f.status});
-            });
-          } catch(e) {}
-        }
-      } catch(e) { _log('fonts-api-error', String(e)); }
-
-      // --- DOMContentLoaded ---
-      document.addEventListener('DOMContentLoaded', function() {
-        _log('DOMContentLoaded');
-        _bodySnapshot('after-DOMContentLoaded');
-      });
-
-      // --- window.load ---
-      window.addEventListener('load', function() {
-        _log('window-load');
-        _bodySnapshot('after-window-load');
-      });
-
-      // --- Periodic samples during early loading (every 30ms for 1.5s) ---
-      var _sampleN = 0;
-      var _sampleTimer = setInterval(function() {
-        _sampleN++;
-        _log('sample-'+_sampleN);
-        _bodySnapshot('sample-'+_sampleN);
-        if (_sampleN >= 50) clearInterval(_sampleTimer);
-      }, 30);
-
-      // --- Expose dump helper ---
-      window.__DEBUG_DUMP__ = function() {
-        console.group('DEBUG LOG (' + _d.length + ' entries, span ' + (_d.length?_d[_d.length-1].t:'0') + 'ms)');
-        _d.forEach(function(e) {
-          console.log(e.t + 'ms', e.msg, e.detail);
-        });
-        console.groupEnd();
-        return _d;
-      };
-    })();
-  </script>
-  <!-- Defer the i18n engine so it downloads in parallel with HTML
-       parsing and executes immediately after the DOM is ready — no
-       blocking network round-trip at the end of <body>. -->
   <title>docu.md — AI writes it. docu.md does the rest.</title>
   <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">

@@ -1,14 +1,6 @@
 (function () {
-  var _dlog = window.__DEBUG_LOG__;
-  var _t0 = performance.now();
-  function _ts() { return (performance.now() - _t0).toFixed(1); }
-  function _d(m,d) { if(_dlog) _dlog.push({t:_ts(),msg:'i18n:'+m,detail:d||''}); try{console.log('[I18N '+_ts()+'ms]',m,d||'');}catch(ex){} }
-
-  _d('script-start', {readyState:document.readyState, hasBody:!!document.body, htmlClass:document.documentElement.className});
-  performance.mark('i18n-script-start');
-
   var config = window.DOCUMD_HOMEPAGE_I18N;
-  if (!config) { _d('no-config-exit'); return; }
+  if (!config) return;
 
   // pageMeta and translations are mutated by per-language IIFEs —
   // they share the same object references created by common.js
@@ -23,13 +15,6 @@
   var originalText = new WeakMap();
   var metaDescription = document.querySelector('meta[name="description"]');
   var languageSelect = document.getElementById('languageSelect');
-
-  _d('config-loaded', {
-    hasPageMetaEn: !!pageMeta['en'],
-    transKeys: Object.keys(translations),
-    hasLangSelect: !!languageSelect,
-    hasMetaDesc: !!metaDescription
-  });
 
   /* ---------- language detection ---------- */
 
@@ -70,25 +55,20 @@
 
   function getInitialLanguage() {
     var params = new URLSearchParams(window.location.search);
-    var result = normalizeLanguage(params.get('lang') || localStorage.getItem('documd-lang') || navigator.language);
-    _d('getInitialLanguage', {raw:params.get('lang')||localStorage.getItem('documd-lang')||navigator.language, normalized:result});
-    return result;
+    return normalizeLanguage(params.get('lang') || localStorage.getItem('documd-lang') || navigator.language);
   }
 
   /* ---------- lazy loading ---------- */
 
   function loadLanguage(lang, callback) {
-    _d('loadLanguage', {lang:lang, alreadyLoaded:!!loaded[lang], hasTranslations:!!translations[lang]});
-    if (loaded[lang]) { _d('loadLanguage:cached', lang); callback(); return; }
+    if (loaded[lang]) { callback(); return; }
     // If translations were already loaded (e.g. sync-preloaded in <head>),
     // skip the network request and callback immediately.
     if (translations[lang]) {
-      _d('loadLanguage:preloaded', {lang:lang, keyCount:Object.keys(translations[lang]).length});
       loaded[lang] = true;
       callback();
       return;
     }
-    _d('loadLanguage:fetch', {lang:lang, url:I18N_BASE+lang+'.js'});
     if (loadCallbacks[lang]) { loadCallbacks[lang].push(callback); return; }
 
     loadCallbacks[lang] = [callback];
@@ -214,14 +194,6 @@
   /* ---------- apply ---------- */
 
   function doApplyLanguage(normalized) {
-    _d('doApplyLanguage:start', {
-      normalized:normalized,
-      htmlClassBefore: document.documentElement.className,
-      bodyVis: document.body ? getComputedStyle(document.body).visibility : 'no-body',
-      i18nElCount: document.querySelectorAll('[data-i18n]').length
-    });
-    performance.mark('i18n-doApply-start');
-
     var meta = pageMeta[normalized] || pageMeta['en'];
     document.documentElement.lang = meta ? meta.lang : 'en';
     document.title = meta ? meta.title : document.title;
@@ -229,10 +201,7 @@
     if (languageSelect) languageSelect.value = normalized;
 
     translateMarkedNodes(normalized);
-    _d('doApplyLanguage:markedDone');
-
     translateTextNodes(normalized);
-    _d('doApplyLanguage:textDone');
 
     if (languageSelect) {
       var languageLabel = getLanguageLabel(normalized);
@@ -244,18 +213,7 @@
     // Reveal the page now that translations have been applied.
     // The .i18n-loading class hides body via display:none to prevent
     // a flash of untranslated content.
-    _d('doApplyLanguage:beforeReveal', {
-      hasClass: document.documentElement.classList.contains('i18n-loading'),
-      bodyDisplay: document.body ? getComputedStyle(document.body).display : 'no-body'
-    });
     document.documentElement.classList.remove('i18n-loading');
-    _d('doApplyLanguage:revealed', {
-      htmlClass: document.documentElement.className,
-      bodyDisplay: document.body ? getComputedStyle(document.body).display : 'no-body',
-      title: document.title.substring(0,50),
-      firstI18nText: (document.querySelector('[data-i18n]')||{}).textContent
-    });
-    performance.mark('i18n-doApply-end');
     // Notify other components (e.g. custom language dropdown)
     try {
       document.dispatchEvent(new CustomEvent('documd-language-applied', { detail: { language: normalized } }));
@@ -263,9 +221,7 @@
   }
 
   function applyLanguage(language) {
-    _d('applyLanguage', {language:language});
     ensureLanguages(language, function () {
-      _d('applyLanguage:callback', {language:language, normalized:normalizeLanguage(language)});
       doApplyLanguage(normalizeLanguage(language));
     });
   }
@@ -274,17 +230,14 @@
 
   if (languageSelect) {
     languageSelect.addEventListener('change', function (event) {
-      _d('languageSelect:change', event.target.value);
       applyLanguage(event.target.value);
     });
   }
 
   var initial = getInitialLanguage();
-  _d('bootstrap', {initial:initial, readyState:document.readyState, bodyChildCount:document.body?document.body.children.length:-1});
   try {
     applyLanguage(initial);
   } catch (e) {
-    _d('bootstrap-error', String(e));
     // If anything fails, force-reveal the body so the page is never stuck blank.
     document.documentElement.classList.remove('i18n-loading');
   }
