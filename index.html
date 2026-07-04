@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Initialize the i18n config early so translation files loaded below
+       can populate it. -->
+  <script>
+    // Inlined from common.js — too small to warrant a separate request.
+    (function(){
+      var root = window.DOCUMD_HOMEPAGE_I18N = window.DOCUMD_HOMEPAGE_I18N || {};
+      root.supported = ["en","zh-CN","zh-TW","ru","ja","hi","ko","de","pt-BR","pt-PT","nl","uk","vi","be","fr","it","id","es","th","sv","tr","et","ms","pl","fi","lt","no","da"];
+      root.fallbackLocales = {};
+      root.pageMeta = root.pageMeta || {};
+      root.translations = root.translations || {};
+      root.pageMeta["en"] = {
+        "lang": "en",
+        "title": "docu.md — AI writes it. docu.md does the rest.",
+        "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support."
+      };
+    })();
+  </script>
   <!-- Sync-preload the translation file before <body> renders, so the
        page appears in the correct language from the first paint. -->
   <script>
@@ -44,13 +63,19 @@
     })();
   </script>
   <style>html.i18n-loading body{visibility:hidden}</style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Preload critical font files so they start downloading before
+       the stylesheet is fully parsed, reducing FOUT (Flash of Unstyled Text). -->
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <!-- Defer the i18n engine so it downloads in parallel with HTML
+       parsing and executes immediately after the DOM is ready — no
+       blocking network round-trip at the end of <body>. -->
+  <script src="assets/js/homepage-i18n.js" defer></script>
   <title>docu.md — AI writes it. docu.md does the rest.</title>
   <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="icon" type="image/png" sizes="128x128" href="assets/images/logo.png">
-  <link rel="stylesheet" href="assets/css/fonts.css">
   <style>
     /* ===== Reset & Variables ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1119,22 +1144,6 @@
     </div>
   </footer>
 
-  <script>
-    // Inlined from common.js — too small to warrant a separate request.
-    (function(){
-      var root = window.DOCUMD_HOMEPAGE_I18N = window.DOCUMD_HOMEPAGE_I18N || {};
-      root.supported = ["en","zh-CN","zh-TW","ru","ja","hi","ko","de","pt-BR","pt-PT","nl","uk","vi","be","fr","it","id","es","th","sv","tr","et","ms","pl","fi","lt","no","da"];
-      root.fallbackLocales = {};
-      root.pageMeta = root.pageMeta || {};
-      root.translations = root.translations || {};
-      root.pageMeta["en"] = {
-        "lang": "en",
-        "title": "docu.md — AI writes it. docu.md does the rest.",
-        "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support."
-      };
-    })();
-  </script>
-  <script src="assets/js/homepage-i18n.js"></script>
   <script>
     (function() {
       var btn = document.getElementById('languageBtn');
