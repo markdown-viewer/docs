@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Sync-preload the translation file before <body> renders, so the
+       page appears in the correct language from the first paint. -->
+  <script>
+    (function(){
+      var lang = (new URLSearchParams(location.search)).get('lang')
+              || localStorage.getItem('documd-lang')
+              || navigator.language || '';
+      var lower = lang.toLowerCase();
+      var file = null;
+      if (lower.indexOf('zh') === 0) {
+        file = (lower.indexOf('tw') >= 0 || lower.indexOf('hk') >= 0 || lower.indexOf('hant') >= 0) ? 'zh-TW' : 'zh-CN';
+      } else if (lower.indexOf('ru') === 0) file = 'ru';
+      else if (lower.indexOf('ja') === 0) file = 'ja';
+      else if (lower.indexOf('hi') === 0) file = 'hi';
+      else if (lower.indexOf('ko') === 0) file = 'ko';
+      else if (lower.indexOf('de') === 0) file = 'de';
+      else if (lower.indexOf('pt-br') === 0) file = 'pt-BR';
+      else if (lower.indexOf('pt-pt') === 0 || lower === 'pt') file = 'pt-PT';
+      else if (lower.indexOf('nl') === 0) file = 'nl';
+      else if (lower.indexOf('uk') === 0) file = 'uk';
+      else if (lower.indexOf('vi') === 0) file = 'vi';
+      else if (lower.indexOf('be') === 0) file = 'be';
+      else if (lower.indexOf('fr') === 0) file = 'fr';
+      else if (lower.indexOf('it') === 0) file = 'it';
+      else if (lower.indexOf('id') === 0) file = 'id';
+      else if (lower.indexOf('es') === 0) file = 'es';
+      else if (lower.indexOf('th') === 0) file = 'th';
+      else if (lower.indexOf('sv') === 0) file = 'sv';
+      else if (lower.indexOf('tr') === 0) file = 'tr';
+      else if (lower.indexOf('et') === 0) file = 'et';
+      else if (lower.indexOf('ms') === 0) file = 'ms';
+      else if (lower.indexOf('pl') === 0) file = 'pl';
+      else if (lower.indexOf('fi') === 0) file = 'fi';
+      else if (lower.indexOf('lt') === 0) file = 'lt';
+      else if (lower.indexOf('no') === 0) file = 'no';
+      else if (lower.indexOf('da') === 0) file = 'da';
+      if (file) {
+        document.write('<script src="assets/js/i18n/' + file + '.js"><\/script>');
+        document.documentElement.className = 'i18n-loading';
+      }
+    })();
+  </script>
+  <style>html.i18n-loading body{visibility:hidden}</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>docu.md — AI writes it. docu.md does the rest.</title>
@@ -1076,7 +1119,21 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n/common.js"></script>
+  <script>
+    // Inlined from common.js — too small to warrant a separate request.
+    (function(){
+      var root = window.DOCUMD_HOMEPAGE_I18N = window.DOCUMD_HOMEPAGE_I18N || {};
+      root.supported = ["en","zh-CN","zh-TW","ru","ja","hi","ko","de","pt-BR","pt-PT","nl","uk","vi","be","fr","it","id","es","th","sv","tr","et","ms","pl","fi","lt","no","da"];
+      root.fallbackLocales = {};
+      root.pageMeta = root.pageMeta || {};
+      root.translations = root.translations || {};
+      root.pageMeta["en"] = {
+        "lang": "en",
+        "title": "docu.md — AI writes it. docu.md does the rest.",
+        "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support."
+      };
+    })();
+  </script>
   <script src="assets/js/homepage-i18n.js"></script>
   <script>
     (function() {

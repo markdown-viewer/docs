@@ -62,6 +62,13 @@
 
   function loadLanguage(lang, callback) {
     if (loaded[lang]) { callback(); return; }
+    // If translations were already loaded (e.g. sync-preloaded in <head>),
+    // skip the network request and callback immediately.
+    if (translations[lang]) {
+      loaded[lang] = true;
+      callback();
+      return;
+    }
     if (loadCallbacks[lang]) { loadCallbacks[lang].push(callback); return; }
 
     loadCallbacks[lang] = [callback];
@@ -87,15 +94,15 @@
   }
 
   function ensureLanguages(language, callback) {
-    // 'en' is always needed for pageMeta fallback
+    // English pageMeta is already embedded in common.js.
+    // No extra file is needed for English — callback immediately.
+    // For other languages, load the target locale file directly.
     var normalized = normalizeLanguage(language);
-    loadLanguage('en', function () {
-      if (normalized !== 'en') {
-        loadLanguage(normalized, callback);
-      } else {
-        callback();
-      }
-    });
+    if (normalized === 'en') {
+      callback();
+    } else {
+      loadLanguage(normalized, callback);
+    }
   }
 
   /* ---------- translation ---------- */
@@ -200,6 +207,10 @@
       languageSelect.setAttribute('title', languageLabel);
     }
     localStorage.setItem('documd-lang', normalized);
+    // Reveal the page now that translations have been applied.
+    // The .i18n-loading class hides body via visibility:hidden to prevent
+    // a flash of untranslated content.
+    document.documentElement.classList.remove('i18n-loading');
     // Notify other components (e.g. custom language dropdown)
     try {
       document.dispatchEvent(new CustomEvent('documd-language-applied', { detail: { language: normalized } }));

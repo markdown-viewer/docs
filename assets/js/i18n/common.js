@@ -4,4 +4,11 @@
   root.fallbackLocales = {};
   root.pageMeta = root.pageMeta || {};
   root.translations = root.translations || {};
+  // English pageMeta is embedded directly so en.js is never required
+  // at startup — avoids an extra network round-trip for every language.
+  root.pageMeta["en"] = {
+    "lang": "en",
+    "title": "docu.md — AI writes it. docu.md does the rest.",
+    "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support."
+  };
 })();
