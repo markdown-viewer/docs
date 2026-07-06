@@ -8,6 +8,7 @@
   "description": "AI создаёт Markdown, а docu.md берёт на себя предпросмотр, оформление, диаграммы и экспорт в DOCX/PDF/HTML."
 };
   root.translations["ru"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Перенесите эти диаграммы в свой ИИ-агент для кода — установите навыки docu.md одной командой.",
   "100+ Language Highlighting": "Подсветка 100+ языков",
   "29 Professional Themes": "29 профессиональных тем",
   "7 diagram engines, zero configuration.": "7 движков диаграмм, ноль настройки.",

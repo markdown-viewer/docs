@@ -8,6 +8,7 @@
   "description": "Trasforma il Markdown generato dall’IA in qualcosa che puoi consegnare, condividere, pubblicare o presentare."
 };
   root.translations["it"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Porta questi diagrammi nel tuo agente di programmazione IA: installa le skill di docu.md con un solo comando.",
   "100+ Language Highlighting": "Evidenziazione per oltre 100 linguaggi",
   "29 Professional Themes": "29 temi professionali",
   "7 diagram engines, zero configuration.": "7 motori di diagrammi, zero configurazione.",

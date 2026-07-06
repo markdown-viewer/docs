@@ -8,6 +8,7 @@
   "description": "Turn AI-generated markdown into professional documents."
 };
   root.translations["be"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Перанясіце гэтыя дыяграмы ў свой ІІ-агент для кода — усталюйце навыкі docu.md адной камандай.",
   "100+ Language Highlighting": "Падсвятленне 100+ моў",
   "29 Professional Themes": "29 прафесійных тэм",
   "7 diagram engines, zero configuration.": "7 рухавікоў дыяграм, нуль налад.",

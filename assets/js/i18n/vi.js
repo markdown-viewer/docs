@@ -8,6 +8,7 @@
   "description": "Biến Markdown do AI tạo ra thành thứ bạn có thể nộp, gửi, xuất bản hoặc trình bày."
 };
   root.translations["vi"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Đưa các sơ đồ này vào trợ lý lập trình AI của bạn — cài đặt kỹ năng docu.md chỉ với một lệnh.",
   "100+ Language Highlighting": "Tô sáng cho hơn 100 ngôn ngữ",
   "29 Professional Themes": "29 chủ đề chuyên nghiệp",
   "7 diagram engines, zero configuration.": "7 bộ máy sơ đồ, không cần cấu hình.",

@@ -8,6 +8,7 @@
   "description": "AI が生成した Markdown を、docu.md がプレビュー、整形、図表表示、DOCX/PDF/HTML 出力まで支えます。"
 };
   root.translations["ja"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "これらの図をあなたの AI コーディングエージェントへ ── コマンド一つで docu.md スキルをインストール。",
   "100+ Language Highlighting": "100 以上の言語ハイライト",
   "29 Professional Themes": "29 種類のテーマ",
   "7 diagram engines, zero configuration.": "7 つの図表エンジン、設定不要。",

@@ -8,6 +8,7 @@
   "description": "Ubah Markdown dari AI menjadi hasil yang bisa Anda kirim, bagikan, terbitkan, atau presentasikan."
 };
   root.translations["id"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Bawa diagram-diagram ini ke agen coding AI Anda — pasang skill docu.md dengan satu perintah.",
   "100+ Language Highlighting": "Sorotan untuk 100+ bahasa",
   "29 Professional Themes": "29 tema profesional",
   "7 diagram engines, zero configuration.": "7 mesin diagram, tanpa konfigurasi.",

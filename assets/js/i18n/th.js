@@ -8,6 +8,7 @@
   "description": "เปลี่ยน Markdown ที่สร้างโดย AI ให้กลายเป็นงานที่คุณสามารถส่งต่อ เผยแพร่ นำเสนอ หรือใช้งานจริงได้ พร้อมการอ่านที่สวยงาม ไดอะแกรมที่ครบ และผลลัพธ์ DOCX/PDF/HTML ที่เรียบร้อยบนแพลตฟอร์มที่คุณใช้อยู่แล้ว"
 };
   root.translations["th"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "นำไดอะแกรมเหล่านี้ไปยัง AI ผู้ช่วยเขียนโค้ดของคุณ — ติดตั้งสกิล docu.md ด้วยคำสั่งเดียว",
   "100+ Language Highlighting": "ไฮไลต์โค้ดมากกว่า 100 ภาษา",
   "29 Professional Themes": "29 ธีมระดับมืออาชีพ",
   "7 diagram engines, zero configuration.": "ไดอะแกรม 7 เอนจิน ไม่ต้องตั้งค่า",

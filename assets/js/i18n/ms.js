@@ -8,6 +8,7 @@
   "description": "Turn AI-generated markdown into professional documents."
 };
   root.translations["ms"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Bawa gambar rajah ini ke ejen pengekodan AI anda — pasang skil docu.md dengan satu arahan.",
   "100+ Language Highlighting": "Sorotan 100+ bahasa",
   "29 Professional Themes": "29 tema profesional",
   "7 diagram engines, zero configuration.": "7 enjin rajah, tanpa konfigurasi.",

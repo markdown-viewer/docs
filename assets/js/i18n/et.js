@@ -8,6 +8,7 @@
   "description": "Muuda AI loodud Markdown tööks, mida saad esitada, saata, avaldada või näidata. Kaunis lugemiskogemus, rikkalikud diagrammid ja viimistletud DOCX/PDF/HTML-väljund kõigil juba kasutatavatel platvormidel."
 };
   root.translations["et"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Too need diagrammid oma AI-kodeerimisagenti — paigalda docu.md oskused ühe käsuga.",
   "100+ Language Highlighting": "100+ keele süntaksitõstmine",
   "29 Professional Themes": "29 professionaalset teemat",
   "7 diagram engines, zero configuration.": "7 diagrammimootorit, null seadistust.",

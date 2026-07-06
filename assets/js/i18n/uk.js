@@ -8,6 +8,7 @@
   "description": "Перетворюйте Markdown від AI на матеріали, які можна здати, надіслати, опублікувати чи представити."
 };
   root.translations["uk"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Перенесіть ці діаграми у свій ШІ-агент для коду — установіть навички docu.md однією командою.",
   "100+ Language Highlighting": "Підсвічування 100+ мов",
   "29 Professional Themes": "29 професійних тем",
   "7 diagram engines, zero configuration.": "7 рушіїв діаграм, жодних налаштувань.",

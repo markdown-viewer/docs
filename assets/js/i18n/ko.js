@@ -8,6 +8,7 @@
   "description": "AI가 만든 Markdown을 docu.md가 미리보기, 정리, 다이어그램 렌더링, DOCX/PDF/HTML 출력까지 이어줍니다."
 };
   root.translations["ko"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "이 다이어그램을 AI 코딩 에이전트로 — 명령어 한 줄로 docu.md 스킬을 설치하세요.",
   "100+ Language Highlighting": "100개 이상 언어 하이라이팅",
   "29 Professional Themes": "29가지 전문 테마",
   "7 diagram engines, zero configuration.": "7개 다이어그램 엔진, 설정은 필요 없습니다.",

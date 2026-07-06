@@ -8,6 +8,7 @@
   "description": "Turn AI-generated markdown into professional documents."
 };
   root.translations["da"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Tag disse diagrammer med til din AI-kodeagent — installer docu.md-færdigheder med én kommando.",
   "100+ Language Highlighting": "Syntaksfremhævning for 100+ sprog",
   "29 Professional Themes": "29 professionelle temaer",
   "7 diagram engines, zero configuration.": "7 diagrammotorer, ingen konfiguration.",

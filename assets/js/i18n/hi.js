@@ -8,6 +8,7 @@
   "description": "AI Markdown बनाता है, और docu.md प्रीव्यू, फॉर्मैटिंग, चार्ट रेंडरिंग और DOCX/PDF/HTML निर्यात संभालता है।"
 };
   root.translations["hi"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "इन डायग्राम को अपने AI कोडिंग एजेंट तक लाएँ — एक ही कमांड से docu.md स्किल्स इंस्टॉल करें।",
   "100+ Language Highlighting": "100+ भाषाओं की highlighting",
   "29 Professional Themes": "29 प्रोफ़ेशनल themes",
   "7 diagram engines, zero configuration.": "7 diagram engines, बिना configuration।",

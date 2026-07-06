@@ -8,6 +8,7 @@
   "description": "Yapay zekânın ürettiği Markdown’u teslim edebileceğiniz, paylaşabileceğiniz, yayımlayabileceğiniz veya sunabileceğiniz işe dönüştürün. Güzel okuma deneyimi, zengin diyagramlar ve kullandığınız platformlarda özenli DOCX/PDF/HTML çıktıları."
 };
   root.translations["tr"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Bu diyagramları yapay zekâ kodlama aracınıza taşıyın — docu.md yeteneklerini tek komutla kurun.",
   "100+ Language Highlighting": "100+ dil için sözdizimi renklendirme",
   "29 Professional Themes": "29 profesyonel tema",
   "7 diagram engines, zero configuration.": "7 diyagram motoru, sıfır yapılandırma.",

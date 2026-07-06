@@ -8,6 +8,7 @@
   "description": "AI 生成 Markdown，docu.md 负责预览、排版、图表渲染，并导出 DOCX/PDF/HTML。跨平台、支持丰富图表。"
 };
   root.translations["zh-CN"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "把这些图表带进你的 AI 编程助手 —— 一条命令安装 docu.md 技能。",
   "100+ Language Highlighting": "100+ 语言高亮",
   "29 Professional Themes": "29 套专业主题",
   "7 diagram engines, zero configuration.": "7 种图表引擎，零配置。",

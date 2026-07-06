@@ -8,6 +8,7 @@
   "description": "Maak van AI-gegenereerde Markdown werk dat je kunt inleveren, delen, publiceren of presenteren."
 };
   root.translations["nl"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Breng deze diagrammen naar je AI-codingagent — installeer docu.md-skills met één commando.",
   "100+ Language Highlighting": "Highlighting voor 100+ talen",
   "29 Professional Themes": "29 professionele thema’s",
   "7 diagram engines, zero configuration.": "7 diagram-engines, geen configuratie nodig.",

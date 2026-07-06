@@ -8,6 +8,7 @@
   "description": "Förvandla AI-genererad Markdown till arbete du kan lämna in, skicka, publicera eller presentera. Vacker läsning, rika diagram och polerad DOCX/PDF/HTML-utdata på plattformarna du redan använder."
 };
   root.translations["sv"] = {
+  "Bring these diagrams to your AI coding agent — install docu.md skills with one command.": "Ta med dessa diagram till din AI-kodningsagent — installera docu.md-färdigheter med ett enda kommando.",
   "100+ Language Highlighting": "Kodmarkering för 100+ språk",
   "29 Professional Themes": "29 professionella teman",
   "7 diagram engines, zero configuration.": "7 diagrammotorer, ingen konfiguration.",
