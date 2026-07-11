@@ -326,7 +326,7 @@ R: Use blocos de código ````vega-lite` no Markdown, com conteúdo em formato JS
 
 ## 📜 Licença open source
 
-Este projeto é open source sob licença ISC. Bem-vindas Estrelas de suporte, relatar problemas, sugestões, contribuições de código.
+Este projeto é open source sob licença GPLv3. Bem-vindas Estrelas de suporte, relatar problemas, sugestões, contribuições de código.
 
 **Endereço do projeto:** https://github.com/markdown-viewer/markdown-viewer-extension
 

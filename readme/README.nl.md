@@ -326,7 +326,7 @@ A: Gebruik ````vega-lite` codeblok in Markdown met JSON-formaat grafiekspecifica
 
 ## 📜 Open-sourcelicentie
 
-Dit project is open source onder ISC-licentie. Welkom om te sterren, problemen te melden, functies voor te stellen en code bij te dragen.
+Dit project is open source onder GPLv3-licentie. Welkom om te sterren, problemen te melden, functies voor te stellen en code bij te dragen.
 
 **Project-URL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

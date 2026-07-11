@@ -37,6 +37,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX su redaguojamomis lygtimis, PDF su nepriekaištingu išdėstymu arba savarankiškas HTML. Vienas spustelėjimas.",
   "Deliver": "Pristatyti",
   "Deliverables": "Pristatomi rezultatai",
+  "Diagram exports": "Diagramų eksportas",
   "Diagrams": "Diagramos",
   "Docs": "Dokumentacija",
   "Draft": "Juodraštis",

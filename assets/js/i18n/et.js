@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX muudetavate valemitega, PDF täiusliku küljendusega või iseseisev HTML. Üks klõps.",
   "Deliver": "Edasta",
   "Deliverables": "Väljundid",
+  "Diagram exports": "Diagrammide eksport",
   "Diagrams": "Diagrammid",
   "Docs": "Dokumendid",
   "Draft": "Mustand",

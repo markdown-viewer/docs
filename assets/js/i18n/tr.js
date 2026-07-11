@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "Düzenlenebilir denklemler içeren DOCX, kusursuz yerleşimli PDF veya bağımsız HTML. Tek tık.",
   "Deliver": "Teslim et",
   "Deliverables": "Teslim çıktıları",
+  "Diagram exports": "Diyagram dışa aktarımları",
   "Diagrams": "Diyagramlar",
   "Docs": "Dokümanlar",
   "Draft": "Taslak",

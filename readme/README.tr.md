@@ -326,7 +326,7 @@ C: Markdown'da ````vega-lite` kod bloğunu JSON biçimli grafik spesifikasyonu i
 
 ## 📜 Açık Kaynak Lisansı
 
-Bu proje ISC lisansı altında açık kaynaktır. Yıldız vermeniz, sorun bildirmeniz, özellik önermeniz ve kod katkısında bulunmanız için bekliyoruz.
+Bu proje GPLv3 lisansı altında açık kaynaktır. Yıldız vermeniz, sorun bildirmeniz, özellik önermeniz ve kod katkısında bulunmanız için bekliyoruz.
 
 **Proje URL'si:** https://github.com/markdown-viewer/markdown-viewer-extension
 

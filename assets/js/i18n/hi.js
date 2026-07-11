@@ -37,6 +37,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "Editable equations वाला DOCX, सही layout वाला PDF, या self-contained HTML। एक क्लिक।",
   "Deliver": "डिलीवर",
   "Deliverables": "आउटपुट",
+  "Diagram exports": "आरेख निर्यात",
   "Diagrams": "आरेख",
   "Docs": "दस्तावेज़",
   "Draft": "ड्राफ्ट",

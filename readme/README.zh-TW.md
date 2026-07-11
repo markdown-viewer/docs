@@ -326,7 +326,7 @@ A: A: 在 Markdown 中使用 ````vega-lite` 程式碼區塊，內容為 JSON 格
 
 ## 📜 開源協定
 
-本專案採用 ISC 協定開源。歡迎 Star 支援、回報問題、提出建議、貢獻程式碼。
+本專案採用 GPLv3 協定開源。歡迎 Star 支援、回報問題、提出建議、貢獻程式碼。
 
 **專案位址：** https://github.com/markdown-viewer/markdown-viewer-extension
 

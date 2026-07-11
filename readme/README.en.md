@@ -326,7 +326,7 @@ A: Use ````vega-lite` code block in Markdown with JSON format chart specificatio
 
 ## 📜 Open Source License
 
-This project is open source under ISC license. Welcome to Star, report issues, suggest features, and contribute code.
+This project is open source under the GPLv3 license. Welcome to Star, report issues, suggest features, and contribute code.
 
 **Project URL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

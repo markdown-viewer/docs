@@ -326,7 +326,7 @@ A: Markdownで````vega-lite`コードブロックを使用し、JSON形式のチ
 
 ## 📜 オープンソースライセンス
 
-このプロジェクトはISCライセンスの下でオープンソースです。Starの歓迎、問題報告、機能提案、コード貢献。
+このプロジェクトはGPLv3ライセンスの下でオープンソースです。Starの歓迎、問題報告、機能提案、コード貢献。
 
 **プロジェクトURL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX với công thức có thể chỉnh sửa, PDF bố cục chuẩn, hoặc HTML độc lập. Chỉ một cú nhấp.",
   "Deliver": "Bàn giao",
   "Deliverables": "Đầu ra bàn giao",
+  "Diagram exports": "Xuất sơ đồ",
   "Diagrams": "Sơ đồ",
   "Docs": "Tài liệu",
   "Draft": "Bản nháp",

@@ -326,7 +326,7 @@ A: Utilisez un bloc de code ````vega-lite` dans Markdown avec spécification de 
 
 ## 📜 Licence Open Source
 
-Ce projet est open source sous licence ISC. Bienvenue pour Star, signaler des problèmes, suggérer des fonctionnalités et contribuer au code.
+Ce projet est open source sous licence GPLv3. Bienvenue pour Star, signaler des problèmes, suggérer des fonctionnalités et contribuer au code.
 
 **URL du projet:** https://github.com/markdown-viewer/markdown-viewer-extension
 

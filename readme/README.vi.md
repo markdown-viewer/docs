@@ -326,7 +326,7 @@ English · 简体中文 · 繁體中文 · Русский · 日本語 · हि
 
 ## 📜 Giấy phép mã nguồn mở
 
-Dự án này là mã nguồn mở theo giấy phép ISC. Hoan nghênh Star hỗ trợ, báo cáo vấn đề, đề xuất tính năng, đóng góp mã.
+Dự án này là mã nguồn mở theo giấy phép GPLv3. Hoan nghênh Star hỗ trợ, báo cáo vấn đề, đề xuất tính năng, đóng góp mã.
 
 **Địa chỉ dự án:** https://github.com/markdown-viewer/markdown-viewer-extension
 

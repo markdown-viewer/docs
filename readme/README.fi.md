@@ -326,7 +326,7 @@ A: Käytä ````vega-lite` koodilohkoa Markdownissa JSON-muotoisella kaaviomäär
 
 ## 📜 Avoimen lähdekoodin lisenssi
 
-Tämä projekti on avoimen lähdekoodin ISC-lisenssillä. Tervetuloa antamaan tähti, ilmoittamaan ongelmista, ehdottamaan ominaisuuksia ja osallistumaan koodiin.
+Tämä projekti on avoimen lähdekoodin GPLv3-lisenssillä. Tervetuloa antamaan tähti, ilmoittamaan ongelmista, ehdottamaan ominaisuuksia ja osallistumaan koodiin.
 
 **Projektin URL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

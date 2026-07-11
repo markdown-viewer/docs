@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX muokattavilla yhtälöillä, PDF täydellisellä asettelulla tai itsenäinen HTML. Yksi napsautus.",
   "Deliver": "Toimita",
   "Deliverables": "Toimitettavat",
+  "Diagram exports": "Kaavioviennit",
   "Diagrams": "Kaaviot",
   "Docs": "Dokumentaatio",
   "Draft": "Luonnos",

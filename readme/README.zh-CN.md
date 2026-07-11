@@ -326,7 +326,7 @@ A: 在 Markdown 中使用 ````vega-lite` 代码块，内容为 JSON 格式的图
 
 ## 📜 开源协议
 
-本项目采用 ISC 协议开源。欢迎 Star 支持、报告问题、提出建议、贡献代码。
+本项目采用 GPLv3 协议开源。欢迎 Star 支持、报告问题、提出建议、贡献代码。
 
 **项目地址：** https://github.com/markdown-viewer/markdown-viewer-extension
 

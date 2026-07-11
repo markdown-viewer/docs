@@ -326,7 +326,7 @@ V: Kasutage Markdownis ````vega-lite` koodiplokki JSON-vormingus graafiku spetsi
 
 ## 📜 Avatud lähtekoodi litsents
 
-See projekt on avatud lähtekoodiga ISC litsentsi alusel. Tere tulemast Star'ima, teatama probleemidest, soovitama funktsioone ja panustama koodi.
+See projekt on avatud lähtekoodiga GPLv3 litsentsi alusel. Tere tulemast Star'ima, teatama probleemidest, soovitama funktsioone ja panustama koodi.
 
 **Projekti URL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

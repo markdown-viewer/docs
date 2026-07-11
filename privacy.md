@@ -148,7 +148,7 @@ All code runs locally. All dependencies are bundled.
 
 ## Open Source Transparency
 
-The Extension is **fully open source** under the ISC license.
+The Extension is **fully open source** under the GPLv3 license.
 
 You can:
 - View all source code

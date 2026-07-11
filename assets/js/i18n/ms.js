@@ -37,6 +37,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX dengan persamaan boleh sunting, PDF susun atur kemas, atau HTML lengkap. Satu klik.",
   "Deliver": "Serah",
   "Deliverables": "Hasil akhir",
+  "Diagram exports": "Eksport rajah",
   "Diagrams": "Rajah",
   "Docs": "Dokumen",
   "Draft": "Draf",

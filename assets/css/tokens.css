@@ -1,0 +1,32 @@
+/* Shared docu.md brand tokens for website surfaces. */
+:root {
+  --brand-blue: #2f5fd0;
+  --brand-blue-hover: #234aa8;
+  --brand-blue-soft: #eef2fb;
+  --brand-blue-muted: #d9e2f6;
+
+  --accent-amber: #c9821b;
+  --accent-green: #3f8f6d;
+  --accent-violet: #7a5cc4;
+  --accent-rose: #c4506a;
+
+  --paper: #fdfcf9;
+  --paper-muted: #f6f3ec;
+  --paper-soft: #efeadf;
+  --paper-raised: #ffffff;
+
+  --ink: #22201b;
+  --ink-muted: #6a6459;
+  --ink-subtle: #9c9488;
+
+  --line: #e7e1d5;
+  --line-soft: #f1ece2;
+
+  --radius-doc: 8px;
+  --radius-panel: 12px;
+  --shadow-doc-card: 0 1px 3px rgba(55, 45, 30, 0.06), 0 1px 2px -1px rgba(55, 45, 30, 0.05);
+  --shadow-doc-elevated: 0 18px 48px -18px rgba(45, 38, 26, 0.18), 0 4px 12px -4px rgba(45, 38, 26, 0.08);
+
+  --font-brand-serif: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --font-brand-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

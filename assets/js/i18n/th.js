@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX พร้อมสมการที่แก้ไขได้, PDF ที่จัดหน้าเรียบร้อย หรือ HTML แบบครบในตัว เพียงคลิกเดียว",
   "Deliver": "ส่งมอบ",
   "Deliverables": "ไฟล์ส่งมอบ",
+  "Diagram exports": "ส่งออกไดอะแกรม",
   "Diagrams": "ไดอะแกรม",
   "Docs": "เอกสาร",
   "Draft": "ฉบับร่าง",

@@ -326,7 +326,7 @@ R: Usa bloque de código ````vega-lite` en Markdown con especificación de gráf
 
 ## 📜 Licencia de Código Abierto
 
-Este proyecto es de código abierto bajo licencia ISC. Bienvenido a Star, reportar problemas, sugerir funciones y contribuir código.
+Este proyecto es de código abierto bajo licencia GPLv3. Bienvenido a Star, reportar problemas, sugerir funciones y contribuir código.
 
 **URL del proyecto:** https://github.com/markdown-viewer/markdown-viewer-extension
 

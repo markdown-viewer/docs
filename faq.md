@@ -16,7 +16,7 @@ Yes, completely free. No subscriptions, no premium features, no hidden costs.
 
 ### Is it open source?
 
-Yes, the entire project is open source under the ISC license. You can view, audit, and contribute to the code on [GitHub](https://github.com/markdown-viewer/markdown-viewer-extension).
+Yes, the entire project is open source under the GPLv3 license. You can view, audit, and contribute to the code on [GitHub](https://github.com/markdown-viewer/markdown-viewer-extension).
 
 ---
 

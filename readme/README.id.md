@@ -326,7 +326,7 @@ J: Gunakan blok kode ````vega-lite` dalam Markdown dengan spesifikasi grafik for
 
 ## 📜 Lisensi Open Source
 
-Proyek ini adalah open source di bawah lisensi ISC. Selamat datang untuk memberi bintang, melaporkan masalah, menyarankan fitur, dan berkontribusi kode.
+Proyek ini adalah open source di bawah lisensi GPLv3. Selamat datang untuk memberi bintang, melaporkan masalah, menyarankan fitur, dan berkontribusi kode.
 
 **URL Proyek:** https://github.com/markdown-viewer/markdown-viewer-extension
 

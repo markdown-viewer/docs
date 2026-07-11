@@ -37,6 +37,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX z edytowalnymi równaniami, PDF z idealnym układem lub samodzielny HTML. Jedno kliknięcie.",
   "Deliver": "Dostarcz",
   "Deliverables": "Materiały końcowe",
+  "Diagram exports": "Eksport diagramów",
   "Diagrams": "Diagramy",
   "Docs": "Dokumentacja",
   "Draft": "Szkic",

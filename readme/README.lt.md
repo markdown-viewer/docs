@@ -326,7 +326,7 @@ A: Naudokite ````vega-lite` kodo bloką Markdown su JSON formato diagramos speci
 
 ## 📜 Atvirojo kodo licencija
 
-Šis projektas yra atvirojo kodo pagal ISC licenciją. Kviečiame pridėti Star, pranešti apie problemas, siūlyti funkcijas ir prisidėti prie kodo.
+Šis projektas yra atvirojo kodo pagal GPLv3 licenciją. Kviečiame pridėti Star, pranešti apie problemas, siūlyti funkcijas ir prisidėti prie kodo.
 
 **Projekto URL:** https://github.com/markdown-viewer/markdown-viewer-extension
 

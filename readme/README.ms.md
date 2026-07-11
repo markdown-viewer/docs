@@ -326,7 +326,7 @@ J: Gunakan blok kod ````vega-lite` dalam Markdown dengan spesifikasi carta forma
 
 ## 📜 Lesen Sumber Terbuka
 
-Projek ini adalah sumber terbuka di bawah lesen ISC. Selamat datang untuk Star, laporkan isu, cadangkan ciri, dan sumbangkan kod.
+Projek ini adalah sumber terbuka di bawah lesen GPLv3. Selamat datang untuk Star, laporkan isu, cadangkan ciri, dan sumbangkan kod.
 
 **URL Projek:** https://github.com/markdown-viewer/markdown-viewer-extension
 

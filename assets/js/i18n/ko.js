@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "편집 가능한 수식이 포함된 DOCX, 레이아웃이 정돈된 PDF, 단일 HTML까지 한 번에 출력합니다.",
   "Deliver": "전달",
   "Deliverables": "산출물",
+  "Diagram exports": "다이어그램 내보내기",
   "Diagrams": "다이어그램",
   "Docs": "문서",
   "Draft": "초안",

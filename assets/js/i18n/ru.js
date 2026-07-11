@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX с редактируемыми формулами, PDF с аккуратной вёрсткой или самодостаточный HTML. Один клик.",
   "Deliver": "Передача",
   "Deliverables": "Форматы выдачи",
+  "Diagram exports": "Экспорт диаграмм",
   "Diagrams": "Диаграммы",
   "Docs": "Документация",
   "Draft": "Черновик",

@@ -38,6 +38,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "DOCX med redigerbara ekvationer, PDF med perfekt layout eller fristående HTML. Ett klick.",
   "Deliver": "Leverera",
   "Deliverables": "Leveranser",
+  "Diagram exports": "Diagramexporter",
   "Diagrams": "Diagram",
   "Docs": "Dokument",
   "Draft": "Utkast",

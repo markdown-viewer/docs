@@ -39,6 +39,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "編集可能な数式付き DOCX、整った PDF、単体 HTML を一クリックで。",
   "Deliver": "届ける",
   "Deliverables": "成果物",
+  "Diagram exports": "図表のエクスポート",
   "Diagrams": "図表",
   "Docs": "ドキュメント",
   "Draft": "下書き",

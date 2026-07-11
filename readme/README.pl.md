@@ -326,7 +326,7 @@ O: Użyj bloków kodu ````vega-lite` w Markdown, z zawartością w formacie JSON
 
 ## 📜 Licencja open source
 
-Ten projekt jest otwartoźródłowy na licencji ISC. Mile widziane Gwiazdki wsparcia, zgłaszanie problemów, sugestie, wkład w kod.
+Ten projekt jest otwartoźródłowy na licencji GPLv3. Mile widziane Gwiazdki wsparcia, zgłaszanie problemów, sugestie, wkład w kod.
 
 **Adres projektu:** https://github.com/markdown-viewer/markdown-viewer-extension
 

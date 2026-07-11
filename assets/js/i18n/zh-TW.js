@@ -37,6 +37,7 @@
   "DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.": "匯出含可編輯公式的 DOCX、版面完美的 PDF，或自包含 HTML。一鍵完成。",
   "Deliver": "交付",
   "Deliverables": "交付格式",
+  "Diagram exports": "圖表匯出",
   "Diagrams": "圖表",
   "Docs": "文件",
   "Draft": "初稿",
