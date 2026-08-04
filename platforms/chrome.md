@@ -1,196 +1,84 @@
 # Chrome Extension
 
-The Chrome extension is the primary platform for Markdown Viewer, offering the most complete feature set.
+docu.md for Chrome is the browser-first version of Markdown Viewer. It is the best fit when you want to open local or online Markdown directly in a Chromium browser, review a polished document view, and export a handoff file without moving content into another editor.
 
-## Overview
+## Why Use This Version
 
-| Feature | Status |
-|---------|--------|
-| Markdown rendering | ✅ |
-| Word export | ✅ |
-| All diagram types | ✅ |
-| LaTeX formulas | ✅ |
-| 29 themes | ✅ |
-| Smart caching | ✅ |
-| Offline mode | ✅ |
+Use the Chrome extension when Markdown appears as a local file, a raw web URL, generated AI output, or documentation you want to inspect in the browser. The extension keeps the source Markdown intact while rendering tables, images, code, math, visual blocks, themes, and document spacing in a finished reading surface.
 
-**Version:** 5.0.0  
-**Manifest:** V3 (latest Chrome standard)
+## Install
 
----
+### Chrome Web Store
 
-## Installation
+1. Open [docu.md Markdown Viewer on Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi).
+2. Click **Add to Chrome**.
+3. Confirm the installation.
+4. Pin the extension if you want quick access to actions and settings.
 
-### From Chrome Web Store (Recommended)
+### Developer Build
 
-1. Visit [Chrome Web Store - Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
-2. Click **"Add to Chrome"**
-3. Confirm the installation
+```bash
+npm install
+npm run build:chrome
+```
 
-### Manual Installation (For Developers)
+Then open `chrome://extensions/`, enable **Developer mode**, choose **Load unpacked**, and select `dist/chrome`.
 
-1. Clone the repository
-2. Run `npm install && npm run build:chrome`
-3. Open `chrome://extensions/`
-4. Enable **"Developer mode"**
-5. Click **"Load unpacked"**
-6. Select the `chrome/dist` folder
+## First Run Setup
 
----
+For web Markdown, open a supported URL and let the extension render the file. For local files, enable **Allow access to file URLs** in the extension details page. This browser permission is required before an extension can read `file:///` documents from your device.
 
-## Permissions Explained
+## Main Workflows
 
-The extension requests these permissions:
+### Read Local Markdown
+
+Open or drag a `.md` file into Chrome after enabling file URL access. docu.md renders a clean reading view with structure, code blocks, formulas, tables, images, and rendered visual content.
+
+### Review Online Markdown
+
+Open a supported raw Markdown URL. The extension detects compatible content and renders it in place, which is useful for documentation, changelogs, AI notes, and project files.
+
+### Export a Handoff Document
+
+Use the export action when the rendered result is ready. DOCX is useful for editable Word handoff. PDF and self-contained HTML are available where supported by the current build and platform.
+
+## Rich Content Support
+
+Chrome uses the shared docu.md rendering engine. It supports standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+
+## Permissions
 
 | Permission | Purpose |
-|------------|---------|
-| `storage` | Save settings and cache locally |
-| `unlimitedStorage` | Store diagram cache without limits |
-| `offscreen` | Render diagrams in background |
-| `scripting` | Inject rendering scripts into pages |
-| `downloads` | Save exported Word documents |
-| `file:///*` | Access local Markdown files |
-| `https://*/*`, `http://*/*` | Access online Markdown files |
+|---|---|
+| `storage` | Save settings and local cache. |
+| `unlimitedStorage` | Store render cache for large documents. |
+| `offscreen` | Render heavy visual content without blocking the visible page. |
+| `scripting` | Inject the viewer into supported pages. |
+| `downloads` | Save exported documents when requested. |
+| `file:///*` | Open local Markdown files after user approval. |
+| `http://*/*`, `https://*/*` | Detect and render supported online Markdown. |
 
-**All data stays local.** No information is sent to any server.
+## Privacy
 
----
-
-## Supported File Types
-
-The Chrome build uses the shared format registry from the core codebase:
-
-| Extensions | Type |
-|-----------|------|
-| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
-| `.plantuml`, `.puml` | PlantUML diagrams |
-| `.mermaid`, `.mmd` | Mermaid diagrams |
-| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
-| `.gv`, `.dot` | Graphviz DOT graphs |
-| `.infographic` | Infographic charts |
-| `.canvas` | Canvas diagrams |
-| `.drawio` | draw.io diagrams |
-
----
-
-## Features
-
-### Automatic Rendering
-
-When you open a supported file:
-1. The extension detects the file type
-2. Renders the content with syntax highlighting
-3. Processes any diagrams or formulas
-4. Displays the formatted result
-
-### Export to Word
-
-1. Click the **Download** button or press `Ctrl/Cmd + S`
-2. Watch the progress indicator
-3. Word document downloads automatically
-
-### Theme Selection
-
-1. Click the extension icon or theme button
-2. Browse 29 themes
-3. Click to apply instantly
-
-### Smart Caching
-
-- Diagrams are cached locally
-- First load: ~5 seconds (for complex docs)
-- Subsequent loads: <1 second
-
----
-
-## Settings
-
-Access settings through:
-- Extension popup (click extension icon)
-- Right-click menu on extension icon
-
-### Available Settings
-
-| Setting | Default | Options |
-|---------|---------|---------|
-| Default theme | Default | Any of 29 themes |
-| Cache size | 1000 items | 100-5000 |
-| Auto-detect URLs | Enabled | On/Off |
-
----
-
-## Keyboard Shortcuts
-
-| Action | Shortcut |
-|--------|----------|
-| Export to Word | `Ctrl/Cmd + S` |
-| Toggle TOC | `Ctrl/Cmd + B` |
-| Zoom in | `Ctrl/Cmd + +` |
-| Zoom out | `Ctrl/Cmd + -` |
-| Reset zoom | `Ctrl/Cmd + 0` |
-
----
-
-## Browser Compatibility
-
-| Browser | Support |
-|---------|---------|
-| Google Chrome | ✅ Full support (88+) |
-| Microsoft Edge | ✅ Full support |
-| Brave | ✅ Full support |
-| Opera | ✅ Full support |
-| Vivaldi | ✅ Full support |
-| Arc | ✅ Full support |
-
-Any Chromium-based browser should work.
-
----
+Normal preview and export work happens locally in the extension. Your Markdown files do not need to be uploaded to a remote rendering service to view or export them.
 
 ## Troubleshooting
 
-### Extension Not Working?
+### Local files open as plain text
 
-1. **Check if enabled:** Go to `chrome://extensions/` and verify it's turned on
-2. **File access:** For local files, enable "Allow access to file URLs"
-3. **Restart browser:** Try closing and reopening Chrome
-4. **Reinstall:** Remove and reinstall the extension
+Open `chrome://extensions/`, find docu.md Markdown Viewer, and enable **Allow access to file URLs**.
 
-### Diagrams Not Rendering?
+### Export does not start
 
-1. **Wait for completion:** Complex diagrams take time
-2. **Check syntax:** Verify your PlantUML/Mermaid/DOT/Vega syntax
-3. **Clear cache:** Try clearing the diagram cache in settings
+Check that the document finished rendering and that browser downloads are allowed for the extension.
 
-### Export Fails?
+### Visual blocks render slowly
 
-1. **Check permissions:** Ensure download permission is granted
-2. **Disk space:** Verify you have disk space available
-3. **Try again:** Some complex exports may need a second attempt
+Large documents can take longer on the first render. Reopening the same document should be faster because cached render results can be reused.
 
----
+## Related Platforms
 
-## Privacy & Security
-
-- ✅ Manifest V3 compliant (latest Chrome security standard)
-- ✅ All processing local
-- ✅ No external requests
-- ✅ No tracking or analytics
-- ✅ Open source and auditable
-
----
-
-## Updates
-
-The extension updates automatically through Chrome Web Store. To check your version:
-
-1. Go to `chrome://extensions/`
-2. Find Markdown Viewer
-3. Version shown under the name
-
----
-
-## Source Code
-
-GitHub: [markdown-viewer-extension](https://github.com/markdown-viewer/markdown-viewer-extension)
-
-The `chrome/` directory contains all Chrome-specific code.
+- [Microsoft Edge](edge.md) for Edge Add-ons and Edge-managed updates.
+- [Firefox](firefox.md) for Firefox-based browsing workflows.
+- [VS Code](vscode.md) for editor-side preview and export.
+- [Platform Comparison](platform-comparison.md).

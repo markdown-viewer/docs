@@ -1,139 +1,81 @@
-# Markdown Viewer
+# docu.md Markdown Viewer Documentation
 
-**Markdown to perfect Word in one click — PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, LaTeX (editable), code highlighting, local processing**
+Preview Markdown. Preserve the complex parts. Export finished documents.
 
-*Completely Free · 29 Professional Themes · 28 Languages Support*
+docu.md Markdown Viewer opens Markdown files as polished reading pages and turns them into output you can share, submit, publish, or archive. It keeps the source file simple while preserving the parts that usually break during handoff: tables, images, code blocks, math, diagrams, themes, and document spacing.
 
-### 🚀 Install Now
+## What This Documentation Covers
 
-- **Chrome / Chromium:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
-- **Microsoft Edge:** [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)
-- **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
-- **Obsidian:** [Community Plugin Directory](https://community.obsidian.md/plugins/markdown-viewer-extension)
-- **VS Code:** [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
-- **Skills:** [Diagram Skills Library](https://github.com/markdown-viewer/skills)
+This documentation explains how to install docu.md, open Markdown files, configure platform-specific settings, choose document themes, and export finished documents.
 
----
+Use it when you need to understand:
 
-## What is Markdown Viewer?
+- How each platform version works.
+- Which setup steps are needed for local files or editor integrations.
+- How preview, export, themes, and privacy behave.
+- Which output formats are available in each environment.
+- How to troubleshoot rendering, permissions, or export issues.
 
-Markdown Viewer is a powerful browser extension and multi-platform tool that transforms your Markdown documents into beautifully formatted Word documents with a single click.
+## Start Here
 
-You love writing in Markdown — clean, efficient, version control friendly. But eventually, you always need a Word document.
+- [Install docu.md](getting-started/installation.md)
+- [Open your first file](getting-started/first-use.md)
+- [Enable local file access](getting-started/file-access.md)
+- [Explore features](features/README.md)
+- [Read the FAQ](faq.md)
 
-**The old nightmare:**
+## Platform Guides
 
-😫 Manual screenshot flowcharts · Copy-paste formulas become messy · Format code by hand · Adjust tables cell by cell · Spend another 30 minutes tweaking fonts, spacing, and colors after export
+| Platform | Best For | Guide |
+|---|---|---|
+| Chrome / Chromium | Opening local or online Markdown in the browser | [Chrome Extension](platforms/chrome.md) |
+| Microsoft Edge | Edge Add-ons installation and Edge-managed updates | [Edge Extension](platforms/edge.md) |
+| Firefox | Firefox-based browser workflows | [Firefox Extension](platforms/firefox.md) |
+| Obsidian | Vault-native preview and export | [Obsidian Plugin](platforms/obsidian.md) |
+| VS Code | Editor-side preview, commands, and writing workflows | [VS Code Extension](platforms/vscode.md) |
+| Mobile | Opening and sharing Markdown on iOS and Android | [Mobile App](platforms/mobile.md) |
 
-**One document: 1 hour writing, 2 hours formatting.**
+See [Platform Feature Comparison](platforms/platform-comparison.md) for a side-by-side view.
 
----
+## Core Workflows
 
-**Now it takes just 1 second.**
+### AI Draft to Shareable Document
 
-Click to download and get a perfect Word document:
+Save Markdown from an AI assistant, open it with docu.md, review the formatted result, choose a theme, and export a document that is easier to send to colleagues, clients, classmates, or reviewers.
 
-- ✅ **PlantUML diagrams** → High-resolution images
-- ✅ **Mermaid diagrams** → High-resolution images
-- ✅ **Vega/Vega-Lite charts** → High-resolution images
-- ✅ **drawio diagrams** → High-resolution images
-- ✅ **Canvas diagrams** → High-resolution images
-- ✅ **Infographic charts** → High-resolution images
-- ✅ **Graphviz DOT graphs** → High-resolution images
-- ✅ **LaTeX formulas** → Word editable equations (not images!)
-- ✅ **Auto syntax highlighting** for 100+ programming languages
-- ✅ **29 professional themes** with one click
-- ✅ **Completely free**, local processing
+### Technical Notes to Documentation
 
-**Spend time on writing, not on formatting.**
+Keep architecture notes, project READMEs, API drafts, and visual blocks in Markdown. Preview them with formatted code and rendered content before sharing.
 
----
+### Reports and Research Drafts
 
-## Key Features
+Use Markdown for writing speed, then export documents with tables, formulas, headings, and document themes preserved for review or submission.
 
-### 🎨 Automatic Diagram Conversion
+## Main Capabilities
 
-Convert diagrams written in code to high-resolution images:
+- Clean Markdown reading view for local files and supported web URLs.
+- Document export to DOCX, PDF, or self-contained HTML where supported.
+- Editable formulas in Word output.
+- Rendered diagrams and charts from source blocks.
+- Syntax highlighting, GitHub-style tables, task lists, images, SVG content, and complex HTML tables.
+- Support for common text-based diagram and chart formats including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+- Themes for business, academic, technical, reading, and Chinese typography needs.
+- Smart rendering and caching for large documents.
+- Local processing for normal preview and export workflows.
 
-- **PlantUML** - Sequence diagrams, class diagrams, activity diagrams, use case diagrams, and more
-- **Mermaid** - Flowcharts, sequence diagrams, class diagrams, state diagrams, Gantt charts, and more
-- **Vega/Vega-Lite** - Bar charts, line charts, scatter plots, heatmaps for data visualization
-- **drawio** - Architecture diagrams, network topologies, UML diagrams
-- **Canvas** - Mind maps, knowledge graphs, concept maps
-- **Infographic** - Statistical charts, infographics, data presentations
-- **Graphviz DOT** - Directed graphs, network topology, state machines
+## Privacy
 
-### 📐 Perfect Formula Conversion
+docu.md is designed around local processing. Normal preview and export workflows do not require uploading your Markdown files to a remote rendering service.
 
-LaTeX formulas are converted to **native Word equations** — not images! You can continue editing them in Word.
+Read the [Privacy Policy](privacy.md) for details.
 
-### 🎭 29 Professional Themes
+## Marketplace Copy
 
-Different scenarios, different styles, one-click switch:
+Marketplace descriptions are maintained separately from README files so store metadata does not accidentally inherit long feature lists or outdated copy. See [Marketplace Copy Source](store/README.md) for the source directory and rules.
 
-| Category | Themes |
-|----------|--------|
-| Classic | Default, Academic, Business, Manuscript, Newspaper |
-| Reading | Palatino, Garamond, Typewriter, Elegant |
-| Modern | Technical, Swiss, Minimal |
-| Creative | Magazine, Century, Handwritten, Verdana |
-| Chinese | Heiti, Mixed, Water |
-| Playful | Rainbow, Starry, Candy, Dinosaur, Space, Garden |
-| Nature | Forest, Ocean, Coral, Sunset |
+## Community and Support
 
-### ⚡ Lightning Fast
-
-- **Smart caching**: First load 5s, second load 1s
-- **Progressive rendering**: Text displays instantly, diagrams render in background
-- **Incremental updates**: Only modified diagrams are re-rendered
-
-### 🔒 Privacy First
-
-- All processing done locally — nothing uploaded
-- No tracking, no data collection
-- Open source and auditable
-
----
-
-## Available Platforms
-
-| Platform | Status | Description |
-|----------|--------|-------------|
-| [Chrome Extension](platforms/chrome.md) | ✅ Released | Primary platform, available on Chrome Web Store |
-| [Edge Extension](platforms/edge.md) | ✅ Released | Native Microsoft Edge Add-ons distribution |
-| [Firefox Extension](platforms/firefox.md) | ✅ Released | Firefox browser support |
-| [Obsidian Plugin](platforms/obsidian.md) | ✅ Released | Preview and export inside Obsidian vaults |
-| [VS Code Extension](platforms/vscode.md) | ✅ Released | Preview and export within VS Code |
-| [Mobile App](platforms/mobile.md) | ✅ Released | iOS and Android via Flutter |
-
----
-
-## Quick Links
-
-- 🚀 [Getting Started](getting-started/installation.md) - Install and start using in 30 seconds
-- 📖 [Features](features/README.md) - Explore all features in detail
-- 💡 [Use Cases](use-cases/technical-docs.md) - See real-world examples
-- ❓ [FAQ](faq.md) - Common questions answered
-- 🔒 [Privacy Policy](privacy.md) - Our commitment to your privacy
-
----
-
-## Install Now
-
-**Chrome:** [Chrome Web Store](https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi)
-
-**Edge:** [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/documd-markdown-viewer/iphmkjlbnogmhofmmcahdhodiilokfca)
-
-**Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
-
-**Obsidian:** [Community Plugin Directory](https://community.obsidian.md/plugins/markdown-viewer-extension)
-
-**VS Code:** [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension) · [Open VSX](https://open-vsx.org/extension/xicilion/markdown-viewer-extension)
-
-**GitHub:** [markdown-viewer-extension](https://github.com/markdown-viewer/markdown-viewer-extension)
-
-**Skills:** [Diagram Skills Library](https://github.com/markdown-viewer/skills)
-
----
-
-*Markdown Viewer is open source under GPL-3.0 license. Star us on GitHub!*
+- [GitHub Repository](https://github.com/markdown-viewer/markdown-viewer-extension)
+- [Report Issues](https://github.com/markdown-viewer/markdown-viewer-extension/issues)
+- [Feature Requests](https://github.com/markdown-viewer/markdown-viewer-extension/issues)
+- [Diagram Skills Library](https://github.com/markdown-viewer/skills)

@@ -1,186 +1,64 @@
 # Firefox Extension
 
-Markdown Viewer is available for Firefox with full feature support.
+docu.md for Firefox is the Firefox browser version of Markdown Viewer. It is for users who want Markdown preview, rich rendering, and document export inside a Firefox-based workflow.
 
-## Overview
+## Why Use This Version
 
-| Feature | Status |
-|---------|--------|
-| Markdown rendering | ✅ |
-| Word export | ✅ |
-| All diagram types | ✅ |
-| LaTeX formulas | ✅ |
-| 29 themes | ✅ |
-| Smart caching | ✅ |
-| Offline mode | ✅ |
+Use this version when Firefox is your daily browser or when you prefer installing from Firefox Add-ons. It is useful for reading local Markdown, reviewing online Markdown, and exporting documents without moving the source into another editor.
 
-**Version:** 5.0.0  
-**Manifest:** V3  
-**Minimum Firefox:** 140.0
+## Install
 
----
+1. Open [docu.md Markdown Viewer on Firefox Add-ons](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/).
+2. Click **Add to Firefox**.
+3. Confirm the installation.
+4. Pin or manage the extension from Firefox Add-ons if needed.
 
-## Installation
+## First Run Setup
 
-### From Firefox Add-ons
+Firefox handles extension permissions differently from Chromium browsers. For local files, open `about:addons`, select docu.md Markdown Viewer, and confirm local file access is allowed. For web Markdown, open a supported raw Markdown URL.
 
-1. Visit [Firefox Add-ons - Markdown Viewer](https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/)
-2. Click **"Add to Firefox"**
-3. Confirm the installation
+## Main Workflows
 
-### Manual Installation (For Developers)
+### Open Local Markdown
 
-1. Clone the repository
-2. Run `npm install && npm run build:firefox`
-3. Open `about:debugging`
-4. Click **"This Firefox"**
-5. Click **"Load Temporary Add-on"**
-6. Select any file in the `firefox/dist` folder
+Enable local file access, then open or drag a `.md` file into Firefox. docu.md renders the file as a document with formatted content and visual blocks.
 
----
+### Review Markdown from the Web
 
-## Firefox-Specific Features
+Open a supported Markdown URL in Firefox. If a server sends unusual headers, save the file locally and open it from disk.
 
-### Background Page
+### Export Documents
 
-Unlike Chrome's service worker, Firefox uses a background page for better compatibility with WebAssembly-based renderers.
+Export when the rendered file is ready for handoff. DOCX is useful for editable Word documents. PDF and HTML are available where supported by the current platform build.
 
-### WebRequest Handling
+## Firefox Notes
 
-Firefox version includes `webRequest` and `webRequestBlocking` permissions for more reliable file type detection.
+Firefox uses different extension APIs for background work and request handling. The user-facing goal is the same as other browser versions, but permission prompts, file access, and content detection can behave differently.
 
----
+## Rich Content Support
 
-## Permissions Explained
+Firefox uses the shared rendering engine for standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and diagrams or charts from text-based formats such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
 
-| Permission | Purpose |
-|------------|---------|
-| `storage` | Save settings and cache |
-| `unlimitedStorage` | Store diagram cache |
-| `downloads` | Save Word exports |
-| `tabs` | Detect markdown files |
-| `activeTab` | Process current tab |
-| `scripting` | Inject rendering scripts |
-| `webRequest` | Detect file types |
-| `file:///*` | Access local files |
-| `https://*/*`, `http://*/*` | Access online files |
+## Privacy
 
----
-
-## Supported File Types
-
-Firefox follows the same shared format registry as the Chrome and Edge builds:
-
-| Extensions | Type |
-|-----------|------|
-| `.md`, `.markdown`, `.slides.md` | Markdown / Slidev documents |
-| `.plantuml`, `.puml` | PlantUML diagrams |
-| `.mermaid`, `.mmd` | Mermaid diagrams |
-| `.vega`, `.vl`, `.vega-lite` | Vega / Vega-Lite charts |
-| `.gv`, `.dot` | Graphviz DOT graphs |
-| `.infographic` | Infographic charts |
-| `.canvas` | Canvas diagrams |
-| `.drawio` | draw.io diagrams |
-
----
-
-## File Access Setup
-
-To open local Markdown files:
-
-1. Go to `about:addons`
-2. Find Markdown Viewer
-3. Click the extension name
-4. Under **Permissions**, enable file access
-
----
-
-## Known Differences from Chrome
-
-| Feature | Chrome | Firefox |
-|---------|--------|---------|
-| Background | Service Worker | Background Page |
-| Offscreen API | Used | Not available (alternative used) |
-| Performance | Slightly faster | Comparable |
-
-Both versions provide the same user-facing features.
-
----
-
-## Keyboard Shortcuts
-
-| Action | Shortcut |
-|--------|----------|
-| Export to Word | `Ctrl + S` / `Cmd + S` |
-| Toggle TOC | `Ctrl + B` / `Cmd + B` |
-| Zoom in | `Ctrl + +` / `Cmd + +` |
-| Zoom out | `Ctrl + -` / `Cmd + -` |
-| Reset zoom | `Ctrl + 0` / `Cmd + 0` |
-
----
+Normal preview and export processing happens locally. Your Markdown files do not need to be uploaded to a remote rendering service.
 
 ## Troubleshooting
 
-### Extension Not Loading?
+### The extension does not activate
 
-1. Check Firefox version (requires 140.0+)
-2. Verify extension is enabled in `about:addons`
-3. Try disabling and re-enabling
-4. Restart Firefox
+Check that the extension is enabled in `about:addons` and that the file or URL is a supported Markdown source.
 
-### Local Files Not Opening?
+### Local files do not open
 
-1. Go to `about:addons`
-2. Find Markdown Viewer → Permissions
-3. Ensure file access is enabled
+Review the extension permissions in Firefox and allow local file access.
 
-### Diagrams Not Rendering?
+### Export fails
 
-1. Check browser console for errors
-2. Verify diagram syntax is correct
-3. Try clearing cache and reloading
+Wait for rendering to finish, confirm downloads are allowed, and try a writable save location.
 
----
+## Related Platforms
 
-## Development
-
-### Build for Firefox
-
-```bash
-npm install
-npm run build:firefox
-```
-
-### Test in Firefox
-
-```bash
-# Load in about:debugging
-# Or use web-ext:
-web-ext run --source-dir firefox/dist
-```
-
-### Firefox-Specific Code
-
-Firefox-specific implementations are in the `firefox/` directory:
-- `manifest.json` — Firefox-specific manifest
-- `src/host/` — Background page implementation
-- `src/webview/` — Firefox-optimized rendering
-
----
-
-## Privacy & Security
-
-- ✅ All processing local
-- ✅ No external requests
-- ✅ No tracking
-- ✅ Open source
-
-Same privacy guarantees as the Chrome version.
-
----
-
-## Source Code
-
-GitHub: [markdown-viewer-extension](https://github.com/markdown-viewer/markdown-viewer-extension)
-
-Firefox-specific code is in the `firefox/` directory.
+- [Chrome](chrome.md) and [Edge](edge.md) for Chromium-based workflows.
+- [VS Code](vscode.md) for editing and preview in the editor.
+- [Platform Comparison](platform-comparison.md).
