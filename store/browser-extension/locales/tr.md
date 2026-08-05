@@ -21,7 +21,7 @@ Temel özellikler:
 - Büyük belgeler için akıllı render ve önbellek.
 - Normal önizleme ve dışa aktarma akışlarında yerel işleme.
 
-Desteklenen zengin içerik; standart Markdown, GitHub tarzı tablolar ve görev listeleri, görseller, vurgulanmış kod, matematik formülleri, SVG içeriği, karmaşık HTML tabloları ve PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ve Graphviz gibi metin tabanlı formatlarda yazılmış diyagramları kapsar.
+Desteklenen zengin içerik; standart Markdown, GitHub tarzı tablolar ve görev listeleri, görseller, vurgulanmış kod, matematik formülleri, SVG içeriği, karmaşık HTML tabloları ve daha zengin belge sunumlarını kapsar. docu.md PlantUML, Infographic, drawio ve ECharts dahil olmak üzere 9 adede kadar diyagram ve grafik formatını destekler.
 
 docu.md teknik dokümantasyon, mühendislik notları, araştırma taslakları, haftalık raporlar, bilgi tabanları, README dosyaları ve yapay zekâ destekli yazım için uygundur. Markdown’u açın, sonucu inceleyin, tema seçin ve uygun formatı dışa aktarın.
 

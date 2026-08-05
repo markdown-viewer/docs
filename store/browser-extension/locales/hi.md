@@ -2,38 +2,38 @@
 
 ## Short Description
 
-Markdown को डायग्राम, फ़ॉर्मूला और थीम के साथ देखें और DOCX/PDF/HTML में स्थानीय रूप से export करें।
+Markdown को डायग्राम, फ़ॉर्मूला और थीम के साथ देखें और DOCX/PDF/HTML में स्थानीय रूप से निर्यात करें।
 
 ## Long Description
 
-docu.md Markdown Viewer Markdown preview और document export के लिए browser extension है। आप local या online Markdown को browser में खोल सकते हैं, उसे साफ़-सुथरे document की तरह पढ़ सकते हैं, और जब सहकर्मियों, ग्राहकों, classmates या reviewers को फ़ाइल भेजनी हो तो export कर सकते हैं।
+docu.md Markdown Viewer Markdown पूर्वावलोकन और दस्तावेज़ निर्यात के लिए ब्राउज़र एक्सटेंशन है। आप स्थानीय या ऑनलाइन Markdown को ब्राउज़र में खोल सकते हैं, उसे साफ़-सुथरे दस्तावेज़ की तरह पढ़ सकते हैं, और जब सहकर्मियों, ग्राहकों, सहपाठियों या समीक्षकों को फ़ाइल भेजनी हो तो निर्यात कर सकते हैं।
 
-Markdown draft लिखने, version control, technical notes, project documentation और AI-generated content के लिए तेज़ है। दिक्कत अक्सर handoff में आती है: diagrams screenshots बन जाते हैं, formulas editable नहीं रहते, code blocks को फिर से style करना पड़ता है और tables की manual सफ़ाई करनी पड़ती है। docu.md Markdown source को बनाए रखते हुए finished reading और export surface देता है।
+Markdown मसौदा लिखने, संस्करण नियंत्रण, तकनीकी नोट्स, परियोजना दस्तावेज़ और AI-जनित सामग्री के लिए तेज़ है। दिक्कत अक्सर सौंपने के चरण में आती है: डायग्राम स्क्रीनशॉट बन जाते हैं, सूत्र संपादन योग्य नहीं रहते, कोड ब्लॉक को फिर से सजाना पड़ता है और तालिकाओं की मैनुअल सफ़ाई करनी पड़ती है। docu.md Markdown स्रोत को बनाए रखते हुए तैयार पढ़ने और निर्यात का अनुभव देता है।
 
 मुख्य सुविधाएँ:
 
-- local files और supported web URLs के लिए साफ़ Markdown reading view.
-- editable Word documents के लिए DOCX export.
-- platform support होने पर PDF और self-contained HTML export.
-- Word output में editable math formulas.
-- code blocks के लिए syntax highlighting.
-- business reports, academic writing, technical notes, reading layouts और Chinese typography के लिए document themes.
-- बड़े documents के लिए smart rendering और cache.
-- normal preview और export workflows के लिए local processing.
+- स्थानीय फ़ाइलों और समर्थित वेब URL के लिए साफ़ Markdown पढ़ने का दृश्य।
+- संपादन योग्य Word दस्तावेज़ों के लिए DOCX निर्यात।
+- प्लेटफ़ॉर्म समर्थन होने पर PDF और स्व-समाहित HTML निर्यात।
+- Word आउटपुट में संपादन योग्य गणितीय सूत्र।
+- कोड ब्लॉक के लिए सिंटैक्स हाइलाइटिंग।
+- व्यावसायिक रिपोर्ट, शैक्षणिक लेखन, तकनीकी नोट्स, पढ़ने के लेआउट और चीनी टाइपोग्राफी के लिए दस्तावेज़ थीम।
+- बड़े दस्तावेज़ों के लिए स्मार्ट रेंडरिंग और कैश।
+- सामान्य पूर्वावलोकन और निर्यात कार्यप्रवाह के लिए स्थानीय प्रसंस्करण।
 
-Supported rich content में standard Markdown, GitHub-style tables और task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, और PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic और Graphviz जैसे text-based formats में लिखे diagrams या charts शामिल हैं।
+समर्थित समृद्ध सामग्री में मानक Markdown, GitHub-शैली तालिकाएँ और कार्य सूचियाँ, चित्र, हाइलाइट किया गया कोड, गणितीय सूत्र, SVG सामग्री, जटिल HTML तालिकाएँ और दस्तावेज़ प्रस्तुति को अधिक प्रभावी बनाने वाली दृश्य सामग्री शामिल है। docu.md PlantUML, Infographic, drawio और ECharts सहित 9 तक डायग्राम और चार्ट प्रारूपों का समर्थन करता है।
 
-docu.md technical documentation, engineering design notes, research drafts, weekly reports, knowledge-base pages, README files और AI-assisted writing के लिए उपयोगी है। Markdown खोलें, rendered result देखें, theme चुनें और handoff के हिसाब से document format export करें।
+docu.md तकनीकी दस्तावेज़, इंजीनियरिंग डिज़ाइन नोट्स, शोध मसौदे, साप्ताहिक रिपोर्ट, ज्ञान-आधार पृष्ठ, README फ़ाइलें और AI-सहायता प्राप्त लेखन के लिए उपयोगी है। Markdown खोलें, रेंडर किया हुआ परिणाम देखें, थीम चुनें और सौंपने की ज़रूरत के अनुसार दस्तावेज़ प्रारूप निर्यात करें।
 
-Local files के लिए extension details page में file URL access enable करें। उसके बाद आप device से `.md` files खोल सकते हैं, उन्हें browser में drag कर सकते हैं या browser file-open workflow इस्तेमाल कर सकते हैं। Online Markdown supported URL से render होता है।
+स्थानीय फ़ाइलों के लिए एक्सटेंशन विवरण पृष्ठ में फ़ाइल URL पहुँच सक्षम करें। उसके बाद आप डिवाइस से `.md` फ़ाइलें खोल सकते हैं, उन्हें ब्राउज़र में खींच सकते हैं या ब्राउज़र की फ़ाइल खोलने की प्रक्रिया इस्तेमाल कर सकते हैं। ऑनलाइन Markdown समर्थित URL से रेंडर होता है।
 
-Privacy workflow का हिस्सा है। Normal preview और export extension में locally process होते हैं। Markdown files को सिर्फ़ देखने या export करने के लिए remote rendering service पर upload करने की ज़रूरत नहीं है।
+गोपनीयता इस कार्यप्रवाह का हिस्सा है। सामान्य पूर्वावलोकन और निर्यात एक्सटेंशन में स्थानीय रूप से संसाधित होते हैं। Markdown फ़ाइलों को सिर्फ़ देखने या निर्यात करने के लिए दूरस्थ रेंडरिंग सेवा पर अपलोड करने की ज़रूरत नहीं है।
 
 ## Reviewer Note
 
-यह extension user-selected Markdown files को locally render करता है और document export देता है। File URL access केवल तब चाहिए जब user browser में local files खोलता है। Description में features को एक organized inventory के रूप में रखा गया है और repeated keyword lists से बचा गया है।
+यह एक्सटेंशन उपयोगकर्ता द्वारा चुनी गई Markdown फ़ाइलों को स्थानीय रूप से रेंडर करता है और दस्तावेज़ निर्यात देता है। फ़ाइल URL पहुँच केवल तब चाहिए जब उपयोगकर्ता ब्राउज़र में स्थानीय फ़ाइलें खोलता है। विवरण में सुविधाओं को व्यवस्थित रूप से रखा गया है और दोहराई गई कीवर्ड सूचियों से बचा गया है।
 
 ## Store-Specific Notes
 
-- Chrome Web Store: ऊपर दिया गया shared text इस्तेमाल करें।
-- Microsoft Edge Add-ons: ऊपर दिया गया shared text इस्तेमाल करें।
+- Chrome Web Store: ऊपर दिया गया साझा पाठ इस्तेमाल करें।
+- Microsoft Edge Add-ons: ऊपर दिया गया साझा पाठ इस्तेमाल करें।

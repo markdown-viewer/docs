@@ -21,7 +21,7 @@ Tärkeimmät ominaisuudet:
 - Älykäs renderöinti ja välimuisti suurille dokumenteille.
 - Paikallinen käsittely normaalissa esikatselussa ja viennissä.
 
-Tuettu rikas sisältö sisältää tavallisen Markdownin, GitHub-tyyliset taulukot ja tehtävälistat, kuvat, korostetun koodin, matemaattiset kaavat, SVG-sisällön, monimutkaiset HTML-taulukot sekä tekstipohjaiset kaavio- ja graafimuodot kuten PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ja Graphviz.
+Tuettu rikas sisältö sisältää tavallisen Markdownin, GitHub-tyyliset taulukot ja tehtävälistat, kuvat, korostetun koodin, matemaattiset kaavat, SVG-sisällön, monimutkaiset HTML-taulukot sekä monipuolisemmat dokumentin esitystavat. docu.md tukee jopa 9 kaavio- ja graafimuotoa, mukaan lukien PlantUML, Infographic, drawio ja ECharts.
 
 docu.md sopii tekniseen dokumentaatioon, suunnittelumuistiinpanoihin, tutkimusluonnoksiin, viikkoraportteihin, tietopankkeihin, README-tiedostoihin ja tekoälyavusteiseen kirjoittamiseen. Avaa Markdown, tarkista tulos, valitse teema ja vie sopiva muoto.
 

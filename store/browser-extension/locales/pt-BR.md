@@ -21,7 +21,7 @@ Principais recursos:
 - Renderização inteligente e cache para documentos grandes.
 - Processamento local nos fluxos normais de prévia e exportação.
 
-O conteúdo enriquecido compatível inclui Markdown padrão, tabelas e listas de tarefas no estilo GitHub, imagens, código destacado, fórmulas matemáticas, conteúdo SVG, tabelas HTML complexas e diagramas ou gráficos em formatos textuais comuns como PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic e Graphviz.
+O conteúdo enriquecido compatível inclui Markdown padrão, tabelas e listas de tarefas no estilo GitHub, imagens, código destacado, fórmulas matemáticas, conteúdo SVG, tabelas HTML complexas e formas mais ricas de apresentação do documento. O docu.md oferece suporte a até 9 formatos de diagramas e gráficos, incluindo PlantUML, Infographic, drawio e ECharts.
 
 O docu.md é útil para documentação técnica, notas de engenharia, rascunhos de pesquisa, relatórios semanais, bases de conhecimento, arquivos README e escrita com auxílio de IA. Abra o Markdown, revise o resultado, escolha um tema e exporte o formato adequado.
 

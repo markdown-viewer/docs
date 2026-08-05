@@ -21,7 +21,7 @@ Tính năng chính:
 - Kết xuất thông minh và bộ nhớ đệm cho tài liệu lớn.
 - Xử lý cục bộ cho quy trình xem trước và xuất thông thường.
 
-Nội dung phong phú được hỗ trợ gồm Markdown chuẩn, bảng và danh sách tác vụ kiểu GitHub, hình ảnh, mã được tô sáng, công thức toán, nội dung SVG, bảng HTML phức tạp, cùng sơ đồ hoặc biểu đồ viết bằng các định dạng văn bản như PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic và Graphviz.
+Nội dung phong phú được hỗ trợ gồm Markdown chuẩn, bảng và danh sách tác vụ kiểu GitHub, hình ảnh, mã được tô sáng, công thức toán, nội dung SVG, bảng HTML phức tạp và cách trình bày tài liệu trực quan hơn. docu.md hỗ trợ tới 9 định dạng sơ đồ và biểu đồ, bao gồm PlantUML, Infographic, drawio và ECharts.
 
 docu.md hữu ích cho tài liệu kỹ thuật, ghi chú thiết kế, bản nháp nghiên cứu, báo cáo tuần, trang tri thức, tệp README và viết với hỗ trợ AI. Mở Markdown, kiểm tra kết quả, chọn chủ đề và xuất định dạng phù hợp.
 

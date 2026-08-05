@@ -21,7 +21,7 @@ Viktige funksjoner:
 - Smart rendering og hurtigbuffer for store dokumenter.
 - Lokal behandling for vanlig forhåndsvisning og eksport.
 
-Støttet rikt innhold omfatter standard Markdown, GitHub-lignende tabeller og oppgavelister, bilder, uthevet kode, matematiske formler, SVG-innhold, komplekse HTML-tabeller samt diagrammer og grafer i tekstbaserte formater som PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic og Graphviz.
+Støttet rikt innhold omfatter standard Markdown, GitHub-lignende tabeller og oppgavelister, bilder, uthevet kode, matematiske formler, SVG-innhold, komplekse HTML-tabeller og rikere måter å presentere dokumenter på. docu.md støtter opptil 9 diagram- og grafformater, inkludert PlantUML, Infographic, drawio og ECharts.
 
 docu.md passer for teknisk dokumentasjon, designnotater, forskningsutkast, ukesrapporter, kunnskapsbaser, README-filer og AI-assistert skriving. Åpne Markdown, se over resultatet, velg tema og eksporter riktig format.
 

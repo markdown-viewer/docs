@@ -21,7 +21,7 @@ Põhivõimalused:
 - Nutikas renderdus ja vahemälu suurtele dokumentidele.
 - Kohalik töötlemine tavapärase eelvaate ja ekspordi jaoks.
 
-Toetatud rikkalik sisu hõlmab standardset Markdowni, GitHubi-laadseid tabeleid ja ülesandeloendeid, pilte, esiletõstetud koodi, matemaatilisi valemeid, SVG-sisu, keerukaid HTML-tabeleid ning tekstipõhiseid diagramme ja graafikuid vormingutes PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ja Graphviz.
+Toetatud rikkalik sisu hõlmab standardset Markdowni, GitHubi-laadseid tabeleid ja ülesandeloendeid, pilte, esiletõstetud koodi, matemaatilisi valemeid, SVG-sisu, keerukaid HTML-tabeleid ning mitmekesisemat dokumendi esitlust. docu.md toetab kuni 9 diagrammi- ja graafikuvormingut, sealhulgas PlantUML, Infographic, drawio ja ECharts.
 
 docu.md sobib tehnilisele dokumentatsioonile, insenerimärkmetele, uurimistöö mustanditele, nädalaaruannetele, teadmistebaasidele, README-failidele ja AI-toega kirjutamisele. Ava Markdown, kontrolli tulemust, vali teema ja ekspordi sobiv vorming.
 

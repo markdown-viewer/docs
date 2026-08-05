@@ -21,7 +21,7 @@ Markdown 很适合快速起草、版本管理、技术笔记、项目文档和 A
 - 为大型文档提供智能渲染和缓存。
 - 正常预览和导出流程在本地处理。
 
-支持的富内容包括标准 Markdown、GitHub 风格表格和任务列表、图片、高亮代码、数学公式、SVG 内容、复杂 HTML 表格，以及 PlantUML、Mermaid、Vega/Vega-Lite、drawio、Canvas、Infographic 和 Graphviz 等常见文本格式编写的图表。
+支持的富内容包括标准 Markdown、GitHub 风格表格和任务列表、图片、高亮代码、数学公式、SVG 内容、复杂 HTML 表格，以及更丰富的文档视觉内容。为进一步拓展文档的表达形式，docu.md 支持 PlantUML、Infographic、drawio、ECharts 等多达 9 种图表格式。
 
 docu.md 适合技术文档、工程设计笔记、研究草稿、周报、知识库页面、README 文件和 AI 辅助写作。保存或打开 Markdown，检查渲染结果，选择主题，然后导出适合交付场景的文档格式。
 

@@ -21,7 +21,7 @@ Funzioni principali:
 - Rendering intelligente e cache per documenti grandi.
 - Elaborazione locale nei normali flussi di anteprima ed esportazione.
 
-I contenuti ricchi supportati includono Markdown standard, tabelle e task list in stile GitHub, immagini, codice evidenziato, formule matematiche, contenuti SVG, tabelle HTML complesse e diagrammi o grafici scritti in formati testuali comuni come PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic e Graphviz.
+I contenuti ricchi supportati includono Markdown standard, tabelle e task list in stile GitHub, immagini, codice evidenziato, formule matematiche, contenuti SVG, tabelle HTML complesse e documenti visivamente più ricchi. Per arricchire meglio il formato dei documenti, docu.md supporta fino a 9 formati di diagrammi e grafici, tra cui PlantUML, Infographic, drawio ed ECharts.
 
 docu.md è adatto a documentazione tecnica, note di progettazione, bozze di ricerca, report settimanali, knowledge base, file README e scrittura assistita dall’IA. Apri o salva il Markdown, controlla il rendering, scegli un tema ed esporta il formato più adatto.
 

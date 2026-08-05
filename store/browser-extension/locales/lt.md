@@ -21,7 +21,7 @@ Pagrindinės funkcijos:
 - Išmanus atvaizdavimas ir talpykla dideliems dokumentams.
 - Vietinis apdorojimas įprastai peržiūrai ir eksportui.
 
-Palaikomas turtingas turinys apima standartinį Markdown, GitHub tipo lenteles ir užduočių sąrašus, paveikslus, paryškintą kodą, matematines formules, SVG turinį, sudėtingas HTML lenteles ir diagramas ar grafikus tekstiniais formatais, tokiais kaip PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ir Graphviz.
+Palaikomas turtingas turinys apima standartinį Markdown, GitHub tipo lenteles ir užduočių sąrašus, paveikslus, paryškintą kodą, matematines formules, SVG turinį, sudėtingas HTML lenteles ir įvairesnį dokumento pateikimą. docu.md palaiko iki 9 diagramų ir grafikų formatų, įskaitant PlantUML, Infographic, drawio ir ECharts.
 
 docu.md tinka techninei dokumentacijai, inžinerinėms pastaboms, tyrimų juodraščiams, savaitinėms ataskaitoms, žinių bazėms, README failams ir AI padedamam rašymui. Atverkite Markdown, patikrinkite rezultatą, pasirinkite temą ir eksportuokite tinkamą formatą.
 

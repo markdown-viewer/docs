@@ -21,7 +21,7 @@ Fitur utama:
 - Rendering cerdas dan cache untuk dokumen besar.
 - Pemrosesan lokal untuk pratinjau dan ekspor normal.
 
-Konten kaya yang didukung mencakup Markdown standar, tabel dan daftar tugas gaya GitHub, gambar, kode yang disorot, rumus matematika, konten SVG, tabel HTML kompleks, serta diagram atau bagan dalam format teks seperti PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, dan Graphviz.
+Konten kaya yang didukung mencakup Markdown standar, tabel dan daftar tugas gaya GitHub, gambar, kode yang disorot, rumus matematika, konten SVG, tabel HTML kompleks, serta penyajian dokumen yang lebih kaya. docu.md mendukung hingga 9 format diagram dan bagan, termasuk PlantUML, Infographic, drawio, dan ECharts.
 
 docu.md cocok untuk dokumentasi teknis, catatan desain, draf riset, laporan mingguan, basis pengetahuan, file README, dan penulisan berbantuan AI. Buka Markdown, tinjau hasil render, pilih tema, lalu ekspor format yang sesuai.
 

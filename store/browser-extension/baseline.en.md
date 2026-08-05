@@ -23,7 +23,7 @@ Key features:
 - Smart rendering and caching for large documents.
 - Local processing for normal preview and export workflows.
 
-Supported rich content includes standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and diagrams or charts written in common text-based formats such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+Supported rich content includes standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and richer document visuals. To make technical documents more expressive, docu.md supports up to 9 diagram and chart formats, including PlantUML, Infographic, drawio, and ECharts.
 
 docu.md is useful for technical documentation, engineering design notes, research drafts, weekly reports, knowledge-base pages, README files, and AI-assisted writing. Save or open the Markdown, review the rendered result, choose a theme, and export the document format that matches the handoff.
 
