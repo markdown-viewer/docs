@@ -54,6 +54,14 @@ $$
 - Position memory
 - Reading history
 
+### 📚 GitBook Books
+
+[Whole-book browsing and export](gitbook-books.md):
+
+- SUMMARY.md navigation panel with in-page chapter switching
+- Export an entire book to a single **DOCX** (title page, TOC, chapters on new pages)
+- Export an entire book to **PDF** via browser print
+
 ---
 
 ## Full Markdown Support
