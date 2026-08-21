@@ -5,7 +5,7 @@ with a `SUMMARY.md` at the root or in a parent folder) and provides:
 
 1. **In-page navigation** — a SUMMARY panel shows the book's table of contents;
    clicking a chapter loads it without a page refresh.
-2. **Whole-book export** — export the entire book to a single DOCX or PDF,
+2. **Whole-book export** — export the entire book to a single DOCX, EPUB or PDF,
    with a title page, table of contents, and every chapter starting on a new page.
 
 ## How it works
@@ -23,9 +23,10 @@ SUMMARY panel appears next to the document.
 
 ## Whole-book export
 
-When a book is detected, an **Export book** button (dropdown with **DOCX** and
-**PDF** options) appears in the SUMMARY panel header. It is tied to the panel:
-hiding the panel hides the button, and it only appears when a book is found.
+When a book is detected, an **Export book** button (dropdown with **DOCX**,
+**EPUB** and **PDF** options) appears in the SUMMARY panel header. It is tied
+to the panel: hiding the panel hides the button, and it only appears when a
+book is found.
 
 ### Export book to DOCX
 
@@ -41,6 +42,22 @@ Each page keeps its relative images and links (resolved per page), LaTeX math
 becomes editable Word equations, code blocks keep syntax highlighting, and
 footnote numbering is continuous across chapters. Pages that fail to fetch
 (e.g. private repos, 403) are skipped and reported at the end.
+
+### Export book to EPUB
+
+A single `.epub` (EPUB 3) where every SUMMARY page becomes its own chapter,
+readable in Apple Books, Calibre, Kindle apps and other e-readers:
+
+- **Table of contents** — reader-native navigation (`nav.xhtml`) built from
+  the SUMMARY order
+- **Math** — KaTeX formulas with the KaTeX fonts embedded, so equations
+  render offline without a CDN
+- **Images & diagrams** — embedded into the book (no network needed while
+  reading); mermaid/plantuml diagrams are included as rendered graphics
+- **Themes** — the current viewer theme's fonts, colors and layout carry over
+
+Pages that fail to fetch (e.g. private repos, 403) are skipped and reported
+at the end, same as DOCX export.
 
 ### Export book to PDF
 

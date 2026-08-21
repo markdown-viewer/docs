@@ -1225,7 +1225,6 @@ flowchart LR
         GFM[remarkGfm<br/>GitHub 扩展]
         Breaks[remarkBreaks<br/>软换行]
         Math[remarkMath<br/>数学公式]
-        Super[remarkSuperSub<br/>上下标]
         TOC[remarkTocFilter<br/>TOC 过滤]
         Plugins[registerRemarkPlugins<br/>图表插件]
     end
@@ -1242,14 +1241,14 @@ flowchart LR
         Stringify[rehypeStringify<br/>HTML 输出]
     end
     
-    MD[Markdown] --> Parse --> GFM --> Breaks --> Math --> Super --> TOC --> Plugins --> Rehype --> Slug --> Image --> Highlight --> KaTeX --> Stringify --> HTML[HTML]
+    MD[Markdown] --> Parse --> GFM --> Breaks --> Math --> TOC --> Plugins --> Rehype --> Slug --> Image --> Highlight --> KaTeX --> Stringify --> HTML[HTML]
 ```
 
-#### 3.1.2 13 步处理流程详解
+#### 3.1.2 12 步处理流程详解
 
-处理流水线由 13 个插件组成，按照严格的顺序执行。每个插件都有明确的职责边界，前一个插件的输出是后一个插件的输入。这种设计确保了处理过程的可预测性和可调试性。
+处理流水线由 12 个插件组成，按照严格的顺序执行。每个插件都有明确的职责边界，前一个插件的输出是后一个插件的输入。这种设计确保了处理过程的可预测性和可调试性。
 
-**阶段一：Markdown 解析与增强 (步骤 1-7)**
+**阶段一：Markdown 解析与增强 (步骤 1-6)**
 
 这一阶段在 MDAST 层面操作，负责将原始文本解析为结构化的语法树，并进行语法扩展。
 
@@ -1259,41 +1258,32 @@ flowchart LR
 | 2 | `remarkGfm` | 添加 GitHub Flavored Markdown 扩展支持，包括表格语法、删除线 (`~~text~~`)、任务列表 (`- [ ]`)、自动链接识别等。这些扩展已成为现代 Markdown 的事实标准。 |
 | 3 | `remarkBreaks` | 将源码中的软换行（单个换行符）转换为 `<br>` 元素。标准 Markdown 需要两个空格加换行才能产生换行，此插件简化了这一行为，更符合用户直觉。 |
 | 4 | `remarkMath` | 识别数学公式语法：行内公式 `$...$` 和块级公式 `$$...$$`。解析器将公式内容提取为 `math` 和 `inlineMath` 节点，供后续 KaTeX 渲染使用。 |
-| 5 | `remarkSuperSub` | 自定义插件，实现上下标语法扩展。`^上标^` 转换为 `<sup>` 标签，`~下标~` 转换为 `<sub>` 标签。常用于化学式（H~2~O）和数学表达式（x^2^）的简写。 |
-| 6 | `remarkTocFilter` | 自定义插件，过滤文档中的 `[toc]` 或 `[TOC]` 标记。这些标记用于生成目录，但不应在渲染输出中显示原始文本。 |
-| 7 | `registerRemarkPlugins` | 图表插件注册入口，将所有图表插件（Mermaid、Vega、Graphviz 等）接入处理流水线。这一步会遍历代码块节点，识别特定语言标识，并创建异步渲染任务。 |
+| 5 | `remarkTocFilter` | 自定义插件，过滤文档中的 `[toc]` 或 `[TOC]` 标记。这些标记用于生成目录，但不应在渲染输出中显示原始文本。 |
+| 6 | `registerRemarkPlugins` | 图表插件注册入口，将所有图表插件（Mermaid、Vega、Graphviz 等）接入处理流水线。这一步会遍历代码块节点，识别特定语言标识，并创建异步渲染任务。 |
 
-**阶段二：AST 转换 (步骤 8)**
+**阶段二：AST 转换 (步骤 7)**
 
 这一阶段是 MDAST 到 HAST 的桥接点，完成从 Markdown 语义到 HTML 语义的转换。
 
 | 步骤 | 插件 | 职责 |
 |-----|------|-----|
-| 8 | `remarkRehype` | AST 转换器，将 MDAST 节点映射为对应的 HAST 节点。例如 `heading` 节点转换为 `h1`-`h6` 元素，`code` 节点转换为 `<pre><code>` 结构。此步骤还处理 `allowDangerousHtml` 选项，决定是否保留原始 HTML 内容。 |
+| 7 | `remarkRehype` | AST 转换器，将 MDAST 节点映射为对应的 HAST 节点。例如 `heading` 节点转换为 `h1`-`h6` 元素，`code` 节点转换为 `<pre><code>` 结构。此步骤还处理 `allowDangerousHtml` 选项，决定是否保留原始 HTML 内容。 |
 
-**阶段三：HTML 增强与输出 (步骤 9-13)**
+**阶段三：HTML 增强与输出 (步骤 8-12)**
 
 这一阶段在 HAST 层面操作，为 HTML 元素添加属性、执行样式处理、最终序列化为字符串。
 
 | 步骤 | 插件 | 职责 |
 |-----|------|-----|
-| 9 | `rehypeSlug` | 为标题元素生成唯一的 `id` 属性，基于标题文本内容生成 slug。例如 `## 快速开始` 生成 `<h2 id="快速开始">`。这些 ID 用于文档内锚点链接和目录导航。 |
-| 10 | `rehypeImageUri` | 自定义插件，处理图片的相对路径。在 VS Code Webview 环境中，普通文件路径无法直接访问，需要转换为 `vscode-webview-resource://` 协议。此插件调用平台层提供的 `toResourceUrl()` 方法完成转换。 |
-| 11 | `rehypeHighlight` | 代码块语法高亮引擎，基于 highlight.js 实现。支持 100+ 编程语言的语法识别，为代码元素添加语义化的 CSS 类名，如 `hljs-keyword`、`hljs-string` 等。 |
-| 12 | `rehypeKatex` | 数学公式渲染引擎，将步骤 4 识别的 `math` 节点转换为 KaTeX HTML 输出。生成的公式包含完整的样式信息，无需额外的 JavaScript 执行即可显示。 |
-| 13 | `rehypeStringify` | 序列化器，将 HAST 树转换为最终的 HTML 字符串。配置 `allowDangerousHtml: true` 以保留图表插件生成的占位符 HTML，这些占位符将在异步阶段被替换为实际内容。 |
+| 8 | `rehypeSlug` | 为标题元素生成唯一的 `id` 属性，基于标题文本内容生成 slug。例如 `## 快速开始` 生成 `<h2 id="快速开始">`。这些 ID 用于文档内锚点链接和目录导航。 |
+| 9 | `rehypeImageUri` | 自定义插件，处理图片的相对路径。在 VS Code Webview 环境中，普通文件路径无法直接访问，需要转换为 `vscode-webview-resource://` 协议。此插件调用平台层提供的 `toResourceUrl()` 方法完成转换。 |
+| 10 | `rehypeHighlight` | 代码块语法高亮引擎，基于 highlight.js 实现。支持 100+ 编程语言的语法识别，为代码元素添加语义化的 CSS 类名，如 `hljs-keyword`、`hljs-string` 等。 |
+| 11 | `rehypeKatex` | 数学公式渲染引擎，将步骤 4 识别的 `math` 节点转换为 KaTeX HTML 输出。生成的公式包含完整的样式信息，无需额外的 JavaScript 执行即可显示。 |
+| 12 | `rehypeStringify` | 序列化器，将 HAST 树转换为最终的 HTML 字符串。配置 `allowDangerousHtml: true` 以保留图表插件生成的占位符 HTML，这些占位符将在异步阶段被替换为实际内容。 |
 
 #### 3.1.3 自定义插件
 
-项目实现了三个自定义 unified 插件：
-
-**remark-super-sub** — 上下标语法扩展
-
-```typescript
-// 语法：^上标^ 和 ~下标~
-// 输入：H~2~O 和 E=mc^2^
-// 输出：H<sub>2</sub>O 和 E=mc<sup>2</sup>
-```
+项目实现了两个自定义 unified 插件：
 
 **remark-toc-filter** — TOC 标记过滤
 
@@ -5092,8 +5082,8 @@ $$\text{缩进量} = \text{listLevel} \times 720 + \text{blockquoteNestLevel} \t
 | `link` | `[文本](url)` | ExternalHyperlink |
 | `image` | `![alt](url)` | ImageRun |
 | `inlineMath` | `$公式$` | Math (OMML) |
-| `superscript` | `^上标^` | TextRun (superScript) |
-| `subscript` | `~下标~` | TextRun (subScript) |
+| `superscript` | `<sup>上标</sup>` | TextRun (superScript) |
+| `subscript` | `<sub>下标</sub>` | TextRun (subScript) |
 
 **样式继承机制**
 
