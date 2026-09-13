@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/release-downloads.css' | relative_url }}">
 </head>
 <body>
   <!-- Top Navigation -->
@@ -68,6 +69,9 @@
           <a href="https://chromewebstore.google.com/detail/markdown-viewer/jekhhoflgcfoikceikgeenibinpojaoi" target="_blank" rel="noopener">Chrome Web Store</a>
           <a href="https://addons.mozilla.org/firefox/addon/markdown-viewer-extension/" target="_blank" rel="noopener">Firefox Add-ons</a>
           <a href="https://marketplace.visualstudio.com/items?itemName=xicilion.markdown-viewer-extension" target="_blank" rel="noopener">VS Code Marketplace</a>
+          <!-- The tag is filled in by assets/js/release-info.js; the link itself
+               is always usable, so it is not hidden while the lookup runs. -->
+          <a href="https://github.com/markdown-viewer/markdown-viewer-extension/releases" data-release-releases target="_blank" rel="noopener">GitHub Releases <span class="release-tag" data-release-tag></span></a>
         </div>
         <div class="footer-col">
           <div class="footer-col-title">Resources</div>
@@ -111,5 +115,9 @@
       }
     });
   </script>
+
+  <!-- Fills the version tag in the footer and any [data-release-*] block on the
+       page (the homepage hero carries the download chips). -->
+  <script src="{{ '/assets/js/release-info.js' | relative_url }}"></script>
 </body>
 </html>

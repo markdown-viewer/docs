@@ -86,6 +86,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="icon" type="image/png" sizes="128x128" href="assets/images/logo.png">
   <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/release-downloads.css">
   <style>
     /* ===== Reset & Variables ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -249,8 +250,8 @@
       background: var(--surface);
       border-bottom: 1px solid var(--border);
     }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr); gap: 64px; align-items: center; position: relative; z-index: 1; }
-    .hero-copy { text-align: left; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr); grid-template-areas: "copy stage" "strip strip"; gap: 28px 64px; align-items: center; position: relative; z-index: 1; }
+    .hero-copy { grid-area: copy; text-align: left; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 6px 16px; border-radius: var(--radius-pill);
@@ -270,9 +271,11 @@
     .hero-platforms { margin-top: 36px; display: flex; gap: 18px; justify-content: flex-start; flex-wrap: wrap; position: relative; z-index: 1; }
     .hero-platforms span { font-size: 13px; color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 6px; }
     .hero-platforms span svg { opacity: 0.5; }
+    /* Latest-release band: own grid row under the hero copy and the visual. */
+    .hero-grid .release-strip { grid-area: strip; margin-top: 0; }
 
     /* ===== Hero Visual: Publication Stack ===== */
-    .artifact-stage { min-height: 568px; position: relative; isolation: isolate; }
+    .artifact-stage { grid-area: stage; min-height: 568px; position: relative; isolation: isolate; }
     .artifact-stage::before {
       content: ''; position: absolute; inset: 28px 0 8px 40px;
       border: 1px solid rgba(120, 96, 60, 0.14); border-radius: 28px;
@@ -537,7 +540,7 @@
       .hero-actions { flex-direction: column; align-items: center; }
       .hero-actions .btn { width: auto; justify-content: flex-start; }
       .heading-lg { font-size: 28px; }
-      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "strip" "stage"; gap: 40px; }
       .artifact-stage { min-height: 472px; }
       .doc-sheet.main { right: 0; width: min(330px, 82vw); }
       .doc-sheet.code { display: none; }
@@ -705,6 +708,24 @@
             </div>
           </div>
           <div class="floating-note" data-i18n="Markdown in. Finished work out.">Markdown in. Finished work out.</div>
+        </div>
+
+        <!-- Direct downloads for the newest release, in their own hero row:
+             full width under the copy and the visual on desktop, right below the
+             hero buttons on mobile. The band is plain markup and always shown —
+             the GitHub Releases chip works on its own — while
+             assets/js/release-info.js adds the version pill and the per-file
+             chips once it resolves a release. Chips carry platform names and
+             file types only, which keeps this block out of the i18n
+             dictionaries. -->
+        <div class="release-strip">
+          <a class="release-version" data-release-block data-release-url href="https://github.com/markdown-viewer/markdown-viewer-extension/releases" target="_blank" rel="noopener" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+            <span data-release-tag></span>
+          </a>
+          <div class="release-assets" data-release-assets>
+            <a class="release-asset release-asset-more" href="https://github.com/markdown-viewer/markdown-viewer-extension/releases" target="_blank" rel="noopener">GitHub Releases</a>
+          </div>
         </div>
       </div>
     </div>
@@ -1083,6 +1104,7 @@
         <div class="footer-left">
           <img src="assets/images/logo.svg" alt="docu.md" width="22" height="22">
           <span data-i18n="© 2026 docu.md — Open source under GPLv3.">&copy; 2026 docu.md &mdash; Open source under GPLv3.</span>
+          <a data-release-url data-release-block hidden href="https://github.com/markdown-viewer/markdown-viewer-extension/releases" target="_blank" rel="noopener"><span class="release-tag" data-release-tag></span></a>
         </div>
         <div class="footer-right">
           <a href="/features/" data-i18n="Docs">Docs</a>
@@ -1147,6 +1169,10 @@
       syncButton();
     })();
   </script>
+
+  <!-- Points the version chip and the download strip at the newest GitHub
+       release. Progressive enhancement: everything it fills starts hidden. -->
+  <script src="assets/js/release-info.js"></script>
 
 </body>
 </html>

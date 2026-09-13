@@ -74,6 +74,15 @@ For VS Code users who want to preview and export Markdown within the editor:
 4. Search for "Markdown Viewer Extension"
 5. Click **Install**
 
+Need the raw files instead — an offline machine, a managed fleet, or a host without a store listing? Every platform also ships as a file, linked with the current version on the [homepage](/) and attached to the [latest GitHub release](https://github.com/markdown-viewer/markdown-viewer-extension/releases):
+
+- `chrome-v<version>.zip` — Chrome, Edge, Brave, and other Chromium builds: unzip it, then load the folder as an unpacked extension.
+- `firefox-v<version>.zip` — Firefox: install it temporarily from `about:debugging`.
+- `vscode-v<version>.vsix` — VS Code and VSCodium: Extensions panel → `...` → **Install from VSIX**.
+- `obsidian-v<version>.zip` — Obsidian: unzip it into `<vault>/.obsidian/plugins/markdown-viewer-extension/`.
+- `android-v<version>.apk` — Android: side-load it on the device.
+- `documd-cli-v<version>.tgz` — headless HTML CLI: `npm install -g ./documd-cli-v<version>.tgz` (needs Node.js 24+).
+
 ---
 
 ## Supported Browsers

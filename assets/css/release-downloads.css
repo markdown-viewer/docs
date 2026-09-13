@@ -1,0 +1,83 @@
+/* Latest-release widget: a version pill plus direct download links.
+   The band is static markup and always visible; only the version pill is
+   revealed by assets/js/release-info.js, so the [hidden] rule below has to win
+   over the flex display of its container. Colours come from tokens.css, which
+   both the homepage and the docs pages load, with the brand values as
+   fallbacks. */
+
+[data-release-block][hidden] {
+  display: none !important;
+}
+
+.release-strip {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px 8px;
+  margin-top: 40px;
+}
+
+.release-version {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border: 1px solid var(--brand-blue-muted, #d9e2f6);
+  border-radius: 9999px;
+  background: var(--brand-blue-soft, #eef2fb);
+  color: var(--brand-blue, #2f5fd0);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.release-version:hover {
+  background: var(--brand-blue-muted, #d9e2f6);
+}
+
+.release-assets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px 8px;
+}
+
+.release-asset {
+  padding: 5px 10px;
+  border: 1px solid var(--line, #e7e1d5);
+  border-radius: 9999px;
+  background: var(--paper-raised, #fff);
+  color: var(--ink-muted, #6a6459);
+  font-size: 12.5px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.release-asset:hover {
+  border-color: var(--brand-blue, #2f5fd0);
+  color: var(--brand-blue, #2f5fd0);
+}
+
+.release-asset-more {
+  background: transparent;
+  border-style: dashed;
+}
+
+/* Version text inside an existing link (footer rows). Stays transparent to the
+   surrounding link colour so it works on the light homepage footer and on the
+   dark docs footer alike. */
+.release-tag {
+  opacity: 0.72;
+  font-variant-numeric: tabular-nums;
+}
+
+.release-tag:empty {
+  display: none;
+}
