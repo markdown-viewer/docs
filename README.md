@@ -54,11 +54,11 @@ Use Markdown for writing speed, then export documents with tables, formulas, hea
 ## Main Capabilities
 
 - Clean Markdown reading view for local files and supported web URLs.
-- Document export to DOCX, PDF, or self-contained HTML where supported.
+- Document export to DOCX, PDF, self-contained HTML, or EPUB where supported.
 - Editable formulas in Word output.
 - Rendered diagrams and charts from source blocks.
 - Syntax highlighting, GitHub-style tables, task lists, images, SVG content, and complex HTML tables.
-- Support for common text-based diagram and chart formats including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+- Support for common text-based diagram and chart formats including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 - Themes for business, academic, technical, reading, and Chinese typography needs.
 - Smart rendering and caching for large documents.
 - Local processing for normal preview and export workflows.

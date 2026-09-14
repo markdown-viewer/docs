@@ -44,7 +44,7 @@ Use docu.md when documents include code, tables, formulas, visual blocks, images
 
 ## Rich Content Support
 
-The VS Code extension supports Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+The VS Code extension supports Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 
 ## Settings
 

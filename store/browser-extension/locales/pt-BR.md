@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Visualize Markdown com diagramas, fórmulas, temas e exportação local DOCX/PDF/HTML.
+Visualize Markdown com diagramas, fórmulas, temas e exportação local DOCX/PDF/HTML/EPUB.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Principais recursos:
 
 - Leitura limpa de Markdown para arquivos locais e URLs compatíveis.
 - Exportação DOCX para documentos Word editáveis.
-- Exportação PDF e HTML autônomo quando a plataforma oferece suporte.
+- Exportação PDF e HTML/EPUB autônomo quando a plataforma oferece suporte.
 - Fórmulas matemáticas editáveis na saída Word.
 - Destaque de sintaxe para blocos de código.
 - Temas para relatórios de negócios, escrita acadêmica, notas técnicas, leitura e tipografia chinesa.

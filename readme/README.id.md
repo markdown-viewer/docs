@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Pratinjau Markdown dengan diagram, rumus, tema, dan ekspor lokal DOCX/PDF/HTML.
+Pratinjau Markdown dengan diagram, rumus, tema, dan ekspor lokal DOCX/PDF/HTML/EPUB.
 
 README ini menjelaskan docu.md dalam Bahasa Indonesia. Ini adalah dokumentasi pengguna, sehingga boleh lebih lengkap daripada deskripsi singkat di toko ekstensi.
 
@@ -12,14 +12,14 @@ Fitur utama:
 
 - Tampilan baca Markdown yang bersih untuk file lokal dan URL web yang didukung.
 - Ekspor DOCX untuk dokumen Word yang dapat diedit.
-- Ekspor PDF dan HTML mandiri jika didukung platform.
+- Ekspor PDF dan HTML/EPUB mandiri jika didukung platform.
 - Rumus matematika yang dapat diedit di output Word.
 - Penyorotan sintaks untuk blok kode.
 - Tema dokumen untuk laporan bisnis, tulisan akademik, catatan teknis, tata baca, dan tipografi Tionghoa.
 - Rendering cerdas dan cache untuk dokumen besar.
 - Pemrosesan lokal untuk pratinjau dan ekspor normal.
 
-Konten kaya yang didukung mencakup Markdown standar, tabel dan daftar tugas gaya GitHub, gambar, kode yang disorot, rumus matematika, konten SVG, tabel HTML kompleks, serta diagram atau bagan dalam format teks seperti PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, dan Graphviz.
+Konten kaya yang didukung mencakup Markdown standar, tabel dan daftar tugas gaya GitHub, gambar, kode yang disorot, rumus matematika, konten SVG, tabel HTML kompleks, serta diagram atau bagan dalam format teks seperti PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts, dan Graphviz.
 
 docu.md cocok untuk dokumentasi teknis, catatan desain, draf riset, laporan mingguan, basis pengetahuan, file README, dan penulisan berbantuan AI. Buka Markdown, tinjau hasil render, pilih tema, lalu ekspor format yang sesuai.
 

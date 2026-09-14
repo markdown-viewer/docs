@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Visualize Markdown com diagramas, fórmulas, temas e exportação local DOCX/PDF/HTML.
+Visualize Markdown com diagramas, fórmulas, temas e exportação local DOCX/PDF/HTML/EPUB.
 
 Este README apresenta o docu.md em português do Brasil. Ele é uma documentação para usuários, por isso pode ser mais completo que uma descrição curta de loja.
 
@@ -12,14 +12,14 @@ Principais recursos:
 
 - Leitura limpa de Markdown para arquivos locais e URLs compatíveis.
 - Exportação DOCX para documentos Word editáveis.
-- Exportação PDF e HTML autônomo quando a plataforma oferece suporte.
+- Exportação PDF e HTML/EPUB autônomo quando a plataforma oferece suporte.
 - Fórmulas matemáticas editáveis na saída Word.
 - Destaque de sintaxe para blocos de código.
 - Temas para relatórios de negócios, escrita acadêmica, notas técnicas, leitura e tipografia chinesa.
 - Renderização inteligente e cache para documentos grandes.
 - Processamento local nos fluxos normais de prévia e exportação.
 
-O conteúdo enriquecido compatível inclui Markdown padrão, tabelas e listas de tarefas no estilo GitHub, imagens, código destacado, fórmulas matemáticas, conteúdo SVG, tabelas HTML complexas e diagramas ou gráficos em formatos textuais comuns como PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic e Graphviz.
+O conteúdo enriquecido compatível inclui Markdown padrão, tabelas e listas de tarefas no estilo GitHub, imagens, código destacado, fórmulas matemáticas, conteúdo SVG, tabelas HTML complexas e diagramas ou gráficos em formatos textuais comuns como PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts e Graphviz.
 
 O docu.md é útil para documentação técnica, notas de engenharia, rascunhos de pesquisa, relatórios semanais, bases de conhecimento, arquivos README e escrita com auxílio de IA. Abra o Markdown, revise o resultado, escolha um tema e exporte o formato adequado.
 

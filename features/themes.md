@@ -1,86 +1,105 @@
 # Themes
 
-Markdown Viewer includes 29 professionally designed themes across 7 categories to match any document type or personal preference.
+Markdown Viewer includes 34 professionally designed themes across 8 categories to match any document type or personal preference. One click switches typography, spacing, tables, and code colours together.
 
 ## Theme Categories
 
-### Classic
+### Classic Document
 
-Themes designed for business and formal documents.
+Traditional formal styles for official documents, reports, papers
 
-| Theme | Font | Best For |
-|-------|------|----------|
-| **Default** | Times New Roman | General documents, papers |
-| **Academic** | SimSun + SimHei | Academic papers |
-| **Business** | Calibri | Business reports, proposals |
-| **Manuscript** | Palatino Linotype | Handwritten style |
-| **Newspaper** | Times New Roman | News articles |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Standard** | `default` | 14pt FangSong body with Hei/Kai headings and first-line indent for general documents |
+| **Official Document** | `official` | GB/T 9704 official document: San-hao FangSong body with Hei/Kai headings |
+| **Academic** | `academic` | Song body with Hei headings, Chinese academic standard |
+| **Business** | `business` | Sans-serif body with clear hierarchy for business reports and proposals |
+| **Manuscript** | `manuscript` | Soft gray draft-paper surface with compact academic tables for research notes, review drafts, and working papers |
+| **Newspaper** | `newspaper` | Traditional newspaper typography, formal and serious |
 
-### Reading
+### Book & Reading
 
-Optimized for comfortable long-form reading.
+Comfortable long-form reading for novels, magazines, blogs
 
-| Theme | Font | Best For |
-|-------|------|----------|
-| **Palatino** | Palatino | Books, literary content |
-| **Garamond** | Garamond | Classic elegance, print |
-| **Typewriter** | Courier New | Vintage, scripts, drafts |
-| **Elegant** | Georgia | Refined, professional |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Book Publishing** | `palatino` | Palatino font with elegant book publishing style |
+| **Long Reading** | `garamond` | Georgia font for comfortable long-form reading |
+| **Typewriter** | `typewriter` | Courier New with a compact retro manuscript style |
+| **Elegant Literary** | `elegant` | Georgia font with elegant literary style |
 
-### Modern
+### Modern Tech
 
-Clean, modern typography for screen reading.
+Clean modern design for technical docs and products
 
-| Theme | Font | Best For |
-|-------|------|----------|
-| **Technical** | Arial | Technical documentation |
-| **Swiss** | Helvetica Neue | Modern, minimalist |
-| **Minimal** | Arial | Clean, distraction-free |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Technical** | `technical` | Designed for technical documentation with clean minimalist style |
+| **Swiss Minimal** | `swiss` | Helvetica style with compact grid structure for clean modern documentation |
+| **Minimal** | `minimal` | System font with minimal styling, focus on content itself |
+| **VSCode Light** | `vscode` | Mirrors VSCode's built-in Markdown preview (light), with system fonts in the Segoe UI / SF style |
 
-### Creative
+### Creative Expression
 
-Unique styles for creative and personal content.
+Creative styles for blogs, design, creative writing
 
-| Theme | Font | Best For |
-|-------|------|----------|
-| **Magazine** | Georgia | Magazine layouts |
-| **Century** | Century Gothic | Presentations |
-| **Handwritten** | Comic Sans MS | Creative, casual |
-| **Verdana** | Verdana | Screen reading |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Magazine** | `magazine` | Large title contrast with visual impact for creative content |
+| **Presentation** | `century` | Century Gothic with display-scale layout for outlines and presentation materials |
+| **Handwritten** | `handwritten` | Handwritten-feel type with gentle colors for diaries, essays, and personal notes |
+| **Web Display** | `verdana` | Verdana font with clear and sharp screen display |
 
-### Chinese
+### Chinese Typography
 
-Optimized for Chinese language documents.
+Typography optimized for Chinese content
 
-| Theme | Font | Best For |
-|-------|------|----------|
-| **Heiti** | SimHei (黑体) | Modern Chinese documents |
-| **Mixed** | SimSun + Times | Academic Chinese papers |
-| **Water** | FangSong | Traditional Chinese style |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Hei Style** | `heiti` | Hei font with a clear compact style for Chinese reports |
+| **Mixed Languages** | `mixed` | Song body with Georgia headings for mixed content |
+| **Ink Poetry** | `water` | FangSong with low-saturation ink-gray colors for poetry and Chinese long reads |
 
-### Playful
+### Colorful & Playful
 
-Fun, colorful themes for students and kids.
+Vibrant playful styles for students and kids
 
-| Theme | Color Scheme | Best For |
-|-------|--------------|----------|
-| **Rainbow** | Multi-color | Student assignments |
-| **Starry** | Purple/Blue | Creative content |
-| **Candy** | Pink/Sweet | Fun documents |
-| **Dinosaur** | Green/Brown | Kids' content |
-| **Space** | Dark/Blue | Sci-fi themed |
-| **Garden** | Green/Fresh | Nature themed |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Rainbow** | `rainbow` | Multi-colored headings for vibrant rainbow style |
+| **Candy** | `candy` | Sweet and adorable candy style |
 
-### Nature
+### Nature Colors
 
-Nature-inspired color themes.
+Nature-inspired colors for warm visual experience
 
-| Theme | Color Scheme | Best For |
-|-------|--------------|----------|
-| **Forest** | Green tones | Environmental docs |
-| **Ocean** | Blue tones | Calm, professional |
-| **Coral** | Coral/Orange | Warm, inviting |
-| **Sunset** | Warm tones | Creative content |
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Forest Natural** | `forest` | Green for natural and eco-friendly forest style |
+| **Ocean Fresh** | `ocean` | Blue-green for fresh and natural ocean style |
+
+### Dark
+
+Dark themes for night reading and developers
+
+| Theme | Theme ID | Style |
+|-------|----------|-------|
+| **Midnight** | `midnight` | Deep blue night-reading base with editorial hierarchy |
+| **Slate** | `slate` | Cool slate tones for tech blogs and product docs |
+| **Dracula** | `dracula` | Softened Dracula palette—a developer classic |
+| **Nord** | `nord` | Official Nord cool palette for long reads |
+| **Solarized Dark** | `solarized-dark` | Solarized Dark with Garamond serif for book-like reading |
+| **Gruvbox** | `gruvbox` | Gruvbox Dark palette with retro code vibe |
+| **Carbon** | `carbon` | IBM Carbon near-black base with compact layout |
+| **Obsidian** | `obsidian` | Catppuccin Mocha mauve base for notes and long reads |
+| **VSCode Dark** | `vscode-dark` | Mirrors VSCode's built-in Markdown preview (Dark+ theme) |
+
+### Theme Highlights
+
+- **9 dark themes** for night reading and developer workflows: Midnight, Slate, Dracula, Nord, Solarized Dark, Gruvbox, Carbon, Obsidian, VSCode Dark.
+- **5 CJK-first themes**: Hei Style, Mixed Languages, Ink Poetry, Standard, Official Document.
+- **Editor-matched themes** — VSCode Light and VSCode Dark mirror the Markdown preview you already read in your editor.
+- Every theme ships a matching code-highlighting palette and table style, so exports keep the same look as the preview.
 
 ---
 
@@ -89,7 +108,7 @@ Nature-inspired color themes.
 ### Method 1: Toolbar
 
 1. Click the **Theme** button in the toolbar
-2. Browse available themes
+2. Browse available themes, grouped by category
 3. Click to apply — changes instantly
 
 ### Method 2: Popup Menu
@@ -97,6 +116,15 @@ Nature-inspired color themes.
 1. Click the Markdown Viewer extension icon
 2. Select a theme from the dropdown
 3. The document updates immediately
+
+### Method 3: Settings or CLI
+
+The theme ID is what you store in settings or pass to the CLI:
+
+```bash
+# Node.js CLI
+npm run documd -- notes.md --theme technical
+```
 
 ---
 
@@ -130,39 +158,44 @@ Each theme controls:
 
 ## Theme Examples
 
-### Default Theme
+### Standard Theme
 
 ```
-Font: Times New Roman, 12pt
-Headings: Bold, 14-22pt
-Line Height: 1.5
-Best for: General documents
+Theme ID: default
+Body: FangSong
+Table style: grid
+Code theme: light-clean
+Best for: 14pt FangSong body with Hei/Kai headings and first-line indent for general documents
 ```
 
 ### Business Theme
 
 ```
-Font: Calibri, 11pt
-Headings: Bold Calibri, 12-24pt
-Line Height: 1.5
-Best for: Corporate reports, proposals
+Theme ID: business
+Body: Arial
+Table style: professional
+Code theme: business-contrast
+Best for: Sans-serif body with clear hierarchy for business reports and proposals
 ```
 
 ### Academic Theme
 
 ```
-Body: SimSun, 12pt
-Headings: SimHei, Bold
-Line Height: 1.75
-Best for: Chinese academic papers
+Theme ID: academic
+Body: SimSun
+Table style: academic
+Code theme: light-clean
+Best for: Song body with Hei headings, Chinese academic standard
 ```
 
-### Typewriter Theme
+### Midnight Theme
 
 ```
-Font: Courier New, 12pt
-Style: Monospace throughout
-Best for: Scripts, drafts, vintage look
+Theme ID: midnight
+Body: Helvetica Neue
+Table style: modern-tech
+Code theme: midnight-code
+Best for: Deep blue night-reading base with editorial hierarchy
 ```
 
 ---
@@ -174,38 +207,46 @@ Best for: Scripts, drafts, vintage look
 | Business reports | Business |
 | Technical docs | Technical |
 | Academic papers | Academic |
-| General use | Default |
-| Long reading | Palatino, Garamond |
-| Screen/web | Verdana |
-| Chinese docs | Heiti, Mixed |
+| General use | Standard |
+| Official Chinese documents | Official Document |
+| Long reading | Book Publishing, Long Reading |
+| Screen/web | Web Display, VSCode Light |
+| Chinese docs | Hei Style, Mixed Languages |
 | Creative writing | Typewriter, Handwritten |
+| Night reading | Midnight, Nord, VSCode Dark |
 
 ---
 
 ## Code Highlighting Themes
 
-Each document theme includes a matching code highlighting style:
+Each document theme ships a matching code highlighting palette:
 
 | Code Theme | Description | Used By |
 |------------|-------------|---------|
-| `light-clean` | Clean, minimal colors | Default, Technical, Verdana |
-| `warm-book` | Warm, book-like colors | Palatino, Garamond, Elegant |
-| `business-contrast` | High contrast for business | Business, Heiti, Century |
-| `cool-modern` | Cool, modern colors | Swiss, Mixed |
-| `colorful` | Vibrant colors | Typewriter, Playful themes |
+| `light-clean` | Clean light color scheme for daily use | Standard, Official Document, Academic, Manuscript, Swiss Minimal, Minimal, Presentation, Hei Style, Forest Natural |
+| `business-contrast` | Business contrast colors for presentation | Business |
+| `warm-book` | Warm book-style colors for long reading | Newspaper, Book Publishing, Long Reading, Typewriter, Handwritten, Mixed Languages, Ink Poetry |
+| `colorful` | Colorful scheme, vibrant and friendly | Elegant Literary, Rainbow, Candy |
+| `cool-modern` | Modern cool-toned colors, professional and clean | Technical, Magazine, Web Display, Ocean Fresh |
+| `vscode-light-code` | VSCode default Light+ semantic highlight palette | VSCode Light |
+| `midnight-code` | Cool low-saturation code palette for midnight/slate/carbon | Midnight, Slate, Carbon |
+| `dracula-code` | Dracula constants for dracula-soft and obsidian themes | Dracula, Obsidian |
+| `nord-code` | Nord official highlight palette for nord-dark theme | Nord |
+| `solarized-dark-code` | Retro warm-dark palette for solarized-dark and gruvbox-dark | Solarized Dark, Gruvbox |
+| `vscode-dark-code` | VSCode default Dark+ semantic highlight palette | VSCode Dark |
 
 ---
 
 ## WYSIWYG Preview
 
-What You See Is What You Get — the preview in your browser matches the exported Word document:
+The preview in your browser matches the exported document:
 
 - Same fonts
 - Same spacing
 - Same code highlighting
 - Same table styling
 
-No surprises when you export!
+No surprises when you export.
 
 ---
 
@@ -213,29 +254,28 @@ No surprises when you export!
 
 ### Consider Your Audience
 
-- **Formal/Business** → Default, Business
-- **Academic/Research** → Academic, Palatino
-- **Technical** → Technical, Verdana
+- **Formal/Business** → Standard, Business
+- **Academic/Research** → Academic, Long Reading
+- **Technical** → Technical, Swiss Minimal
 - **Creative** → Typewriter, Handwritten
 
 ### Consider the Content
 
-- **Code-heavy** → Technical, Default
-- **Math-heavy** → Academic, Default
-- **Text-heavy** → Palatino, Garamond
-- **Mixed content** → Business, Default
+- **Code-heavy** → Technical, VSCode Dark
+- **Math-heavy** → Academic, Standard
+- **Text-heavy** → Book Publishing, Long Reading
 
 ### Consider the Medium
 
-- **Print** → Garamond, Palatino (serif)
-- **Screen** → Verdana, Century (sans-serif)
-- **Both** → Default, Business
+- **Print** → Long Reading, Book Publishing (serif)
+- **Screen** → Web Display, Presentation (sans-serif)
+- **Both** → Standard, Business
 
 ---
 
 ## Custom Themes
 
-Currently, themes cannot be customized. However, 29 built-in themes across 7 categories cover most use cases.
+Currently, themes cannot be customized from the UI. However, the 34 built-in themes across 8 categories cover most use cases — and each preset is a readable JSON file in `src/themes/presets/` if you want to clone one.
 
 **Coming soon:** Custom theme support for advanced users.
 
@@ -249,5 +289,6 @@ All themes export correctly to:
 - ✅ WPS Office
 - ✅ LibreOffice
 - ✅ Google Docs (when opened)
+- ✅ Single-file HTML and EPUB exports
 
 Font substitution may occur if the exact font isn't installed on the target system, but the document will remain readable.

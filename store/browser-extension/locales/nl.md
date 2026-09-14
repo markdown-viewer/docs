@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Bekijk Markdown met diagrammen, formules, thema’s en lokale DOCX/PDF/HTML-export.
+Bekijk Markdown met diagrammen, formules, thema’s en lokale DOCX/PDF/HTML/EPUB-export.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Belangrijkste functies:
 
 - Duidelijke Markdown-leesweergave voor lokale bestanden en ondersteunde web-URL’s.
 - DOCX-export voor bewerkbare Word-documenten.
-- PDF- en zelfstandige HTML-export waar het platform dit ondersteunt.
+- PDF- en zelfstandige HTML/EPUB-export waar het platform dit ondersteunt.
 - Bewerkbare wiskundige formules in Word-uitvoer.
 - Syntaxmarkering voor codeblokken.
 - Documentthema’s voor zakelijke rapporten, academische teksten, technische notities, leeslayouts en Chinese typografie.

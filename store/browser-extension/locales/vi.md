@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Xem trước Markdown với sơ đồ, công thức, giao diện và xuất DOCX/PDF/HTML cục bộ.
+Xem trước Markdown với sơ đồ, công thức, giao diện và xuất DOCX/PDF/HTML/EPUB cục bộ.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Tính năng chính:
 
 - Chế độ đọc Markdown rõ ràng cho tệp cục bộ và URL web được hỗ trợ.
 - Xuất DOCX cho tài liệu Word có thể chỉnh sửa.
-- Xuất PDF và HTML độc lập khi nền tảng hỗ trợ.
+- Xuất PDF và HTML/EPUB độc lập khi nền tảng hỗ trợ.
 - Công thức toán có thể chỉnh sửa trong đầu ra Word.
 - Tô sáng cú pháp cho khối mã.
 - Chủ đề tài liệu cho báo cáo kinh doanh, bài viết học thuật, ghi chú kỹ thuật, bố cục đọc và kiểu chữ tiếng Trung.

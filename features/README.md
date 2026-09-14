@@ -1,6 +1,6 @@
 # Features Overview
 
-Markdown Viewer is packed with features designed to make your Markdown-to-Word workflow seamless and professional.
+Markdown Viewer is packed with features designed to make your Markdown-to-document workflow seamless and professional.
 
 ## Core Features
 
@@ -15,6 +15,7 @@ Transform code-based diagrams into high-resolution images automatically:
 - **[Canvas](diagrams/canvas.md)** — Mind maps, knowledge graphs, concept maps
 - **[Infographic](diagrams/infographic.md)** — Statistical charts and infographics
 - **[Graphviz DOT](diagrams/graphviz.md)** — Network graphs, state machines, dependency diagrams
+- **[ECharts](diagrams/echarts.md)** — Presentation-grade charts, dashboards, gauges, radar charts
 
 ### 📐 Math Formulas
 
@@ -28,17 +29,18 @@ $$
 
 ### 🎨 Professional Themes
 
-[29 built-in themes](themes.md) across 7 categories for every scenario:
+[34 built-in themes](themes.md) across 8 categories for every scenario:
 
 | Category | Themes |
 |----------|--------|
-| Classic | Default, Academic, Business, Manuscript, Newspaper |
-| Reading | Palatino, Garamond, Typewriter, Elegant |
-| Modern | Technical, Swiss, Minimal |
-| Creative | Magazine, Century, Handwritten, Verdana |
-| Chinese | Heiti, Mixed, Water |
-| Playful | Rainbow, Starry, Candy, Dinosaur, Space, Garden |
-| Nature | Forest, Ocean, Coral, Sunset |
+| Classic Document | Standard, Official Document, Academic, Business, Manuscript, Newspaper |
+| Book & Reading | Book Publishing, Long Reading, Typewriter, Elegant Literary |
+| Modern Tech | Technical, Swiss Minimal, Minimal, VSCode Light |
+| Creative Expression | Magazine, Presentation, Handwritten, Web Display |
+| Chinese Typography | Hei Style, Mixed Languages, Ink Poetry |
+| Colorful & Playful | Rainbow, Candy |
+| Nature Colors | Forest Natural, Ocean Fresh |
+| Dark | Midnight, Slate, Dracula, Nord, Solarized Dark, Gruvbox, Carbon, Obsidian, VSCode Dark |
 
 ### 💻 Code Highlighting
 
@@ -60,6 +62,7 @@ $$
 
 - SUMMARY.md navigation panel with in-page chapter switching
 - Export an entire book to a single **DOCX** (title page, TOC, chapters on new pages)
+- Export an entire book to a single **EPUB** (each SUMMARY page becomes a chapter)
 - Export an entire book to **PDF** via browser print
 
 ---
@@ -99,6 +102,7 @@ Markdown Viewer supports the complete Markdown specification plus extensions:
 - Canvas diagrams
 - Infographic syntax
 - Graphviz DOT graphs
+- ECharts charts
 - LaTeX math (inline and block)
 - Footnotes
 - Definition lists
@@ -140,17 +144,28 @@ Markdown Viewer supports the complete Markdown specification plus extensions:
 - Formulas as editable equations
 - Compatible with Word 2013+, WPS Office
 
+### Other Exports
+
+| Output | What you get | Where to find it |
+|--------|--------------|------------------|
+| **PDF** | Print-ready pages using the shared print stylesheet | Export menu → Print to PDF |
+| **HTML** | One self-contained page for publishing or archiving | Export menu → Export to HTML |
+| **EPUB** | A single ebook, or a whole GitBook exported as one EPUB | Export menu → Export to EPUB, or SUMMARY panel → Export book to EPUB |
+| **XLSX** | A Markdown table saved as a spreadsheet | Right-click a table → Save as Excel (.xlsx) |
+| **PNG / SVG** | Diagram exports for reuse outside the document | Right-click a rendered diagram |
+| **Markdown** | The raw source file | Export menu → Save File |
+
 ### What's Converted
 
-| Element | Word Result |
+| Element | Export Result |
 |---------|-------------|
 | Headings | Styled headings |
 | Lists | Proper list formatting |
-| Tables | Formatted tables with borders |
+| Tables | Formatted tables with borders (also exportable as XLSX) |
 | Code blocks | Syntax highlighted |
 | Images | Embedded high-quality |
-| Mermaid/PlantUML/DOT/Vega | PNG images |
-| LaTeX | Native equations |
+| Mermaid / PlantUML / DOT / Vega / ECharts / drawio / Canvas / Infographic | High-resolution images |
+| LaTeX | Native Word equations |
 
 ---
 
@@ -187,6 +202,7 @@ Dive deeper into each feature:
 - [Canvas Diagrams](diagrams/canvas.md)
 - [Infographic](diagrams/infographic.md)
 - [Graphviz DOT](diagrams/graphviz.md)
+- [ECharts](diagrams/echarts.md)
 - [Math Formulas](formulas.md)
 - [Themes](themes.md)
 - [Code Highlighting](code-highlight.md)

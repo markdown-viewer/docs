@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Markdown’u diyagramlar, formüller ve temalarla önizleyin; DOCX/PDF/HTML olarak yerel dışa aktarın.
+Markdown’u diyagramlar, formüller ve temalarla önizleyin; DOCX/PDF/HTML/EPUB olarak yerel dışa aktarın.
 
 Bu README docu.md’yi Türkçe açıklar. Kullanıcı dokümantasyonu olduğu için mağaza açıklamasından daha ayrıntılı olabilir.
 
@@ -12,14 +12,14 @@ Temel özellikler:
 
 - Yerel dosyalar ve desteklenen web URL’leri için temiz Markdown okuma görünümü.
 - Düzenlenebilir Word belgeleri için DOCX dışa aktarma.
-- Platform desteklediğinde PDF ve bağımsız HTML dışa aktarma.
+- Platform desteklediğinde PDF ve bağımsız HTML/EPUB dışa aktarma.
 - Word çıktısında düzenlenebilir matematik formülleri.
 - Kod blokları için sözdizimi vurgulama.
 - İş raporları, akademik yazılar, teknik notlar, okuma düzenleri ve Çince tipografi için belge temaları.
 - Büyük belgeler için akıllı render ve önbellek.
 - Normal önizleme ve dışa aktarma akışlarında yerel işleme.
 
-Desteklenen zengin içerik; standart Markdown, GitHub tarzı tablolar ve görev listeleri, görseller, vurgulanmış kod, matematik formülleri, SVG içeriği, karmaşık HTML tabloları ve PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ve Graphviz gibi metin tabanlı formatlarda yazılmış diyagramları kapsar.
+Desteklenen zengin içerik; standart Markdown, GitHub tarzı tablolar ve görev listeleri, görseller, vurgulanmış kod, matematik formülleri, SVG içeriği, karmaşık HTML tabloları ve PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts ve Graphviz gibi metin tabanlı formatlarda yazılmış diyagramları kapsar.
 
 docu.md teknik dokümantasyon, mühendislik notları, araştırma taslakları, haftalık raporlar, bilgi tabanları, README dosyaları ve yapay zekâ destekli yazım için uygundur. Markdown’u açın, sonucu inceleyin, tema seçin ve uygun formatı dışa aktarın.
 

@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Anteprima Markdown con diagrammi, formule, temi ed esportazione locale DOCX/PDF/HTML.
+Anteprima Markdown con diagrammi, formule, temi ed esportazione locale DOCX/PDF/HTML/EPUB.
 
 Questo README descrive docu.md in italiano. È documentazione per utenti, quindi può essere più completa di una breve scheda negli store.
 
@@ -12,14 +12,14 @@ Funzioni principali:
 
 - Vista Markdown pulita per file locali e URL web supportati.
 - Esportazione DOCX per documenti Word modificabili.
-- Esportazione PDF e HTML autonomo dove supportato dalla piattaforma.
+- Esportazione PDF e HTML/EPUB autonomo dove supportato dalla piattaforma.
 - Formule matematiche modificabili nell’output Word.
 - Evidenziazione della sintassi nei blocchi di codice.
 - Temi per report aziendali, scrittura accademica, note tecniche, lettura e tipografia cinese.
 - Rendering intelligente e cache per documenti grandi.
 - Elaborazione locale nei normali flussi di anteprima ed esportazione.
 
-I contenuti ricchi supportati includono Markdown standard, tabelle e task list in stile GitHub, immagini, codice evidenziato, formule matematiche, contenuti SVG, tabelle HTML complesse e diagrammi o grafici scritti in formati testuali comuni come PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic e Graphviz.
+I contenuti ricchi supportati includono Markdown standard, tabelle e task list in stile GitHub, immagini, codice evidenziato, formule matematiche, contenuti SVG, tabelle HTML complesse e diagrammi o grafici scritti in formati testuali comuni come PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts e Graphviz.
 
 docu.md è adatto a documentazione tecnica, note di progettazione, bozze di ricerca, report settimanali, knowledge base, file README e scrittura assistita dall’IA. Apri o salva il Markdown, controlla il rendering, scegli un tema ed esporta il formato più adatto.
 

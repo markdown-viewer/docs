@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-図表・数式・テーマ付きで Markdown をプレビューし、DOCX/PDF/HTML をローカルで出力できます。
+図表・数式・テーマ付きで Markdown をプレビューし、DOCX/PDF/HTML/EPUB をローカルで出力できます。
 
 この README は docu.md を日本語で説明する利用者向けドキュメントです。ストア向けの短い説明よりも詳しく、機能と使い方を紹介します。
 
@@ -12,14 +12,14 @@ Markdown は下書き、バージョン管理、技術メモ、プロジェク�
 
 - ローカルファイルと対応 Web URL の Markdown を読みやすく表示。
 - 編集可能な Word 文書として DOCX 出力。
-- プラットフォームが対応する場合は PDF と単体 HTML 出力。
+- プラットフォームが対応する場合は PDF と単体 HTML/EPUB 出力。
 - Word 出力内で編集可能な数式。
 - コードブロックのシンタックスハイライト。
 - ビジネス文書、学術文書、技術メモ、閲覧用レイアウト、中国語組版向けのテーマ。
 - 大きな文書向けのスマートレンダリングとキャッシュ。
 - 通常のプレビューと出力はローカル処理。
 
-対応するリッチコンテンツには、標準 Markdown、GitHub 風の表とタスクリスト、画像、ハイライト付きコード、数式、SVG、複雑な HTML テーブル、PlantUML、Mermaid、Vega/Vega-Lite、drawio、Canvas、Infographic、Graphviz などのテキスト形式で書かれた図表やチャートが含まれます。
+対応するリッチコンテンツには、標準 Markdown、GitHub 風の表とタスクリスト、画像、ハイライト付きコード、数式、SVG、複雑な HTML テーブル、PlantUML、Mermaid、Vega/Vega-Lite、drawio、Canvas、Infographic、ECharts、Graphviz などのテキスト形式で書かれた図表やチャートが含まれます。
 
 docu.md は、技術文書、設計メモ、研究下書き、週次レポート、ナレッジベース、README、AI 支援ライティングに適しています。Markdown を開き、レンダリング結果を確認し、テーマを選び、用途に合った形式で出力できます。
 

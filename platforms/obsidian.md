@@ -36,7 +36,7 @@ AI-generated Markdown can be saved into the vault, reviewed with docu.md, themed
 
 ## Rich Content Support
 
-The Obsidian plugin uses the shared docu.md rendering engine. It supports Markdown, tables, task lists, images, highlighted code, math formulas, SVG assets, complex HTML tables, and text-based diagrams or charts such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+The Obsidian plugin uses the shared docu.md rendering engine. It supports Markdown, tables, task lists, images, highlighted code, math formulas, SVG assets, complex HTML tables, and text-based diagrams or charts such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 
 ## Privacy
 

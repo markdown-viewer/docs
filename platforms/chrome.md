@@ -40,11 +40,11 @@ Open a supported raw Markdown URL. The extension detects compatible content and 
 
 ### Export a Handoff Document
 
-Use the export action when the rendered result is ready. DOCX is useful for editable Word handoff. PDF and self-contained HTML are available where supported by the current build and platform.
+Use the export action when the rendered result is ready. DOCX is useful for editable Word handoff. PDF, self-contained HTML, and EPUB are available where supported by the current build and platform.
 
 ## Rich Content Support
 
-Chrome uses the shared docu.md rendering engine. It supports standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+Chrome uses the shared docu.md rendering engine. It supports standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 
 ## Permissions
 

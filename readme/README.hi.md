@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Markdown को डायग्राम, फ़ॉर्मूला और थीम के साथ देखें और DOCX/PDF/HTML में स्थानीय रूप से export करें।
+Markdown को डायग्राम, फ़ॉर्मूला और थीम के साथ देखें और DOCX/PDF/HTML/EPUB में स्थानीय रूप से export करें।
 
 यह README docu.md को हिन्दी में समझाता है। यह उपयोगकर्ता दस्तावेज़ है, इसलिए यह एक्सटेंशन स्टोर के छोटे विवरण से ज़्यादा विस्तृत हो सकता है।
 
@@ -12,14 +12,14 @@ Markdown draft लिखने, version control, technical notes, project docume
 
 - local files और supported web URLs के लिए साफ़ Markdown reading view.
 - editable Word documents के लिए DOCX export.
-- platform support होने पर PDF और self-contained HTML export.
+- platform support होने पर PDF और self-contained HTML/EPUB export.
 - Word output में editable math formulas.
 - code blocks के लिए syntax highlighting.
 - business reports, academic writing, technical notes, reading layouts और Chinese typography के लिए document themes.
 - बड़े documents के लिए smart rendering और cache.
 - normal preview और export workflows के लिए local processing.
 
-Supported rich content में standard Markdown, GitHub-style tables और task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, और PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic और Graphviz जैसे text-based formats में लिखे diagrams या charts शामिल हैं।
+Supported rich content में standard Markdown, GitHub-style tables और task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, और PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts और Graphviz जैसे text-based formats में लिखे diagrams या charts शामिल हैं।
 
 docu.md technical documentation, engineering design notes, research drafts, weekly reports, knowledge-base pages, README files और AI-assisted writing के लिए उपयोगी है। Markdown खोलें, rendered result देखें, theme चुनें और handoff के हिसाब से document format export करें।
 

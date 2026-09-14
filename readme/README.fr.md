@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Prévisualisez Markdown avec diagrammes, formules, thèmes et export local DOCX/PDF/HTML.
+Prévisualisez Markdown avec diagrammes, formules, thèmes et export local DOCX/PDF/HTML/EPUB.
 
 Ce README présente docu.md en français. C’est une documentation utilisateur : elle peut donc être plus complète qu’un court texte de marketplace.
 
@@ -12,14 +12,14 @@ Fonctions principales :
 
 - Vue de lecture claire pour les fichiers locaux et les URL web prises en charge.
 - Export DOCX pour des documents Word modifiables.
-- Export PDF et HTML autonome lorsque la plateforme le permet.
+- Export PDF et HTML/EPUB autonome lorsque la plateforme le permet.
 - Formules mathématiques modifiables dans la sortie Word.
 - Coloration syntaxique des blocs de code.
 - Thèmes pour rapports professionnels, textes académiques, notes techniques, lecture longue et typographie chinoise.
 - Rendu intelligent et cache pour les documents volumineux.
 - Traitement local pour les flux habituels de prévisualisation et d’export.
 
-Les contenus riches pris en charge incluent Markdown standard, tableaux et listes de tâches de style GitHub, images, code coloré, formules mathématiques, contenu SVG, tableaux HTML complexes, ainsi que des diagrammes et graphiques écrits dans des formats textuels courants comme PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic et Graphviz.
+Les contenus riches pris en charge incluent Markdown standard, tableaux et listes de tâches de style GitHub, images, code coloré, formules mathématiques, contenu SVG, tableaux HTML complexes, ainsi que des diagrammes et graphiques écrits dans des formats textuels courants comme PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts et Graphviz.
 
 docu.md convient à la documentation technique, aux notes de conception, aux brouillons de recherche, aux rapports hebdomadaires, aux bases de connaissances, aux fichiers README et à l’écriture assistée par IA. Ouvrez le Markdown, vérifiez le rendu, choisissez un thème et exportez le format adapté.
 

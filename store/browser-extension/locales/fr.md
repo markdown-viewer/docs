@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Prévisualisez Markdown avec diagrammes, formules, thèmes et export local DOCX/PDF/HTML.
+Prévisualisez Markdown avec diagrammes, formules, thèmes et export local DOCX/PDF/HTML/EPUB.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Fonctions principales :
 
 - Vue de lecture claire pour les fichiers locaux et les URL web prises en charge.
 - Export DOCX pour des documents Word modifiables.
-- Export PDF et HTML autonome lorsque la plateforme le permet.
+- Export PDF et HTML/EPUB autonome lorsque la plateforme le permet.
 - Formules mathématiques modifiables dans la sortie Word.
 - Coloration syntaxique des blocs de code.
 - Thèmes pour rapports professionnels, textes académiques, notes techniques, lecture longue et typographie chinoise.

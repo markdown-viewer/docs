@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Eelvaata Markdowni diagrammide, valemite ja teemadega ning ekspordi kohalikult DOCX/PDF/HTML-vormingusse.
+Eelvaata Markdowni diagrammide, valemite ja teemadega ning ekspordi kohalikult DOCX/PDF/HTML/EPUB-vormingusse.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Põhivõimalused:
 
 - Selge Markdowni lugemisvaade kohalikele failidele ja toetatud veebiaadressidele.
 - DOCX eksport muudetavate Wordi dokumentide jaoks.
-- PDF ja iseseisev HTML eksport, kui platvorm seda toetab.
+- PDF ja iseseisev HTML/EPUB eksport, kui platvorm seda toetab.
 - Muudetavad matemaatilised valemid Wordi väljundis.
 - Süntaksi esiletõstmine koodiplokkidele.
 - Dokumenditeemad äriraportitele, akadeemilisele tekstile, tehnilistele märkmetele, lugemisvaadetele ja hiina tüpograafiale.

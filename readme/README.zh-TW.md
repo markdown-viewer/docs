@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-預覽帶圖表、公式和主題的 Markdown，並在本地匯出 DOCX/PDF/HTML。
+預覽帶圖表、公式和主題的 Markdown，並在本地匯出 DOCX/PDF/HTML/EPUB。
 
 這份 README 使用繁體中文介紹 docu.md。它面向使用者與文件場景，因此可以比擴充商店裡的簡短說明更完整、更積極。
 
@@ -12,14 +12,14 @@ Markdown 很適合快速起草、版本管理、技術筆記、專案文件和 A
 
 - 為本地檔案和受支援的網頁網址提供清晰的 Markdown 閱讀視圖。
 - 匯出可編輯的 DOCX Word 文件。
-- 在平台支援時匯出 PDF 和自包含 HTML。
+- 在平台支援時匯出 PDF 和自包含 HTML/EPUB。
 - 在 Word 輸出中保留可編輯數學公式。
 - 為程式碼區塊提供語法高亮。
 - 提供適合商務報告、學術寫作、技術筆記、閱讀版式和中文排版的文件主題。
 - 為大型文件提供智慧渲染和快取。
 - 正常預覽和匯出流程在本地處理。
 
-支援的豐富內容包括標準 Markdown、GitHub 風格表格和任務列表、圖片、高亮程式碼、數學公式、SVG 內容、複雜 HTML 表格，以及 PlantUML、Mermaid、Vega/Vega-Lite、drawio、Canvas、Infographic 和 Graphviz 等常見文字格式編寫的圖表。
+支援的豐富內容包括標準 Markdown、GitHub 風格表格和任務列表、圖片、高亮程式碼、數學公式、SVG 內容、複雜 HTML 表格，以及 PlantUML、Mermaid、Vega/Vega-Lite、drawio、Canvas、Infographic、ECharts 和 Graphviz 等常見文字格式編寫的圖表。
 
 docu.md 適合技術文件、工程設計筆記、研究草稿、週報、知識庫頁面、README 檔案和 AI 輔助寫作。儲存或開啟 Markdown，檢查渲染結果，選擇主題，然後匯出適合交付場景的文件格式。
 

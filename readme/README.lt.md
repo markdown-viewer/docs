@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Peržiūrėkite Markdown su diagramomis, formulėmis, temomis ir vietiniu DOCX/PDF/HTML eksportu.
+Peržiūrėkite Markdown su diagramomis, formulėmis, temomis ir vietiniu DOCX/PDF/HTML/EPUB eksportu.
 
 Šis README aprašo docu.md lietuviškai. Tai naudotojų dokumentacija, todėl ji gali būti išsamesnė nei trumpas parduotuvės aprašas.
 
@@ -12,14 +12,14 @@ Pagrindinės funkcijos:
 
 - Aiški Markdown skaitymo peržiūra vietiniams failams ir palaikomiems URL.
 - DOCX eksportas redaguojamiems Word dokumentams.
-- PDF ir savarankiško HTML eksportas, kai palaiko platforma.
+- PDF ir savarankiško HTML/EPUB eksportas, kai palaiko platforma.
 - Redaguojamos matematinės formulės Word išvestyje.
 - Sintaksės paryškinimas kodo blokams.
 - Dokumentų temos verslo ataskaitoms, akademiniam rašymui, techninėms pastaboms, skaitymui ir kinų tipografijai.
 - Išmanus atvaizdavimas ir talpykla dideliems dokumentams.
 - Vietinis apdorojimas įprastai peržiūrai ir eksportui.
 
-Palaikomas turtingas turinys apima standartinį Markdown, GitHub tipo lenteles ir užduočių sąrašus, paveikslus, paryškintą kodą, matematines formules, SVG turinį, sudėtingas HTML lenteles ir diagramas ar grafikus tekstiniais formatais, tokiais kaip PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ir Graphviz.
+Palaikomas turtingas turinys apima standartinį Markdown, GitHub tipo lenteles ir užduočių sąrašus, paveikslus, paryškintą kodą, matematines formules, SVG turinį, sudėtingas HTML lenteles ir diagramas ar grafikus tekstiniais formatais, tokiais kaip PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts ir Graphviz.
 
 docu.md tinka techninei dokumentacijai, inžinerinėms pastaboms, tyrimų juodraščiams, savaitinėms ataskaitoms, žinių bazėms, README failams ir AI padedamam rašymui. Atverkite Markdown, patikrinkite rezultatą, pasirinkite temą ir eksportuokite tinkamą formatą.
 

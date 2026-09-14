@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Pratinjau Markdown dengan diagram, rumus, tema, dan ekspor lokal DOCX/PDF/HTML.
+Pratinjau Markdown dengan diagram, rumus, tema, dan ekspor lokal DOCX/PDF/HTML/EPUB.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Fitur utama:
 
 - Tampilan baca Markdown yang bersih untuk file lokal dan URL web yang didukung.
 - Ekspor DOCX untuk dokumen Word yang dapat diedit.
-- Ekspor PDF dan HTML mandiri jika didukung platform.
+- Ekspor PDF dan HTML/EPUB mandiri jika didukung platform.
 - Rumus matematika yang dapat diedit di output Word.
 - Penyorotan sintaks untuk blok kode.
 - Tema dokumen untuk laporan bisnis, tulisan akademik, catatan teknis, tata baca, dan tipografi Tionghoa.

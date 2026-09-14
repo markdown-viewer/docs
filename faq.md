@@ -43,6 +43,7 @@ All major diagram types:
 | **Canvas** | Mind maps, knowledge graphs, concept maps |
 | **Infographic** | Statistical charts, presentations |
 | **Graphviz DOT** | Directed graphs, network topology, state machines |
+| **ECharts** | Bar, line, pie, radar, gauge, candlestick charts |
 | **SVG** | Auto-converted to images |
 
 ### Are there file size limits?
@@ -130,7 +131,7 @@ Default: max 1000 items, approximately 500MB. You can:
 
 ### Can I customize themes?
 
-Currently not supported. We offer 29 pre-designed themes across 7 categories that cover most needs. Custom themes are planned for future releases.
+Currently not supported. We offer 34 pre-designed themes across 8 categories that cover most needs. Custom themes are planned for future releases.
 
 ---
 

@@ -29,7 +29,7 @@ Open a supported Markdown URL in Firefox. If a server sends unusual headers, sav
 
 ### Export Documents
 
-Export when the rendered file is ready for handoff. DOCX is useful for editable Word documents. PDF and HTML are available where supported by the current platform build.
+Export when the rendered file is ready for handoff. DOCX is useful for editable Word documents. PDF, HTML, and EPUB are available where supported by the current platform build.
 
 ## Firefox Notes
 
@@ -37,7 +37,7 @@ Firefox uses different extension APIs for background work and request handling. 
 
 ## Rich Content Support
 
-Firefox uses the shared rendering engine for standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and diagrams or charts from text-based formats such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+Firefox uses the shared rendering engine for standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and diagrams or charts from text-based formats such as PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 
 ## Privacy
 

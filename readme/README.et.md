@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Eelvaata Markdowni diagrammide, valemite ja teemadega ning ekspordi kohalikult DOCX/PDF/HTML-vormingusse.
+Eelvaata Markdowni diagrammide, valemite ja teemadega ning ekspordi kohalikult DOCX/PDF/HTML/EPUB-vormingusse.
 
 See README kirjeldab docu.md-d eesti keeles. See on kasutajadokumentatsioon ja võib olla põhjalikum kui lühike poekirjeldus.
 
@@ -12,14 +12,14 @@ Põhivõimalused:
 
 - Selge Markdowni lugemisvaade kohalikele failidele ja toetatud veebiaadressidele.
 - DOCX eksport muudetavate Wordi dokumentide jaoks.
-- PDF ja iseseisev HTML eksport, kui platvorm seda toetab.
+- PDF ja iseseisev HTML/EPUB eksport, kui platvorm seda toetab.
 - Muudetavad matemaatilised valemid Wordi väljundis.
 - Süntaksi esiletõstmine koodiplokkidele.
 - Dokumenditeemad äriraportitele, akadeemilisele tekstile, tehnilistele märkmetele, lugemisvaadetele ja hiina tüpograafiale.
 - Nutikas renderdus ja vahemälu suurtele dokumentidele.
 - Kohalik töötlemine tavapärase eelvaate ja ekspordi jaoks.
 
-Toetatud rikkalik sisu hõlmab standardset Markdowni, GitHubi-laadseid tabeleid ja ülesandeloendeid, pilte, esiletõstetud koodi, matemaatilisi valemeid, SVG-sisu, keerukaid HTML-tabeleid ning tekstipõhiseid diagramme ja graafikuid vormingutes PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ja Graphviz.
+Toetatud rikkalik sisu hõlmab standardset Markdowni, GitHubi-laadseid tabeleid ja ülesandeloendeid, pilte, esiletõstetud koodi, matemaatilisi valemeid, SVG-sisu, keerukaid HTML-tabeleid ning tekstipõhiseid diagramme ja graafikuid vormingutes PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts ja Graphviz.
 
 docu.md sobib tehnilisele dokumentatsioonile, insenerimärkmetele, uurimistöö mustanditele, nädalaaruannetele, teadmistebaasidele, README-failidele ja AI-toega kirjutamisele. Ava Markdown, kontrolli tulemust, vali teema ja ekspordi sobiv vorming.
 

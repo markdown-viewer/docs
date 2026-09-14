@@ -2,7 +2,7 @@
 
 ## Short Description
 
-図表・数式・テーマ付きで Markdown をプレビューし、DOCX/PDF/HTML をローカルで出力できます。
+図表・数式・テーマ付きで Markdown をプレビューし、DOCX/PDF/HTML/EPUB をローカルで出力できます。
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Markdown は下書き、バージョン管理、技術メモ、プロジェク�
 
 - ローカルファイルと対応 Web URL の Markdown を読みやすく表示。
 - 編集可能な Word 文書として DOCX 出力。
-- プラットフォームが対応する場合は PDF と単体 HTML 出力。
+- プラットフォームが対応する場合は PDF と単体 HTML/EPUB 出力。
 - Word 出力内で編集可能な数式。
 - コードブロックのシンタックスハイライト。
 - ビジネス文書、学術文書、技術メモ、閲覧用レイアウト、中国語組版向けのテーマ。

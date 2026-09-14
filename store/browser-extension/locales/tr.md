@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Markdown’u diyagramlar, formüller ve temalarla önizleyin; DOCX/PDF/HTML olarak yerel dışa aktarın.
+Markdown’u diyagramlar, formüller ve temalarla önizleyin; DOCX/PDF/HTML/EPUB olarak yerel dışa aktarın.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Temel özellikler:
 
 - Yerel dosyalar ve desteklenen web URL’leri için temiz Markdown okuma görünümü.
 - Düzenlenebilir Word belgeleri için DOCX dışa aktarma.
-- Platform desteklediğinde PDF ve bağımsız HTML dışa aktarma.
+- Platform desteklediğinde PDF ve bağımsız HTML/EPUB dışa aktarma.
 - Word çıktısında düzenlenebilir matematik formülleri.
 - Kod blokları için sözdizimi vurgulama.
 - İş raporları, akademik yazılar, teknik notlar, okuma düzenleri ve Çince tipografi için belge temaları.

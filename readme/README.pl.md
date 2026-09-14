@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Podgląd Markdown z diagramami, wzorami, motywami i lokalnym eksportem DOCX/PDF/HTML.
+Podgląd Markdown z diagramami, wzorami, motywami i lokalnym eksportem DOCX/PDF/HTML/EPUB.
 
 Ten README opisuje docu.md po polsku. To dokumentacja użytkownika, więc może być pełniejsza niż krótki opis w sklepie.
 
@@ -12,14 +12,14 @@ Najważniejsze funkcje:
 
 - Czytelny widok Markdown dla plików lokalnych i obsługiwanych adresów URL.
 - Eksport DOCX do edytowalnych dokumentów Word.
-- Eksport PDF i samodzielnego HTML tam, gdzie pozwala platforma.
+- Eksport PDF i samodzielnego HTML/EPUB tam, gdzie pozwala platforma.
 - Edytowalne wzory matematyczne w plikach Word.
 - Podświetlanie składni w blokach kodu.
 - Motywy dokumentów dla raportów, tekstów akademickich, notatek technicznych, czytania i chińskiej typografii.
 - Inteligentne renderowanie i pamięć podręczna dla dużych dokumentów.
 - Lokalne przetwarzanie podczas typowego podglądu i eksportu.
 
-Obsługiwana treść obejmuje standardowy Markdown, tabele i listy zadań w stylu GitHub, obrazy, podświetlony kod, wzory matematyczne, SVG, złożone tabele HTML oraz diagramy i wykresy w tekstowych formatach takich jak PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic i Graphviz.
+Obsługiwana treść obejmuje standardowy Markdown, tabele i listy zadań w stylu GitHub, obrazy, podświetlony kod, wzory matematyczne, SVG, złożone tabele HTML oraz diagramy i wykresy w tekstowych formatach takich jak PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts i Graphviz.
 
 docu.md sprawdza się przy dokumentacji technicznej, notatkach projektowych, szkicach badawczych, raportach tygodniowych, bazach wiedzy, plikach README i pisaniu wspieranym przez AI. Otwórz Markdown, sprawdź wynik, wybierz motyw i wyeksportuj właściwy format.
 

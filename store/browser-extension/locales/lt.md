@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Peržiūrėkite Markdown su diagramomis, formulėmis, temomis ir vietiniu DOCX/PDF/HTML eksportu.
+Peržiūrėkite Markdown su diagramomis, formulėmis, temomis ir vietiniu DOCX/PDF/HTML/EPUB eksportu.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Pagrindinės funkcijos:
 
 - Aiški Markdown skaitymo peržiūra vietiniams failams ir palaikomiems URL.
 - DOCX eksportas redaguojamiems Word dokumentams.
-- PDF ir savarankiško HTML eksportas, kai palaiko platforma.
+- PDF ir savarankiško HTML/EPUB eksportas, kai palaiko platforma.
 - Redaguojamos matematinės formulės Word išvestyje.
 - Sintaksės paryškinimas kodo blokams.
 - Dokumentų temos verslo ataskaitoms, akademiniam rašymui, techninėms pastaboms, skaitymui ir kinų tipografijai.

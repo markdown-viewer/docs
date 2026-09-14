@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Bekijk Markdown met diagrammen, formules, thema’s en lokale DOCX/PDF/HTML-export.
+Bekijk Markdown met diagrammen, formules, thema’s en lokale DOCX/PDF/HTML/EPUB-export.
 
 Deze README beschrijft docu.md in het Nederlands. Het is gebruikersdocumentatie en mag daarom vollediger zijn dan korte store-tekst.
 
@@ -12,14 +12,14 @@ Belangrijkste functies:
 
 - Duidelijke Markdown-leesweergave voor lokale bestanden en ondersteunde web-URL’s.
 - DOCX-export voor bewerkbare Word-documenten.
-- PDF- en zelfstandige HTML-export waar het platform dit ondersteunt.
+- PDF- en zelfstandige HTML/EPUB-export waar het platform dit ondersteunt.
 - Bewerkbare wiskundige formules in Word-uitvoer.
 - Syntaxmarkering voor codeblokken.
 - Documentthema’s voor zakelijke rapporten, academische teksten, technische notities, leeslayouts en Chinese typografie.
 - Slim renderen en cache voor grote documenten.
 - Lokale verwerking voor normale preview- en exportflows.
 
-Ondersteunde rijke inhoud omvat standaard Markdown, GitHub-achtige tabellen en takenlijsten, afbeeldingen, gemarkeerde code, wiskundige formules, SVG-inhoud, complexe HTML-tabellen en diagrammen of grafieken in gangbare tekstformaten zoals PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic en Graphviz.
+Ondersteunde rijke inhoud omvat standaard Markdown, GitHub-achtige tabellen en takenlijsten, afbeeldingen, gemarkeerde code, wiskundige formules, SVG-inhoud, complexe HTML-tabellen en diagrammen of grafieken in gangbare tekstformaten zoals PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts en Graphviz.
 
 docu.md is nuttig voor technische documentatie, ontwerpnotities, onderzoeksconcepten, weekrapporten, kennisbanken, README-bestanden en AI-ondersteund schrijven. Open Markdown, controleer de weergave, kies een thema en exporteer het juiste documentformaat.
 

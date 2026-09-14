@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Pratonton Markdown dengan rajah, formula, tema dan eksport tempatan DOCX/PDF/HTML.
+Pratonton Markdown dengan rajah, formula, tema dan eksport tempatan DOCX/PDF/HTML/EPUB.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Ciri utama:
 
 - Paparan bacaan Markdown yang bersih untuk fail tempatan dan URL web yang disokong.
 - Eksport DOCX untuk dokumen Word yang boleh diedit.
-- Eksport PDF dan HTML kendiri apabila disokong platform.
+- Eksport PDF dan HTML/EPUB kendiri apabila disokong platform.
 - Formula matematik boleh diedit dalam output Word.
 - Serlahan sintaks untuk blok kod.
 - Tema dokumen untuk laporan perniagaan, penulisan akademik, nota teknikal, susun atur bacaan dan tipografi Cina.

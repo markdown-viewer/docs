@@ -21,6 +21,7 @@
   * [Canvas](features/diagrams/canvas.md)
   * [Infographic](features/diagrams/infographic.md)
   * [Graphviz DOT](features/diagrams/graphviz.md)
+  * [ECharts](features/diagrams/echarts.md)
 * [Math Formulas](features/formulas.md)
 * [Themes](features/themes.md)
 * [Code Highlighting](features/code-highlight.md)

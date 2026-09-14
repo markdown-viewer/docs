@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Esikatsele Markdownia kaavioilla, kaavoilla ja teemoilla sekä vie paikallisesti DOCX/PDF/HTML-muotoon.
+Esikatsele Markdownia kaavioilla, kaavoilla ja teemoilla sekä vie paikallisesti DOCX/PDF/HTML/EPUB-muotoon.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Tärkeimmät ominaisuudet:
 
 - Selkeä Markdown-lukunäkymä paikallisille tiedostoille ja tuetuille verkko-osoitteille.
 - DOCX-vienti muokattavia Word-dokumentteja varten.
-- PDF- ja itsenäinen HTML-vienti, kun alusta tukee niitä.
+- PDF- ja itsenäinen HTML/EPUB-vienti, kun alusta tukee niitä.
 - Muokattavat matemaattiset kaavat Word-tulosteessa.
 - Syntaksikorostus koodilohkoille.
 - Dokumenttiteemat raportteihin, akateemiseen tekstiin, teknisiin muistiinpanoihin, lukukäyttöön ja kiinalaiseen typografiaan.

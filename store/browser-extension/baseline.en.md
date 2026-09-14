@@ -4,7 +4,7 @@ This is the English baseline for browser extension marketplace copy. It applies 
 
 ## Short Description
 
-Preview Markdown with diagrams, math, themes, and local DOCX/PDF/HTML export.
+Preview Markdown with diagrams, math, themes, and local DOCX/PDF/HTML/EPUB export.
 
 ## Long Description
 
@@ -16,7 +16,7 @@ Key features:
 
 - Clean Markdown reading view for local files and supported web URLs.
 - DOCX export for editable Word documents.
-- PDF and self-contained HTML export where supported by the platform.
+- PDF and self-contained HTML/EPUB export where supported by the platform.
 - Editable math formulas in Word output.
 - Syntax highlighting for code blocks.
 - Document themes for business reports, academic writing, technical notes, reading layouts, and Chinese typography.

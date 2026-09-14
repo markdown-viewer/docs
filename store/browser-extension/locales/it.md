@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Anteprima Markdown con diagrammi, formule, temi ed esportazione locale DOCX/PDF/HTML.
+Anteprima Markdown con diagrammi, formule, temi ed esportazione locale DOCX/PDF/HTML/EPUB.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Funzioni principali:
 
 - Vista Markdown pulita per file locali e URL web supportati.
 - Esportazione DOCX per documenti Word modificabili.
-- Esportazione PDF e HTML autonomo dove supportato dalla piattaforma.
+- Esportazione PDF e HTML/EPUB autonomo dove supportato dalla piattaforma.
 - Formule matematiche modificabili nell’output Word.
 - Evidenziazione della sintassi nei blocchi di codice.
 - Temi per report aziendali, scrittura accademica, note tecniche, lettura e tipografia cinese.

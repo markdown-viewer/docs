@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Förhandsvisa Markdown med diagram, formler, teman och lokal DOCX/PDF/HTML-export.
+Förhandsvisa Markdown med diagram, formler, teman och lokal DOCX/PDF/HTML/EPUB-export.
 
 Denna README beskriver docu.md på svenska. Det är användardokumentation och kan därför vara mer utförlig än kort store-text.
 
@@ -12,14 +12,14 @@ Viktiga funktioner:
 
 - Ren Markdown-läsvy för lokala filer och stödda webbadresser.
 - DOCX-export för redigerbara Word-dokument.
-- PDF- och fristående HTML-export där plattformen stöder det.
+- PDF- och fristående HTML/EPUB-export där plattformen stöder det.
 - Redigerbara matematiska formler i Word-utdata.
 - Syntaxmarkering för kodblock.
 - Dokumentteman för rapporter, akademisk text, tekniska anteckningar, läslayouter och kinesisk typografi.
 - Smart rendering och cache för stora dokument.
 - Lokal bearbetning för vanlig förhandsvisning och export.
 
-Stött rikt innehåll omfattar standard-Markdown, GitHub-liknande tabeller och uppgiftslistor, bilder, markerad kod, matematiska formler, SVG-innehåll, komplexa HTML-tabeller samt diagram och grafer i textbaserade format som PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic och Graphviz.
+Stött rikt innehåll omfattar standard-Markdown, GitHub-liknande tabeller och uppgiftslistor, bilder, markerad kod, matematiska formler, SVG-innehåll, komplexa HTML-tabeller samt diagram och grafer i textbaserade format som PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts och Graphviz.
 
 docu.md passar teknisk dokumentation, designanteckningar, forskningsutkast, veckorapporter, kunskapsbaser, README-filer och AI-assisterat skrivande. Öppna Markdown, granska resultatet, välj tema och exportera rätt format.
 

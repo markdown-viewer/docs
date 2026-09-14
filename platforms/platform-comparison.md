@@ -20,6 +20,10 @@ This page provides a comparison of the main Markdown Viewer platform families an
 | Markdown rendering | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Shared diagram/file registry | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | DOCX export | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| HTML export | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| EPUB export | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Excel table export (.xlsx) | ✅ | ✅ | ✅ | Host-managed | ✅ | ✅ |
+| Diagram image export (PNG/SVG) | ✅ | ✅ | ✅ | Host-managed | ✅ | ✅ |
 | Print | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Theme switching | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Local/offline use | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -43,6 +47,7 @@ All released platforms are built on the same shared format registry in `src/type
 | `.infographic` | Infographic charts |
 | `.canvas` | Canvas diagrams |
 | `.drawio` | draw.io diagrams |
+| `.echarts` | ECharts charts |
 
 Obsidian additionally registers `.svg` for preview handling inside the host app.
 

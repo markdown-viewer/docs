@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Pratonton Markdown dengan rajah, formula, tema dan eksport tempatan DOCX/PDF/HTML.
+Pratonton Markdown dengan rajah, formula, tema dan eksport tempatan DOCX/PDF/HTML/EPUB.
 
 README ini menerangkan docu.md dalam Bahasa Melayu. Ia dokumentasi pengguna, jadi kandungannya boleh lebih lengkap daripada teks ringkas di kedai sambungan.
 
@@ -12,14 +12,14 @@ Ciri utama:
 
 - Paparan bacaan Markdown yang bersih untuk fail tempatan dan URL web yang disokong.
 - Eksport DOCX untuk dokumen Word yang boleh diedit.
-- Eksport PDF dan HTML kendiri apabila disokong platform.
+- Eksport PDF dan HTML/EPUB kendiri apabila disokong platform.
 - Formula matematik boleh diedit dalam output Word.
 - Serlahan sintaks untuk blok kod.
 - Tema dokumen untuk laporan perniagaan, penulisan akademik, nota teknikal, susun atur bacaan dan tipografi Cina.
 - Rendering pintar dan cache untuk dokumen besar.
 - Pemprosesan tempatan untuk pratonton dan eksport biasa.
 
-Kandungan kaya yang disokong termasuk Markdown standard, jadual dan senarai tugas gaya GitHub, imej, kod berserlah, formula matematik, kandungan SVG, jadual HTML kompleks, serta rajah atau carta dalam format teks seperti PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic dan Graphviz.
+Kandungan kaya yang disokong termasuk Markdown standard, jadual dan senarai tugas gaya GitHub, imej, kod berserlah, formula matematik, kandungan SVG, jadual HTML kompleks, serta rajah atau carta dalam format teks seperti PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts dan Graphviz.
 
 docu.md sesuai untuk dokumentasi teknikal, nota reka bentuk, draf penyelidikan, laporan mingguan, pangkalan pengetahuan, fail README dan penulisan berbantu AI. Buka Markdown, semak hasil render, pilih tema dan eksport format yang sesuai.
 

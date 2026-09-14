@@ -2,7 +2,7 @@
 
 ## Short Description
 
-다이어그램, 수식, 테마가 있는 Markdown을 미리 보고 DOCX/PDF/HTML로 로컬 내보내기합니다.
+다이어그램, 수식, 테마가 있는 Markdown을 미리 보고 DOCX/PDF/HTML/EPUB로 로컬 내보내기합니다.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Markdown은 초안 작성, 버전 관리, 기술 메모, 프로젝트 문서, AI
 
 - 로컬 파일과 지원되는 웹 URL을 위한 깔끔한 Markdown 읽기 화면.
 - 편집 가능한 Word 문서를 위한 DOCX 내보내기.
-- 플랫폼에서 지원되는 경우 PDF 및 단일 HTML 내보내기.
+- 플랫폼에서 지원되는 경우 PDF 및 단일 HTML/EPUB 내보내기.
 - Word 출력에서 편집 가능한 수학 수식.
 - 코드 블록 구문 강조.
 - 비즈니스 보고서, 학술 글쓰기, 기술 메모, 읽기 레이아웃, 중국어 타이포그래피용 문서 테마.

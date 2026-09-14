@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Esikatsele Markdownia kaavioilla, kaavoilla ja teemoilla sekä vie paikallisesti DOCX/PDF/HTML-muotoon.
+Esikatsele Markdownia kaavioilla, kaavoilla ja teemoilla sekä vie paikallisesti DOCX/PDF/HTML/EPUB-muotoon.
 
 Tämä README kuvaa docu.md:n suomeksi. Se on käyttäjädokumentaatiota, joten se voi olla laajempi kuin lyhyt kauppakuvaus.
 
@@ -12,14 +12,14 @@ Tärkeimmät ominaisuudet:
 
 - Selkeä Markdown-lukunäkymä paikallisille tiedostoille ja tuetuille verkko-osoitteille.
 - DOCX-vienti muokattavia Word-dokumentteja varten.
-- PDF- ja itsenäinen HTML-vienti, kun alusta tukee niitä.
+- PDF- ja itsenäinen HTML/EPUB-vienti, kun alusta tukee niitä.
 - Muokattavat matemaattiset kaavat Word-tulosteessa.
 - Syntaksikorostus koodilohkoille.
 - Dokumenttiteemat raportteihin, akateemiseen tekstiin, teknisiin muistiinpanoihin, lukukäyttöön ja kiinalaiseen typografiaan.
 - Älykäs renderöinti ja välimuisti suurille dokumenteille.
 - Paikallinen käsittely normaalissa esikatselussa ja viennissä.
 
-Tuettu rikas sisältö sisältää tavallisen Markdownin, GitHub-tyyliset taulukot ja tehtävälistat, kuvat, korostetun koodin, matemaattiset kaavat, SVG-sisällön, monimutkaiset HTML-taulukot sekä tekstipohjaiset kaavio- ja graafimuodot kuten PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic ja Graphviz.
+Tuettu rikas sisältö sisältää tavallisen Markdownin, GitHub-tyyliset taulukot ja tehtävälistat, kuvat, korostetun koodin, matemaattiset kaavat, SVG-sisällön, monimutkaiset HTML-taulukot sekä tekstipohjaiset kaavio- ja graafimuodot kuten PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts ja Graphviz.
 
 docu.md sopii tekniseen dokumentaatioon, suunnittelumuistiinpanoihin, tutkimusluonnoksiin, viikkoraportteihin, tietopankkeihin, README-tiedostoihin ja tekoälyavusteiseen kirjoittamiseen. Avaa Markdown, tarkista tulos, valitse teema ja vie sopiva muoto.
 

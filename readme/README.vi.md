@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Xem trước Markdown với sơ đồ, công thức, giao diện và xuất DOCX/PDF/HTML cục bộ.
+Xem trước Markdown với sơ đồ, công thức, giao diện và xuất DOCX/PDF/HTML/EPUB cục bộ.
 
 README này giới thiệu docu.md bằng tiếng Việt. Đây là tài liệu cho người dùng nên có thể đầy đủ hơn phần mô tả ngắn trên cửa hàng.
 
@@ -12,14 +12,14 @@ Tính năng chính:
 
 - Chế độ đọc Markdown rõ ràng cho tệp cục bộ và URL web được hỗ trợ.
 - Xuất DOCX cho tài liệu Word có thể chỉnh sửa.
-- Xuất PDF và HTML độc lập khi nền tảng hỗ trợ.
+- Xuất PDF và HTML/EPUB độc lập khi nền tảng hỗ trợ.
 - Công thức toán có thể chỉnh sửa trong đầu ra Word.
 - Tô sáng cú pháp cho khối mã.
 - Chủ đề tài liệu cho báo cáo kinh doanh, bài viết học thuật, ghi chú kỹ thuật, bố cục đọc và kiểu chữ tiếng Trung.
 - Kết xuất thông minh và bộ nhớ đệm cho tài liệu lớn.
 - Xử lý cục bộ cho quy trình xem trước và xuất thông thường.
 
-Nội dung phong phú được hỗ trợ gồm Markdown chuẩn, bảng và danh sách tác vụ kiểu GitHub, hình ảnh, mã được tô sáng, công thức toán, nội dung SVG, bảng HTML phức tạp, cùng sơ đồ hoặc biểu đồ viết bằng các định dạng văn bản như PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic và Graphviz.
+Nội dung phong phú được hỗ trợ gồm Markdown chuẩn, bảng và danh sách tác vụ kiểu GitHub, hình ảnh, mã được tô sáng, công thức toán, nội dung SVG, bảng HTML phức tạp, cùng sơ đồ hoặc biểu đồ viết bằng các định dạng văn bản như PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts và Graphviz.
 
 docu.md hữu ích cho tài liệu kỹ thuật, ghi chú thiết kế, bản nháp nghiên cứu, báo cáo tuần, trang tri thức, tệp README và viết với hỗ trợ AI. Mở Markdown, kiểm tra kết quả, chọn chủ đề và xuất định dạng phù hợp.
 

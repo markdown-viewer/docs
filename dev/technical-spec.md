@@ -87,7 +87,7 @@ data
 
 #### 1.2.1 图表支持
 
-图表是技术文档的核心组成部分。本扩展支持五种主流图表语言，覆盖从流程图到数据可视化的完整场景：
+图表是技术文档的核心组成部分。本扩展支持八种主流图表语言，覆盖从流程图到数据可视化的完整场景：
 
 **PlantUML** — 经典的 UML 建模工具，支持时序图、类图、活动图、用例图、状态图等多种 UML 图表类型。通过服务端渲染实现高质量输出。项目中通过 `src/plugins/plantuml-plugin.ts` 实现渲染。
 
@@ -98,6 +98,12 @@ data
 **Vega/Vega-Lite** — 声明式数据可视化语法，基于图形语法理论设计。Vega-Lite 提供简洁的高层语法，适合快速创建标准图表；Vega 则提供完整的底层控制，支持复杂的自定义可视化。分别由 `src/plugins/vega-plugin.ts` 和 `src/plugins/vegalite-plugin.ts` 实现。
 
 **Infographic** — 基于 AntV 的信息图表引擎，专门用于创建数据卡片、统计图表、信息图等适合汇报演示的可视化内容。通过 `src/plugins/infographic-plugin.ts` 集成 @antv/infographic。
+
+**ECharts** — 功能完整的图表库，支持柱状图、折线图、饼图、散点图、雷达图、仪表盘、K 线图等，适合需要精细控制坐标轴、图例与标签的汇报级图表。通过 `src/plugins/echarts-plugin.ts` 集成 echarts，使用 SVG 渲染器以同时产出 PNG 与矢量结果。
+
+**drawio** — 专业图形编辑器格式，支持丰富的图形库与自由布局，适合架构图、网络拓扑图。通过 `src/plugins/drawio-plugin.ts` 渲染，PlantUML 也可转换为 drawio XML 以便二次编辑。
+
+**Canvas** — Obsidian Canvas 格式，侧重自由位置的卡片式笔记与思维导图。通过 `src/plugins/canvas-plugin.ts` 渲染。
 
 ```mermaid
 mindmap
@@ -158,77 +164,105 @@ mindmap
 
 导出到 Word 时，代码块保留完整的颜色格式和等宽字体设置，无需任何手动调整。代码主题可在设置中选择，提供 GitHub、Monokai、Dracula 等多种流行配色方案。
 
+
 #### 1.2.4 主题系统
 
-文档的视觉呈现对于阅读体验和专业形象至关重要。本扩展提供了一套完善的主题系统，包含 **29 个专业预设主题**，全部定义在 `src/themes/presets/` 目录中，涵盖七大类别：
+文档的视觉呈现对于阅读体验和专业形象至关重要。本扩展提供了一套完善的主题系统，包含 **34 个专业预设主题**，全部定义在 `src/themes/presets/` 目录中，涵盖八大类别：
 
-**Professional（专业商务）**
+**经典文档（Classic Document）**
 
-- `default`：平衡的默认主题，适合各类通用文档
-- `business`：商务风格，简洁大方，适合企业报告
-- `technical`：技术文档优化，代码块和表格样式突出
+- `default`：标准文档——四号仿宋正文、黑体/楷体标题、首行缩进，适合通用文档与内部材料
+- `official`：党政公文——国标三号仿宋正文、黑体/楷体标题，符合党政机关公文格式
+- `academic`：学术论文——宋体正文配黑体标题，中文学术规范
+- `business`：商务报告——无衬线正文、清晰层级，适合商务报告与方案
+- `manuscript`：手稿风格——淡灰草稿纸面，紧凑学术表格，适合研究笔记、评审稿和工作论文
+- `newspaper`：报纸风格——传统新闻排版风格，正式严肃
 
-**Academic（学术风格）**
+**书籍阅读（Book & Reading）**
 
-- `academic`：学术论文风格，符合期刊排版规范，适当的行距和边距设置
+- `palatino`：书籍出版——Palatino 字体，优雅的书籍出版风格
+- `garamond`：长文阅读——Georgia 字体，舒适的长文阅读体验
+- `typewriter`：复古打字——Courier New 字体，紧凑的复古打字稿风格
+- `elegant`：优雅文艺——Georgia 字体，优雅的文学风格
 
-**Serif（衬线字体）**
+**现代科技（Modern Tech）**
 
-- `elegant`：优雅的衬线排版，适合正式文档和出版物
-- `palatino`：基于 Palatino 字体，经典的书籍排版风格
-- `garamond`：基于 Garamond 字体，法式优雅风格
+- `technical`：技术文档——专为技术文档设计，清晰简洁的极简风格
+- `swiss`：瑞士极简——Helvetica 风格，紧凑网格系统，适合清爽的现代说明文档
+- `minimal`：极简主义——系统字体，最简洁的排版风格，专注内容本身
+- `vscode`：VSCode 浅色——复刻 VSCode 内置 Markdown 预览（浅色），系统字体、Segoe UI/苹方风格
 
-**Sans-serif（无衬线字体）**
+**创意表达（Creative Expression）**
 
-- `verdana`：屏幕优化，清晰易读
-- `century`：圆润简约，友好亲切
+- `magazine`：杂志排版——大标题差异，视觉冲击，适合创意内容展示
+- `century`：演示文稿——Century Gothic 字体，大字号展示布局，适合提纲和演示材料
+- `handwritten`：手写风格——手写感字体，轻柔配色，适合日记、随笔和个人札记
+- `verdana`：网页显示——Verdana 字体，屏幕显示清晰锐利
 
-**Creative（创意风格）**
+**中文排版（Chinese Typography）**
 
-- `typewriter`：打字机风格，复古怀旧感
-- `water`：水波主题，蓝色调，清爽简洁
-- `minimal`：极简主义设计
+- `heiti`：现代黑体——黑体字体，清晰紧凑的中文报告风格
+- `mixed`：中英混排——宋体正文配 Georgia 标题，中英文混排优化
+- `water`：水墨诗意——仿宋字体，低饱和墨灰配色，适合诗文和中文长读
 
-**Chinese（中文优化）**
+**缤纷童趣（Colorful & Playful）**
 
-- `heiti`：黑体排版，现代中文风格
-- `mixed`：混排优化，中文宋体+英文衬线字体混合排版
+- `rainbow`：彩虹缤纷——多彩标题，活泼童趣的彩虹风格
+- `candy`：糖果甜心——糖果甜心，甜美可爱风格
 
-每个主题不仅定义了字体和颜色，还包含完整的样式配置：标题层级样式、段落间距、表格边框、代码块背景色等。主题配置采用 JSON 格式，高级用户可以轻松创建自定义主题。
+**自然色彩（Nature Colors）**
+
+- `forest`：森林自然——绿色系，自然环保的森林风格
+- `ocean`：海洋清新——蓝绿色系，清爽自然的海洋风格
+
+**深色夜间（Dark）**
+
+- `midnight`：深夜蓝——深蓝夜读底色，强层级的编辑型排版
+- `slate`：石板——冷调石板蓝，技术博客与产品文档首选
+- `dracula`：吸血鬼——Dracula 柔化配色，开发者经典夜间主题
+- `nord`：北欧——Nord 官方冷净配色，适合长文阅读
+- `solarized-dark`：日晒暗——Solarized 深色经典，青蓝底 + Garamond 衬线书卷气
+- `gruvbox`：复古暖暗——Gruvbox Dark 配色，怀旧编辑器风代码段
+- `carbon`：碳黑——IBM Carbon 近黑底 + 紧凑布局，适合控制台与管理后台
+- `obsidian`：曜石——Catppuccin Mocha 风的紫灰底，适合笔记与长文
+- `vscode-dark`：VSCode 深色——复刻 VSCode 内置 Markdown 预览（深色 Dark+ 主题）
+
+每个主题不仅定义了字体和颜色，还包含完整的样式配置：标题层级样式、段落间距、表格边框、代码块背景色等。主题配置采用 JSON 格式，高级用户可以轻松复制预设创建自定义主题。
 
 ```infographic
 infographic list-grid-badge-card
 data
   title 主题分类
-  desc 29 个专业预设主题，7 大类别
+  desc 34 个专业预设主题，8 大类别
   items
     - label 经典文档
-      desc default, academic, business, manuscript, newspaper
+      desc default, official, academic, business, manuscript, newspaper
     - label 书籍阅读
       desc palatino, garamond, typewriter, elegant
     - label 现代科技
-      desc technical, swiss, minimal
+      desc technical, swiss, minimal, vscode
     - label 创意表达
       desc magazine, century, handwritten, verdana
     - label 中文排版
       desc heiti, mixed, water
     - label 缤纷童趣
-      desc rainbow, starry, candy, dinosaur, space, garden
+      desc rainbow, candy
     - label 自然色彩
-      desc forest, ocean, coral, sunset
+      desc forest, ocean
+    - label 深色夜间
+      desc midnight, slate, dracula, nord, solarized-dark, gruvbox, carbon, obsidian, vscode-dark
 ```
 
 | 类别 | 主题 | 适用场景 |
 |-----|------|---------|
-| **Classic** | default, academic, business, manuscript, newspaper | 公文、报告、论文 |
-| **Reading** | palatino, garamond, typewriter, elegant | 书籍、长文阅读 |
-| **Modern** | technical, swiss, minimal | 技术文档、产品说明 |
-| **Creative** | magazine, century, handwritten, verdana | 博客、设计、创意写作 |
-| **Chinese** | heiti, mixed, water | 中文排版优化 |
-| **Playful** | rainbow, starry, candy, dinosaur, space, garden | 学生作业、儿童内容 |
-| **Nature** | forest, ocean, coral, sunset | 自然配色、温暖视觉 |
-
-#### 1.2.5 多语言支持
+| **Classic Document** | default, official, academic, business, manuscript, newspaper | 传统正式的文档风格，适合公文、报告、论文 |
+| **Book & Reading** | palatino, garamond, typewriter, elegant | 舒适的长文阅读体验，适合小说、杂志、博客 |
+| **Modern Tech** | technical, swiss, minimal, vscode | 简洁现代的设计风格，适合技术文档、产品说明 |
+| **Creative Expression** | magazine, century, handwritten, verdana | 富有个性的创意风格，适合博客、设计、创意写作 |
+| **Chinese Typography** | heiti, mixed, water | 专为中文优化的排版风格 |
+| **Colorful & Playful** | rainbow, candy | 活泼多彩的风格，适合学生作业、儿童内容 |
+| **Nature Colors** | forest, ocean | 取自自然的配色，温暖舒适的视觉体验 |
+| **Dark** | midnight, slate, dracula, nord, solarized-dark, gruvbox, carbon, obsidian, vscode-dark | 适合夜间阅读与开发者的深色主题 |
 
 为了服务全球用户，本扩展提供了全面的界面本地化支持，目前已支持 **28 种语言**，语言包位于 `src/_locales/` 目录。支持的语言包括：
 
@@ -312,13 +346,16 @@ VS Code 扩展位于 `vscode/` 目录，专为开发者设计。它提供了编�
 
 **图表渲染引擎**
 
-为了支持多种图表语言，项目集成了五个独立的渲染引擎：
+为了支持多种图表语言，项目集成了八个独立的渲染引擎：
 
 - **PlantUML**：PlantUML 服务端渲染，支持时序图、类图、活动图、用例图等 UML 图表类型
 - **Mermaid**：官方 mermaid 库，支持流程图、时序图等 10+ 种图表类型
 - **Viz.js**：Graphviz 的 WebAssembly 版本（@viz-js/viz），在浏览器中直接运行 DOT 语言渲染
 - **Vega/Vega-Lite**：vega + vega-lite + vega-embed 组合，提供声明式数据可视化能力
 - **Infographic**：@antv/infographic，专注于信息图表和数据卡片
+- **drawio**：drawio2svg + @markdown-viewer/draw-uml，解析 drawio XML 并生成 SVG
+- **Canvas**：内置解析器，渲染 Obsidian Canvas 的卡片与连线
+- **ECharts**：echarts（SVG 渲染器），渲染 option JSON 并产出 SVG/PNG
 
 **公式渲染**
 
@@ -387,7 +424,8 @@ VS Code 扩展位于 `vscode/` 目录，专为开发者设计。它提供了编�
 | **图表 - Mermaid** | mermaid | v11.12.1 |
 | **图表 - Graphviz** | @viz-js/viz | v3.24.0 |
 | **图表 - Vega** | vega + vega-lite + vega-embed | v6.x / v6.4.x |
-| **图表 - Infographic** | @antv/infographic | v0.2.2 |
+| **图表 - Infographic** | @antv/infographic | v0.2.19 |
+| **图表 - ECharts** | echarts | v6.1.0 |
 | **公式 - 预览** | katex | v0.16.25 |
 | **公式 - 导出** | mathjax-full | v3.2.2 |
 | **代码高亮** | rehype-highlight | v7.0.2 |
@@ -5394,7 +5432,7 @@ const estimatedToBlobTime = renderTime * 1.8;
 - **双格式输出**：同一套主题配置自动转换为 CSS（Web 预览）和 DOCX 样式（Word 导出）
 - **模块化资源**：字体、表格、代码、间距等样式资源分离存储，支持灵活组合
 - **跨平台字体兼容**：通过字体配置文件解决 Web 与 Word、中文与西文的字体映射问题
-- **丰富的预设主题**：提供 29 个精心设计的主题预设，覆盖专业、学术、创意等多种场景
+- **丰富的预设主题**：提供 34 个精心设计的主题预设，覆盖专业、学术、创意、深色夜间等多种场景
 - **扩展性**：基于 JSON 的配置格式，便于用户自定义或扩展新主题
 
 ```mermaid
@@ -5648,53 +5686,84 @@ ThemeManager 还提供了一组单位转换方法，用于在不同场景下正�
 2. **用户导向**：分类名称使用用户熟悉的术语（如"学术"、"商务"），而非技术术语
 3. **均衡分布**：每个分类包含 2-5 个主题，避免某个分类过于臃肿或稀疏
 
+
 #### 9.3.4 预设主题一览
 
-系统内置了 **29 个精心设计的主题预设**，每个主题都针对特定使用场景进行了优化。以下是按分类组织的主题列表：
+系统内置了 **34 个精心设计的主题预设**，每个主题都针对特定使用场景进行了优化。以下是按分类组织的主题列表：
 
-**专业类 (Professional)**
+**经典文档 (Classic Document)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **default** | Times New Roman | 经典衬线，适合正式文档和论文 |
-| **business** | Arial | 简洁专业，适合商务报告 |
-| **technical** | Consolas + Arial | 代码友好，适合技术文档 |
+| **default** | 标准文档 | 四号仿宋正文、黑体/楷体标题、首行缩进，适合通用文档与内部材料 |
+| **official** | 党政公文 | 国标三号仿宋正文、黑体/楷体标题，符合党政机关公文格式 |
+| **academic** | 学术论文 | 宋体正文配黑体标题，中文学术规范 |
+| **business** | 商务报告 | 无衬线正文、清晰层级，适合商务报告与方案 |
+| **manuscript** | 手稿风格 | 淡灰草稿纸面，紧凑学术表格，适合研究笔记、评审稿和工作论文 |
+| **newspaper** | 报纸风格 | 传统新闻排版风格，正式严肃 |
 
-**学术类 (Academic)**
+**书籍阅读 (Book & Reading)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **academic** | Times New Roman | 符合学术规范，三线表样式 |
+| **palatino** | 书籍出版 | Palatino 字体，优雅的书籍出版风格 |
+| **garamond** | 长文阅读 | Georgia 字体，舒适的长文阅读体验 |
+| **typewriter** | 复古打字 | Courier New 字体，紧凑的复古打字稿风格 |
+| **elegant** | 优雅文艺 | Georgia 字体，优雅的文学风格 |
 
-**衬线体 (Serif)**
+**现代科技 (Modern Tech)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **elegant** | Georgia | 优雅大气，适合正式场合 |
-| **palatino** | Palatino | 人文气息，适合书籍排版 |
-| **garamond** | Garamond | 古典韵味，适合长文阅读 |
+| **technical** | 技术文档 | 专为技术文档设计，清晰简洁的极简风格 |
+| **swiss** | 瑞士极简 | Helvetica 风格，紧凑网格系统，适合清爽的现代说明文档 |
+| **minimal** | 极简主义 | 系统字体，最简洁的排版风格，专注内容本身 |
+| **vscode** | VSCode 浅色 | 复刻 VSCode 内置 Markdown 预览（浅色），系统字体、Segoe UI/苹方风格 |
 
-**无衬线 (Sans-serif)**
+**创意表达 (Creative Expression)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **verdana** | Verdana | 屏幕优化，清晰易读 |
-| **century** | Century Gothic | 圆润简约，友好亲切 |
+| **magazine** | 杂志排版 | 大标题差异，视觉冲击，适合创意内容展示 |
+| **century** | 演示文稿 | Century Gothic 字体，大字号展示布局，适合提纲和演示材料 |
+| **handwritten** | 手写风格 | 手写感字体，轻柔配色，适合日记、随笔和个人札记 |
+| **verdana** | 网页显示 | Verdana 字体，屏幕显示清晰锐利 |
 
-**中文字体 (Chinese)**
+**中文排版 (Chinese Typography)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **heiti** | 黑体 | 现代中文，标题醒目 |
-| **mixed** | 宋体 + Times | 中西混排优化 |
+| **heiti** | 现代黑体 | 黑体字体，清晰紧凑的中文报告风格 |
+| **mixed** | 中英混排 | 宋体正文配 Georgia 标题，中英文混排优化 |
+| **water** | 水墨诗意 | 仿宋字体，低饱和墨灰配色，适合诗文和中文长读 |
 
-**创意类 (Creative)**
+**缤纷童趣 (Colorful & Playful)**
 
-| 主题 | 字体 | 特点 |
+| 主题 | 名称 | 特点 |
 |------|------|------|
-| **typewriter** | Courier New | 打字机复古风格 |
-| **water** | 衬线 + 蓝灰系 | 水墨淡雅风格 |
-| **minimal** | 无衬线 | 极简主义设计 |
+| **rainbow** | 彩虹缤纷 | 多彩标题，活泼童趣的彩虹风格 |
+| **candy** | 糖果甜心 | 糖果甜心，甜美可爱风格 |
+
+**自然色彩 (Nature Colors)**
+
+| 主题 | 名称 | 特点 |
+|------|------|------|
+| **forest** | 森林自然 | 绿色系，自然环保的森林风格 |
+| **ocean** | 海洋清新 | 蓝绿色系，清爽自然的海洋风格 |
+
+**深色夜间 (Dark)**
+
+| 主题 | 名称 | 特点 |
+|------|------|------|
+| **midnight** | 深夜蓝 | 深蓝夜读底色，强层级的编辑型排版 |
+| **slate** | 石板 | 冷调石板蓝，技术博客与产品文档首选 |
+| **dracula** | 吸血鬼 | Dracula 柔化配色，开发者经典夜间主题 |
+| **nord** | 北欧 | Nord 官方冷净配色，适合长文阅读 |
+| **solarized-dark** | 日晒暗 | Solarized 深色经典，青蓝底 + Garamond 衬线书卷气 |
+| **gruvbox** | 复古暖暗 | Gruvbox Dark 配色，怀旧编辑器风代码段 |
+| **carbon** | 碳黑 | IBM Carbon 近黑底 + 紧凑布局，适合控制台与管理后台 |
+| **obsidian** | 曜石 | Catppuccin Mocha 风的紫灰底，适合笔记与长文 |
+| **vscode-dark** | VSCode 深色 | 复刻 VSCode 内置 Markdown 预览（深色 Dark+ 主题） |
 
 所有主题文件存储在 `src/themes/presets/` 目录下，以 JSON 格式定义，便于查看和自定义修改。
 
@@ -5708,11 +5777,11 @@ ThemeManager 还提供了一组单位转换方法，用于在不同场景下正�
 src/themes/
 ├── registry.json           # 主题注册表：主题目录索引
 ├── font-config.json        # 字体配置：跨平台字体映射
-├── presets/                # 主题预设：29个完整主题定义
+├── presets/                # 主题预设：34 个完整主题定义
 │   ├── default.json
 │   ├── academic.json
 │   └── ...
-├── table-styles/           # 表格样式：9种表格边框方案
+├── table-styles/           # 表格样式：10 种表格边框方案
 │   ├── grid.json           # 网格边框（默认）
 │   ├── academic.json       # 学术三线表
 │   ├── borderless.json     # 无边框
@@ -6273,7 +6342,7 @@ DOCX 导出时需要加载主题预设及其所有关联资源。`loadThemeForDO
 
 4. **跨平台字体解决方案**：通过字体配置文件统一解决 Web/Word、中文/西文的字体映射问题
 
-5. **丰富的预设主题**：29 个精心设计的主题预设覆盖专业、学术、创意等多种场景
+5. **丰富的预设主题**：34 个精心设计的主题预设覆盖专业、学术、创意、深色夜间等多种场景
 
 主题系统使得用户无需了解 CSS 或 Word 样式的技术细节，只需选择一个主题，即可获得专业统一的文档外观——无论是在浏览器中预览，还是导出为 Word 文档。
 

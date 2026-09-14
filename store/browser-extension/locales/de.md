@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Markdown mit Diagrammen, Formeln und Themes anzeigen und lokal als DOCX/PDF/HTML exportieren.
+Markdown mit Diagrammen, Formeln und Themes anzeigen und lokal als DOCX/PDF/HTML/EPUB exportieren.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Wichtige Funktionen:
 
 - Klare Markdown-Leseansicht für lokale Dateien und unterstützte Web-URLs.
 - DOCX-Export für bearbeitbare Word-Dokumente.
-- PDF- und eigenständiger HTML-Export, sofern die Plattform dies unterstützt.
+- PDF- und eigenständiger HTML/EPUB-Export, sofern die Plattform dies unterstützt.
 - Bearbeitbare mathematische Formeln in Word-Ausgaben.
 - Syntaxhervorhebung für Codeblöcke.
 - Dokument-Themes für Geschäftsberichte, wissenschaftliche Texte, technische Notizen, Leselayouts und chinesische Typografie.

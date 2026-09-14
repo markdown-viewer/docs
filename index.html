@@ -16,7 +16,7 @@
       root.pageMeta["en"] = {
         "lang": "en",
         "title": "docu.md — AI writes it. docu.md does the rest.",
-        "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support."
+        "description": "Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML/EPUB. Cross-platform markdown viewer with rich diagram support."
       };
     })();
   </script>
@@ -82,7 +82,7 @@
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="assets/css/fonts.css">
   <title>docu.md — AI writes it. docu.md does the rest.</title>
-  <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML. Cross-platform markdown viewer with rich diagram support.">
+  <meta name="description" content="Your AI generates markdown. We handle everything else — preview, format, export to DOCX/PDF/HTML/EPUB. Cross-platform markdown viewer with rich diagram support.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="icon" type="image/png" sizes="128x128" href="assets/images/logo.png">
   <link rel="stylesheet" href="assets/css/tokens.css">
@@ -285,7 +285,7 @@
     }
     .doc-sheet.main { width: 360px; min-height: 472px; right: 62px; top: 8px; padding: 30px; transform: rotate(1.8deg); }
     .doc-sheet.code { width: 258px; min-height: 230px; left: 4px; top: 84px; padding: 22px; background: #272219; color: #ece4d5; transform: rotate(-5deg); }
-    .doc-sheet.export { width: 320px; left: 56px; bottom: 24px; padding: 20px; transform: rotate(3deg); }
+    .doc-sheet.export { width: min(424px, calc(100% - 32px)); left: 24px; bottom: 24px; padding: 20px; transform: rotate(3deg); }
     .sheet-label { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); margin-bottom: 18px; }
     .doc-title { font-family: var(--font-serif); font-size: 33px; line-height: 1.04; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 18px; }
     .doc-kicker { font-size: 13px; color: var(--text-muted); font-weight: 600; margin-bottom: 12px; }
@@ -301,9 +301,9 @@
     .code-line:nth-child(2) { width: 72%; background: rgba(201,130,27,0.5); }
     .code-line:nth-child(4) { width: 54%; background: rgba(63,143,109,0.5); }
     .code-line:nth-child(6) { width: 82%; }
-    .export-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+    .export-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
     .export-tile { border: 1px solid var(--border); border-radius: 12px; padding: 11px 10px; background: var(--surface); min-height: 74px; }
-    .export-tile strong { display: block; font-size: 17px; line-height: 1; letter-spacing: -0.02em; }
+    .export-tile strong { display: block; font-size: 16px; line-height: 1; letter-spacing: -0.02em; }
     .export-tile span { display: block; margin-top: 6px; font-size: 10px; color: var(--text-muted); font-weight: 600; line-height: 1.35; }
     .floating-note {
       position: absolute; right: -8px; bottom: 198px; padding: 12px 16px;
@@ -406,7 +406,7 @@
 
     /* ===== Diagram Types ===== */
     .diagram-strip {
-      display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));
+      display: grid; grid-template-columns: repeat(8, minmax(0, 1fr));
       border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
     }
     .diagram-tag {
@@ -654,8 +654,8 @@
             <span data-i18n="The aftercare for AI-written markdown">The aftercare for AI-written markdown</span>
           </div>
           <h1 class="display" data-i18n-html="hero-slogan">AI writes it.<br><em>docu.md</em> does the rest.</h1>
-          <p class="body-lg subtitle" data-i18n="Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.">
-            Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML output across the platforms you already use.
+          <p class="body-lg subtitle" data-i18n="Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML/EPUB output across the platforms you already use.">
+            Turn AI-generated markdown into work you can hand in, send out, publish, or present. Beautiful reading, rich diagrams, and polished DOCX/PDF/HTML/EPUB output across the platforms you already use.
           </p>
           <div class="hero-actions">
             <a href="#downloads" class="btn btn-primary btn-lg">
@@ -679,7 +679,7 @@
           <div class="doc-sheet main">
             <div class="sheet-label" data-i18n="Annual Brief">Annual Brief</div>
             <div class="doc-title" data-i18n="A finished document from a simple .md">A finished document from a simple .md</div>
-            <div class="doc-kicker">DOCX / PDF / HTML</div>
+            <div class="doc-kicker">DOCX / PDF / HTML / EPUB</div>
             <div class="doc-line"></div>
             <div class="doc-line medium"></div>
             <div class="doc-line short"></div>
@@ -695,9 +695,11 @@
               <div class="export-tile"><strong>.docx</strong><span data-i18n="editable">editable</span></div>
               <div class="export-tile"><strong>.pdf</strong><span data-i18n="print">print</span></div>
               <div class="export-tile"><strong>.html</strong><span data-i18n="publish">publish</span></div>
+              <div class="export-tile"><strong>.epub</strong><span data-i18n="Ebook">Ebook</span></div>
               <div class="export-tile"><strong>.png</strong><span data-i18n="Diagrams">Diagrams</span></div>
               <div class="export-tile"><strong>.drawio</strong><span data-i18n="Editable diagrams">Editable diagrams</span></div>
               <div class="export-tile"><strong>.svg</strong><span data-i18n="Vector diagrams">Vector diagrams</span></div>
+              <div class="export-tile"><strong>.xlsx</strong><span data-i18n="Tables">Tables</span></div>
             </div>
           </div>
           <div class="floating-note" data-i18n="Markdown in. Finished work out.">Markdown in. Finished work out.</div>
@@ -756,7 +758,7 @@
           </div>
           <h3 class="heading-sm" data-i18n="docu.md bridges the gap.">docu.md bridges the gap.</h3>
           <p class="body-sm" data-i18n-html="bridge-copy">
-            Open any .md file and see it beautifully rendered — live diagrams, formatted code, editable math. Export to polished DOCX, PDF, or HTML in one click. No manual formatting. No copy-paste. <strong>Just your content, delivered professionally.</strong>
+            Open any .md file and see it beautifully rendered — live diagrams, formatted code, editable math. Export to polished DOCX, PDF, or HTML/EPUB in one click. No manual formatting. No copy-paste. <strong>Just your content, delivered professionally.</strong>
           </p>
         </div>
       </div>
@@ -829,6 +831,9 @@
           <span class="fmt-ext">.html</span> <span data-i18n="Self-contained">Self-contained</span>
         </div>
         <div class="export-badge">
+          <span class="fmt-ext">.epub</span> <span data-i18n="Ebook">Ebook</span>
+        </div>
+        <div class="export-badge">
           <span class="fmt-ext">.png</span> <span data-i18n="Diagrams">Diagrams</span>
         </div>
         <div class="export-badge">
@@ -836,6 +841,9 @@
         </div>
         <div class="export-badge">
           <span class="fmt-ext">.svg</span> <span data-i18n="Vector diagrams">Vector diagrams</span>
+        </div>
+        <div class="export-badge">
+          <span class="fmt-ext">.xlsx</span> <span data-i18n="Spreadsheets">Spreadsheets</span>
         </div>
       </div>
     </div>
@@ -856,7 +864,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
           </div>
           <h3 data-i18n="Rich Diagram Support">Rich Diagram Support</h3>
-          <p data-i18n="PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz — 7 diagram engines rendered live.">PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz — 7 diagram engines rendered live.</p>
+          <p data-i18n="PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, ECharts — 8 diagram engines rendered live.">PlantUML, Mermaid, Vega, drawio, Canvas, Infographic, Graphviz, ECharts — 8 diagram engines rendered live.</p>
         </div>
         <div class="feature-card">
           <div class="card-shine"></div>
@@ -864,7 +872,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </div>
           <h3 data-i18n="Professional Export">Professional Export</h3>
-          <p data-i18n="DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.">DOCX with editable equations, PDF with perfect layout, or self-contained HTML. One click.</p>
+          <p data-i18n="DOCX with editable equations, PDF with perfect layout, or self-contained HTML/EPUB. One click.">DOCX with editable equations, PDF with perfect layout, or self-contained HTML/EPUB. One click.</p>
         </div>
         <div class="feature-card">
           <div class="card-shine"></div>
@@ -879,8 +887,8 @@
           <div class="card-icon-wrap blue">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
-          <h3 data-i18n="29 Professional Themes">29 Professional Themes</h3>
-          <p data-i18n="Classic, Reading, Modern, Creative, Chinese, Playful, Nature — switch in one click.">Classic, Reading, Modern, Creative, Chinese, Playful, Nature — switch in one click.</p>
+          <h3 data-i18n="34 Professional Themes">34 Professional Themes</h3>
+          <p data-i18n="Classic, Reading, Modern, Creative, Chinese, Playful, Nature, Dark — switch in one click.">Classic, Reading, Modern, Creative, Chinese, Playful, Nature, Dark — switch in one click.</p>
         </div>
         <div class="feature-card">
           <div class="card-shine"></div>
@@ -961,7 +969,7 @@
     <div class="container">
       <div class="section-header">
         <span class="eyebrow" data-i18n="Diagrams">Diagrams</span>
-        <h2 class="heading-lg" data-i18n="7 diagram engines, zero configuration.">7 diagram engines, zero configuration.</h2>
+        <h2 class="heading-lg" data-i18n="8 diagram engines, zero configuration.">8 diagram engines, zero configuration.</h2>
         <p class="body-lg" data-i18n="Write diagram code in your markdown. docu.md renders it live — and exports at high resolution.">Write diagram code in your markdown. docu.md renders it live — and exports at high resolution.</p>
       </div>
       <div class="diagram-strip">
@@ -972,6 +980,7 @@
         <span class="diagram-tag"><span class="tag-dot canv"></span>Canvas</span>
         <span class="diagram-tag"><span class="tag-dot info"></span>Infographic</span>
         <span class="diagram-tag"><span class="tag-dot gv"></span>Graphviz DOT</span>
+        <span class="diagram-tag"><span class="tag-dot ec"></span>ECharts</span>
       </div>
       <div style="margin-top:40px;text-align:center;">
         <p class="body-lg" style="margin-bottom:16px;max-width:560px;margin-left:auto;margin-right:auto;" data-i18n="Bring these diagrams to your AI coding agent — install docu.md skills with one command.">Bring these diagrams to your AI coding agent — install docu.md skills with one command.</p>
@@ -1006,7 +1015,7 @@
         <div class="step">
           <div class="step-number">3</div>
           <h3 class="heading-sm" data-i18n="Export and share">Export and share</h3>
-          <p data-i18n="One click to DOCX, PDF, or HTML. Perfect formatting, editable equations, high-res diagrams.">One click to DOCX, PDF, or HTML. Perfect formatting, editable equations, high-res diagrams.</p>
+          <p data-i18n="One click to DOCX, PDF, or HTML/EPUB. Perfect formatting, editable equations, high-res diagrams.">One click to DOCX, PDF, or HTML/EPUB. Perfect formatting, editable equations, high-res diagrams.</p>
           <div class="step-meta" data-i18n="Deliver">Deliver</div>
         </div>
       </div>
@@ -1025,11 +1034,12 @@
         <div class="output-card dark wide">
           <div class="label" data-i18n="Formal Documents">Formal Documents</div>
           <h3 data-i18n="AI drafts become reports people can actually submit.">AI drafts become reports people can actually submit.</h3>
-          <p data-i18n="Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX and PDF.">Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX and PDF.</p>
+          <p data-i18n="Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX, PDF/EPUB.">Clean headings, tables, diagrams, math, and code all survive the journey from markdown to DOCX, PDF/EPUB.</p>
           <div class="output-mini-grid">
             <div class="output-mini"><strong>DOCX</strong><span data-i18n="editable equations">editable equations</span></div>
             <div class="output-mini"><strong>PDF</strong><span data-i18n="print-ready pages">print-ready pages</span></div>
             <div class="output-mini"><strong>HTML</strong><span data-i18n="shareable pages">shareable pages</span></div>
+            <div class="output-mini"><strong>EPUB</strong><span data-i18n="Ebook">Ebook</span></div>
             <div class="output-mini-sep" data-i18n="Diagram exports">Diagram exports</div>
             <div class="output-mini"><strong>.png</strong><span data-i18n="Diagrams">Diagrams</span></div>
             <div class="output-mini"><strong>.drawio</strong><span data-i18n="Editable diagrams">Editable diagrams</span></div>

@@ -95,7 +95,7 @@ This is the core feature of Markdown Viewer!
 | Code blocks | Syntax highlighted |
 | Tables | Formatted tables |
 | Images | Embedded images |
-| Mermaid/PlantUML diagrams | High-res PNG |
+| Mermaid / PlantUML / ECharts diagrams | High-res PNG |
 | LaTeX formulas | Editable equations |
 | Links | Clickable hyperlinks |
 
@@ -104,7 +104,7 @@ This is the core feature of Markdown Viewer!
 ## Switching Themes
 
 1. Click the **Theme** button in the toolbar
-2. Browse the 29 available themes
+2. Browse the 34 available themes
 3. Click a theme to preview it
 4. The document updates instantly
 

@@ -27,7 +27,7 @@ Open Markdown files in Edge and read them with document typography, code highlig
 
 ### Document Handoff
 
-Use export when the rendered document is ready for a colleague, client, reviewer, or archive. DOCX is the primary editable handoff format; PDF and HTML are available where supported.
+Use export when the rendered document is ready for a colleague, client, reviewer, or archive. DOCX is the primary editable handoff format; PDF, HTML, and EPUB are available where supported.
 
 ### Managed Environments
 
@@ -35,7 +35,7 @@ Edge is often used in managed workplaces. If an administrator controls extension
 
 ## Rich Content Support
 
-The Edge extension supports the shared docu.md rich content set: standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, and Graphviz.
+The Edge extension supports the shared docu.md rich content set: standard Markdown, GitHub-style tables and task lists, images, highlighted code, math formulas, SVG content, complex HTML tables, and text-based diagrams or charts including PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz, and ECharts.
 
 ## Privacy
 

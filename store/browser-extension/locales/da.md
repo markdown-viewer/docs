@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Forhåndsvis Markdown med diagrammer, formler, temaer og lokal DOCX/PDF/HTML-eksport.
+Forhåndsvis Markdown med diagrammer, formler, temaer og lokal DOCX/PDF/HTML/EPUB-eksport.
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Vigtige funktioner:
 
 - Ren Markdown-læsevisning for lokale filer og understøttede webadresser.
 - DOCX-eksport til redigerbare Word-dokumenter.
-- PDF- og selvstændig HTML-eksport, hvor platformen understøtter det.
+- PDF- og selvstændig HTML/EPUB-eksport, hvor platformen understøtter det.
 - Redigerbare matematiske formler i Word-output.
 - Syntaksfremhævning for kodeblokke.
 - Dokumenttemaer til rapporter, akademisk tekst, tekniske noter, læselayouts og kinesisk typografi.

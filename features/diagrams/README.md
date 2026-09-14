@@ -1,6 +1,6 @@
 # Diagram Features
 
-Markdown Viewer can convert code-based diagrams into high-resolution images during Word export. This is one of its most powerful features.
+Markdown Viewer can convert code-based diagrams into high-resolution images during document export. This is one of its most powerful features.
 
 ## Supported Diagram Types
 
@@ -13,6 +13,7 @@ Markdown Viewer can convert code-based diagrams into high-resolution images duri
 | [Canvas](canvas.md) | `canvas` | Mind maps, knowledge graphs |
 | [Infographic](infographic.md) | `infographic` | Statistics, presentations |
 | [Graphviz DOT](graphviz.md) | `dot` | Network graphs, dependencies |
+| [ECharts](echarts.md) | `echarts` | Presentation-grade charts and dashboards |
 
 ---
 
@@ -20,7 +21,7 @@ Markdown Viewer can convert code-based diagrams into high-resolution images duri
 
 1. **Write diagrams as code** in your Markdown file
 2. **Preview** them rendered in the browser
-3. **Export to Word** — diagrams become high-resolution PNG images
+3. **Export** to DOCX, PDF, HTML, or EPUB — diagrams become high-resolution images
 
 ### Example Workflow
 
@@ -37,7 +38,7 @@ graph TD
 
 **See it rendered** in the browser as a beautiful flowchart.
 
-**Export to Word** — it becomes a crisp, high-resolution image.
+**Export it** — it becomes a crisp, high-resolution image in DOCX, PDF, HTML, or EPUB.
 
 ---
 
@@ -64,6 +65,7 @@ graph TD
 | **Canvas** | Spatial layouts, free positioning | Mind maps, concept maps, planning boards |
 | **Infographic** | Presentations, statistics | KPIs, comparisons, summaries |
 | **Graphviz DOT** | Complex relationships, hierarchies | Dependency trees, org charts, state machines |
+| **ECharts** | Presentation-grade charts, dashboards | Sales reports, KPIs, gauges, radar charts |
 
 ---
 
@@ -87,3 +89,4 @@ All diagrams are rendered at high resolution for crisp output:
 - [Canvas](canvas.md) — For spatial mind maps
 - [Infographic](infographic.md) — For presentations
 - [Graphviz DOT](graphviz.md) — For complex graphs
+- [ECharts](echarts.md) — For presentation-grade charts

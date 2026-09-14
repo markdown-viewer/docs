@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-Markdown mit Diagrammen, Formeln und Themes anzeigen und lokal als DOCX/PDF/HTML exportieren.
+Markdown mit Diagrammen, Formeln und Themes anzeigen und lokal als DOCX/PDF/HTML/EPUB exportieren.
 
 Diese README beschreibt docu.md auf Deutsch. Sie ist für Nutzerinnen, Nutzer und Dokumentation gedacht und darf deshalb ausführlicher sein als kurze Store-Texte.
 
@@ -12,14 +12,14 @@ Wichtige Funktionen:
 
 - Klare Markdown-Leseansicht für lokale Dateien und unterstützte Web-URLs.
 - DOCX-Export für bearbeitbare Word-Dokumente.
-- PDF- und eigenständiger HTML-Export, sofern die Plattform dies unterstützt.
+- PDF- und eigenständiger HTML/EPUB-Export, sofern die Plattform dies unterstützt.
 - Bearbeitbare mathematische Formeln in Word-Ausgaben.
 - Syntaxhervorhebung für Codeblöcke.
 - Dokument-Themes für Geschäftsberichte, wissenschaftliche Texte, technische Notizen, Leselayouts und chinesische Typografie.
 - Intelligentes Rendering und Caching für größere Dokumente.
 - Lokale Verarbeitung für normale Vorschau- und Exportabläufe.
 
-Unterstützte Inhalte umfassen Standard-Markdown, GitHub-ähnliche Tabellen und Aufgabenlisten, Bilder, hervorgehobenen Code, mathematische Formeln, SVG-Inhalte, komplexe HTML-Tabellen sowie Diagramme und Charts in verbreiteten textbasierten Formaten wie PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic und Graphviz.
+Unterstützte Inhalte umfassen Standard-Markdown, GitHub-ähnliche Tabellen und Aufgabenlisten, Bilder, hervorgehobenen Code, mathematische Formeln, SVG-Inhalte, komplexe HTML-Tabellen sowie Diagramme und Charts in verbreiteten textbasierten Formaten wie PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts und Graphviz.
 
 docu.md eignet sich für technische Dokumentation, Architektur- und Designnotizen, Forschungsentwürfe, Wochenberichte, Wissensdatenbanken, README-Dateien und KI-gestütztes Schreiben. Datei öffnen, Darstellung prüfen, Theme wählen und das passende Ausgabeformat exportieren.
 

@@ -46,4 +46,4 @@ Do not submit English fallback text for any locale. If a locale is not ready, le
 
 ## Review Rule
 
-Before submission, review each locale manually for English fallback paragraphs and dense feature-name lists. Official names such as docu.md, Markdown, DOCX, PDF, HTML, Chrome Web Store, and Microsoft Edge Add-ons may stay in their normal spelling.
+Before submission, review each locale manually for English fallback paragraphs and dense feature-name lists. Official names such as docu.md, Markdown, DOCX, PDF, HTML/EPUB, Chrome Web Store, and Microsoft Edge Add-ons may stay in their normal spelling.

@@ -2,7 +2,7 @@
 
 ## Short Description
 
-預覽帶圖表、公式和主題的 Markdown，並在本地匯出 DOCX/PDF/HTML。
+預覽帶圖表、公式和主題的 Markdown，並在本地匯出 DOCX/PDF/HTML/EPUB。
 
 ## Long Description
 
@@ -14,7 +14,7 @@ Markdown 很適合快速起草、版本管理、技術筆記、專案文件和 A
 
 - 為本地檔案和受支援的網頁網址提供清晰的 Markdown 閱讀視圖。
 - 匯出可編輯的 DOCX Word 文件。
-- 在平台支援時匯出 PDF 和自包含 HTML。
+- 在平台支援時匯出 PDF 和自包含 HTML/EPUB。
 - 在 Word 輸出中保留可編輯數學公式。
 - 為程式碼區塊提供語法高亮。
 - 提供適合商務報告、學術寫作、技術筆記、閱讀版式和中文排版的文件主題。

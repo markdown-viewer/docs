@@ -1,6 +1,6 @@
 # docu.md Markdown Viewer
 
-다이어그램, 수식, 테마가 있는 Markdown을 미리 보고 DOCX/PDF/HTML로 로컬 내보내기합니다.
+다이어그램, 수식, 테마가 있는 Markdown을 미리 보고 DOCX/PDF/HTML/EPUB로 로컬 내보내기합니다.
 
 이 README는 docu.md를 한국어로 설명하는 사용자 문서입니다. 스토어의 짧은 설명보다 더 자세하게 기능과 사용 흐름을 다룹니다.
 
@@ -12,14 +12,14 @@ Markdown은 초안 작성, 버전 관리, 기술 메모, 프로젝트 문서, AI
 
 - 로컬 파일과 지원되는 웹 URL을 위한 깔끔한 Markdown 읽기 화면.
 - 편집 가능한 Word 문서를 위한 DOCX 내보내기.
-- 플랫폼에서 지원되는 경우 PDF 및 단일 HTML 내보내기.
+- 플랫폼에서 지원되는 경우 PDF 및 단일 HTML/EPUB 내보내기.
 - Word 출력에서 편집 가능한 수학 수식.
 - 코드 블록 구문 강조.
 - 비즈니스 보고서, 학술 글쓰기, 기술 메모, 읽기 레이아웃, 중국어 타이포그래피용 문서 테마.
 - 큰 문서를 위한 스마트 렌더링과 캐시.
 - 일반 미리보기와 내보내기의 로컬 처리.
 
-지원되는 풍부한 콘텐츠에는 표준 Markdown, GitHub 스타일 표와 작업 목록, 이미지, 강조된 코드, 수학 수식, SVG 콘텐츠, 복잡한 HTML 표, PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, Graphviz 같은 텍스트 기반 형식의 다이어그램과 차트가 포함됩니다.
+지원되는 풍부한 콘텐츠에는 표준 Markdown, GitHub 스타일 표와 작업 목록, 이미지, 강조된 코드, 수학 수식, SVG 콘텐츠, 복잡한 HTML 표, PlantUML, Mermaid, Vega/Vega-Lite, drawio, Canvas, Infographic, ECharts, Graphviz 같은 텍스트 기반 형식의 다이어그램과 차트가 포함됩니다.
 
 docu.md는 기술 문서, 설계 메모, 연구 초안, 주간 보고서, 지식 베이스, README 파일, AI 보조 글쓰기에 적합합니다. Markdown을 열고 렌더링 결과를 확인한 뒤 테마를 선택하고 필요한 형식으로 내보내세요.
 
